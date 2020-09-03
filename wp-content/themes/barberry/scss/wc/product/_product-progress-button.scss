@@ -1,0 +1,142 @@
+.single_add_to_cart_button.progress-btn {
+
+	cursor: pointer;
+
+    &:after {
+        display: none;
+    }
+
+    .checked {
+        position: absolute;
+        top: calc(50% - 8px);
+        left: 47%;
+        opacity: 1;
+        height: 0;
+
+        // transition: all 0.3s ease;
+
+        &:after {
+            font-size: 0;
+            margin-left: -5px;
+            @include barberry-icon('\ea36');
+        }
+    }
+
+    &.check {
+        .btn-text {
+            opacity: 0;
+            font-size: 0;
+        }
+
+        .checked {
+            opacity: 1;
+            height: auto;
+            transition: all 0.3s ease;
+
+            @media all and (max-width: 1024px) {
+                // margin-top: 12px;
+            }
+            
+            &:after {
+                font-size: 16px;
+            }
+        }    	
+    }
+
+    .btn-text {
+        @include transition(opacity .3s);
+        opacity: 1;
+        // font-size: 13px;
+        // transition: all 0.3s ease;
+    }
+
+    &.active {
+        opacity: 1 !important;
+        pointer-events: none;
+        cursor: initial !important;
+
+        @media all and (min-width: 1024px) {
+            // margin-top: 11px !important;
+        }
+
+        .progress {
+            opacity: 1;
+            animation: progress-anim 3s ease 0s;
+        }
+
+        .btn-text {
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        &:before {
+        	transform: rotate3d(0, 0, 1, 0deg) translate3d(0, 0, 0);
+        }
+
+        &.check {
+	        &:before {
+	        	transform: rotate3d(0, 0, 1, 10deg) translate3d(-1.2em, 110%, 0);
+	        }        	
+        }
+    }
+
+    .progress {
+        width: 0%;
+        height: 100%;
+        z-index: 5;
+        background: #000;
+        opacity: 0;
+        transition: all 0.3s ease;
+        position: absolute;
+        left: 0px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+
+}
+
+body.is-mobile {
+	.single_add_to_cart_button.progress-btn {
+		@include transition(.6s background-color ease);
+		&.active {
+			background-color: #fff;
+			&.check {
+				.checked {
+					&:after {
+						color: #000;
+					}					
+				}
+			}
+		}
+	}
+}
+
+
+@keyframes progress-anim {
+    0% {
+        width: 0%;
+    }
+    5% {
+        width: 0%;
+    }
+    10% {
+        width: 15%;
+    }
+    30% {
+        width: 40%;
+    }
+    50% {
+        width: 55%;
+    }
+    80% {
+        width: 100%;
+    }
+    95% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+} 

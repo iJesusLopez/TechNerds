@@ -1,0 +1,118 @@
+.entry-header {
+
+	.entry-thumbnail {
+		text-align: center;
+		overflow: hidden;
+		img {
+			margin: 0;
+		}
+		margin-bottom: rem-calc(80);
+
+		@include breakpoint(small only) {
+			margin-bottom: rem-calc(40);
+		}
+	}
+
+	@include breakpoint(small only) {
+		margin-left: rem-calc(-24); 
+		margin-right: rem-calc(-24); 
+	}
+}
+
+.entry-content {
+
+	a:not(.button):not(.wp-block-button__link) {
+	  font-weight: normal;
+	  color: #000;
+	  background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+	  background-position: left bottom, left bottom;
+	  background-repeat: no-repeat, no-repeat;
+	  background-size: 0 1px, 100% 1px;
+	  transition: none 300ms ease-in-out;
+	  transition-property: background-size, color;
+	  word-wrap: break-word;
+	  @include transition(opacity .3s);
+
+	  &:hover {
+	    background-size: 100% 1px, 100% 1px;
+	  }         
+	}
+
+	.page-links	{
+		display: flex;
+		justify-content: center;
+		font-size: rem-calc(18); 
+		clear: both;
+
+		a {
+			background-image: none;
+			&:hover {
+				opacity: .6;
+			}
+		}
+
+		span,a {
+			font-size: rem-calc(18);
+		}
+		
+		// > .pages {
+		// 	display: none;
+		// }
+
+		span {
+			margin-right: rem-calc(32); 
+		}
+
+	}
+
+}
+
+footer.entry-meta {
+	margin-top: rem-calc(60);
+
+	.post_tags {
+	    text-align: center;
+
+	    a {
+			color: #000;
+			background-color: #fff;
+			border:2px solid #e1e1e1;
+			padding: rem-calc(8) rem-calc(12) rem-calc(6) rem-calc(10);
+			margin: 0 rem-calc(10) rem-calc(10) 0 ;
+			display: inline-block;
+			font-size: rem-calc(13) !important;
+			line-height: 1.2;
+			font-weight: 400;
+			transition: all .3s ease;
+
+			&:before {
+				background-color: #e1e1e1;
+			    content: "";
+			    width: 5px;
+			    height: 5px;
+			    margin-right: 0.5rem;
+			    margin-bottom: 0.05rem;
+			    display: inline-block;
+			    -webkit-border-radius: 50%;
+			    border-radius: 50%;				
+			}
+
+		    .tag-link-count	{
+		    	color: #999;
+		    	// font-weight: 300;
+			}	
+
+			&:hover {
+				border-color: #000;
+				color: #fff;
+				background-color: #000;
+				&:before {
+					background-color: #fff;
+				}
+				.tag-link-count	{
+					color: #fff;
+				}
+			}				    	
+	    }
+	}	
+}

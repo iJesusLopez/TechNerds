@@ -1,0 +1,504 @@
+.checkout-order {
+	h3 {
+		display: inline-block;
+		font-size: rem-calc(30);
+	}
+
+	.edit {
+		margin-top: 13px;
+		float: right;
+	}
+}
+
+#order_review {
+	margin-top: 20px;
+
+	table {
+		margin-bottom: rem-calc(20);
+
+		.blockUI {
+			background-color: #f4f4f4 !important;
+			@include loader(24px, 24px);
+	
+			&:after {
+				border-top-color: #000;
+				z-index: 4;
+				position: absolute;
+			    top: calc(50% - 12px);
+			    left: calc(50% - 12px);
+
+			}				
+		}
+
+		thead {
+			display: none;
+		}
+
+		tbody {
+			background-color: transparent;
+			border:none;
+
+			tr {
+				background-color: transparent;
+				border-bottom: none;
+
+				&:last-child {
+					td {
+						padding-bottom: 40px;
+					}
+				}
+
+				td {
+					padding: 12px 0;
+				}
+			}
+
+			.checkout-product-wrap {
+			    position: relative;
+			    display: flex;
+			    align-items: center;
+			    width: 100%;
+
+			    .checkout-product-thumbnail {
+			    	margin-right: 20px;
+			    	img {
+			    		max-width: rem-calc(70);
+			    		@include box-shadow(5px 5px 50px -5px rgba(0,0,0,0.1));
+
+			    		@include breakpoint(1280px down) {
+							max-width: rem-calc(60);
+			    		}
+			    	}
+			    }
+
+			    .checkout-product-name {
+				    color: #000;
+				    font-size: 16px;
+				    line-height: 1.3;
+				    font-weight: 400 !important;
+				    display: block;
+				    padding-right: 20px;
+
+				    .product-quantity {
+				    	font-weight: 300;
+				    	color: #999999;
+				    }
+
+			    }
+
+			    .checkout-product-total {
+						margin-left: auto;
+						text-align: right;	
+						line-height: 1.2;
+						.subscription-price {
+							.subscription-details {
+								font-size:rem-calc(18);
+							}
+						}		    	
+			    }
+			}			
+		}
+
+		tfoot {
+			background-color: transparent;
+			border: none;
+
+			th {
+				font-size: 20px;
+			}
+
+			tr {
+				border: none;
+			}
+
+			.cart-subtotal {
+				border-top: 2px solid #000;
+				border-bottom: 1px solid #dbdbdb;
+				th, td {
+					padding-left: 0;
+					padding-top: rem-calc(20); 	
+				}	
+				td {
+					text-align: right;
+					.amount {
+						font-size: 24px;
+					}
+				}							
+			}
+
+			.shipping {
+				th {
+					display: none;
+				}
+			}
+				
+			.cart-discount {
+				border-bottom: 1px solid #dbdbdb;
+
+				th {
+					padding-left: 0;
+					font-weight: 300;
+					font-size: 18px;
+					line-height: 1.4;
+				}
+
+				td {
+					position: relative;
+					text-align: right;
+					padding-right: 25px;
+					font-weight: 300;
+
+					> .amount {
+						margin-left: 10px;
+					}
+
+					.woocommerce-remove-coupon {
+						color: #000;
+						position: absolute;
+						top: calc(50% - 9px);
+						right: 0;
+		    		display: inline-block;
+		    		font-size: 0px;				
+						width: 18px;
+						height: 18px;
+						border-radius:50%;
+						border:1px solid #000;
+						background-color: #fff;	
+
+						&:before {
+							position: absolute;
+							left: calc(50% - 7px);
+							top: calc(50% - 7px);
+							
+							font-size: 14px;
+							@include barberry_icon('\ea2a');
+						}
+
+						&:hover {
+							background-color: #000;
+							&:before {
+								color: #fff;
+							}
+						}						
+					}
+				}				
+			}
+
+			.shipping {
+				td {
+					font-weight: 300;
+					font-size: 1rem;
+					padding-left: 0;
+					.amount {
+						float: right;
+					}					
+				}
+				.shipping-th-title {
+					color: #000;
+					font-size: 20px;
+					font-weight: normal;
+					margin-bottom: rem-calc(10);
+				}
+
+				ul#shipping_method {
+					margin: 0;
+					list-style: none;
+					li {
+						margin-bottom: 5px;
+						input.shipping_method {
+							display: none;
+						}
+						label {
+							font-weight: 300;
+							width: 100%;
+							margin-left: 0;
+							.amount {
+								float: right;
+							}
+						}
+					}
+				}				
+			}
+
+			.recurring-totals {
+				background-color: #fff;
+				th {
+					position: relative;
+					padding: 22px 25px 20px 25px;
+					color: #000;
+					font-size: 16px;
+					font-weight: 600;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					background-image: none;
+					
+				}				
+			}
+
+			.recurring-total {
+				&.cart-subtotal {
+					border-top: 1px solid;
+					border-top-color: #dbdbdb;
+					border-top-width: 1px;
+					td {
+						font-size: rem-calc(18);
+						line-height: 1.2;	
+						font-weight: 300;				
+					}					
+				}
+				&.cart-subtotal,
+				&.shipping {
+					background-color: #fff !important;
+					th {
+						padding-left: 25px !important;
+					}
+
+					td {
+						padding-right: 25px !important;
+					}
+				}	
+				&.shipping {
+					th {
+						display: table-cell;
+						font-size: 1rem;
+						font-weight: 300;
+					}
+					td {
+						text-align: right;
+						.amount {
+							float: none;
+						}
+					}					
+				}			
+			}
+
+			.order-total {
+				border-top: 6px solid #000;
+				background-color: transparent;
+
+				th, td {
+					padding-left: 0;
+					padding-top: rem-calc(30); 	
+				}	
+
+				th {
+					font-size: rem-calc(26);
+					line-height: 1.2;
+					font-weight: 600;					
+				}
+
+				td {
+					text-align: right;
+
+					.amount {
+						font-size: 36px;
+						@include breakpoint(small only) {
+							font-size: 30px;
+						}
+					}
+
+					.includes_tax {
+						font-size: 14px;
+						line-height: 1.4;
+						display: block;
+						font-weight: 300;
+
+						.amount {
+							font-size: 14px;
+						}
+					}					
+				}
+				&.recurring-total {
+					td {
+						font-size: rem-calc(18);
+						font-weight: 300;
+						line-height: 1.2;
+						.first-payment-date {
+							small {
+								font-size: rem-calc(18);
+							}
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+
+#order_review {
+	&.checkout-form-pay {
+		margin-top: 0;
+
+
+		table {
+			border:none;
+			thead {
+				border:none;
+				display: table-header-group;
+				background-color: transparent;
+				tr {
+					border-bottom: 6px solid #000;
+					th {
+						padding: 0;
+						padding: rem-calc(20) 0;
+						padding-right: rem-calc(15);
+						&:last-child {
+							padding-right: 0;
+							text-align: right;
+						}						
+					}
+				}
+			}
+			tbody {
+				tr {
+					background-color: transparent;
+					border-bottom: 1px solid #dbdbdb;	
+					&:last-child {
+						border-bottom: none;
+					}
+
+					td {
+						padding: rem-calc(25) 0;
+						font-size: 18px;
+						line-height: 1.4;
+						&.product-name {
+							.product-quantity {
+									font-weight: 300;
+									color: #666;
+							}
+						}
+
+						@include breakpoint(500px down) {
+							font-size: 16px;
+						}						
+						&:last-child {
+							text-align: right;
+						}
+					}									
+				}
+			}
+
+			tfoot {
+				border: none;
+				background:transparent;
+				tr {
+					background-color: transparent;
+					border-bottom: 1px solid #dbdbdb;
+
+					th,td {
+						width:auto;
+						padding-left: 0;
+					}
+					&:first-child {
+						border-top: 2px solid #000;
+						th, td {
+							padding-left: 0;
+							padding-top: rem-calc(20); 	
+						}					
+						td {
+							.amount {
+								font-size: 24px;
+							}
+						}
+					}
+					&:last-child {
+						border-bottom: none;
+					}
+
+					td {
+						// width: 300px;
+						font-weight: 300;
+						font-size: 18px;
+						line-height: 1.4;
+						text-align: right;
+
+						@include breakpoint(500px down) {
+							font-size: 16px;
+						}					
+						.shipped_via {
+							font-size: 100%;
+							font-weight: 300;
+
+						}
+					}
+					&:last-child {
+						border-top: 6px solid #000;
+						border-bottom: none;
+						th, td {
+							padding-top: rem-calc(30); 	
+						}	
+						td {
+							text-align: right;
+							.amount {
+								font-size: 36px;
+								@include breakpoint(small only) {
+									font-size: 30px;
+								}
+							}
+							.includes_tax {
+								font-size: 14px;
+								line-height: 1.4;
+								display: block;
+								font-weight: 300;
+
+								.amount {
+									font-size: 14px;
+								}
+							}						
+						}									
+					}															
+				}
+			}
+		}
+	}	
+
+	#payment {
+		ul.payment_methods {
+			border:2px dashed #eee;
+			margin-bottom: 40px;
+			// background-color: #eee;
+		}
+		.woocommerce-privacy-policy-text,
+		.woocommerce-terms-and-conditions-checkbox-text,
+		.woocommerce-terms-and-conditions {
+		  a, p {
+		    font-size: 16px;
+		    margin: 0 0 30px;      
+		  }
+
+		  a {
+		    font-weight: 400;
+		  }
+		}
+
+		.woocommerce-terms-and-conditions {
+			margin-bottom: 30px;
+		}
+
+		.woocommerce-terms-and-conditions-checkbox-text {
+			display: inline;
+			position: relative;
+			padding-left: rem-calc(30);
+		}	
+
+		.validate-required {
+			label {
+				input {
+					position: absolute;
+					display: inline-block;
+				}
+			}
+		}
+
+		.woocommerce-form__label-for-checkbox {
+			margin-bottom: rem-calc(20);
+		}
+
+		.required {
+			display: inline;
+		}
+
+	}
+}
+

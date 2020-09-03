@@ -1,0 +1,85 @@
+.sidebar-container {
+    @include breakpoint(medium down) {
+        padding-top: rem-calc(40) !important;
+        @include poly-fluid-sizing('padding-left', (768px:25px, 1024px:50px));
+        @include poly-fluid-sizing('padding-right', (768px:25px, 1024px:50px));
+    }
+}
+
+&.product-sidebar-left {
+
+	.woocommerce-sidebar-inside {
+		position: relative;
+		// padding-right: rem-calc(40);
+
+		@include breakpoint(xlarge down) {
+			// padding-right: 20px;
+		}
+
+		@include breakpoint(large down) {
+			padding-right: 0;
+		}
+	}
+}
+
+&.product-sidebar-right {
+
+	.woocommerce-sidebar-inside {
+		position: relative;
+		// padding-left: rem-calc(40);
+
+		@include breakpoint(xlarge down) {
+			// padding-left: 20px;
+		}
+
+		@include breakpoint(large down) {
+			padding-left: 0;
+		}
+	}
+}
+
+// Sticky Sidebar Button
+
+.barberry-sticky-sidebar-btn {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    color: #333;
+    text-align: center;
+    z-index: 4;
+    font-size: 0;
+    border: 1px solid;
+    border-color: #e4e4e4;    
+    background-color: rgba(255,255,255,.9);
+    display: none;
+
+    svg {
+        transform: scaleX(-1);
+    }
+
+    @include breakpoint(medium down) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.shop-sidebar-btn {
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.barberry-sidebar-btn-shown {
+    pointer-events: visible;
+    pointer-events: unset;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}  

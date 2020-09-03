@@ -1,0 +1,57 @@
+body.bb_classic_notif {
+
+	.woocommerce-message,
+	.woocommerce-info {
+
+
+		.woocommerce-message-wrapper {
+			padding-left: 0;
+			padding-right: rem-calc(80);
+
+			.remove-notif {
+				right: auto;
+				left: 20px;
+
+				&:before {
+					left: auto;
+					right: calc(50% - 7px);
+				}
+
+			}
+
+			.success-icon {
+				left: auto;
+				right: 0;
+			}	
+
+			.notice_text {
+				padding-right: 0;
+				padding-left: 20px;
+
+				.button {
+					margin-right: 0;	
+					margin-left: rem-calc(10);			
+				}
+			}	
+		}
+
+	}
+
+
+	.woocommerce-error {
+		padding-left: 0;
+		padding-right: rem-calc(80);
+
+
+		&:before {
+			left: auto;
+			right: 0;
+		}
+	}
+}
+
+
+
+
+
+

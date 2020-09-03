@@ -1,0 +1,469 @@
+.product_layout {
+
+	&.product_layout_default {
+		.product-info-cell {
+			padding-top: rem-calc(60);
+			@include poly-fluid-sizing('padding-top', (1199px:0px, 1280px:30px, 1920px:60px));
+		}	
+	}
+
+	&.product_layout_style_2 {
+		.product-info-cell {
+			padding-top: rem-calc(0);
+		}	
+	}
+
+	.product-info-cell {
+
+		// Product Summary Top
+
+		.product_summary_top {
+
+			padding-right: rem-calc(60);
+
+
+
+			.title-wrapper {
+				position: relative;
+			}
+
+			// Product Page Title
+
+			.page-title-wrapper {
+				padding-top: 10px;
+				position: relative;
+				display: inline-block;
+				overflow: hidden;
+				margin-bottom: 10px;
+
+				h1 {
+					margin-bottom: 0;
+				}				
+			}
+
+		}
+
+		// Product Summary Middle
+
+		.product_summary_middle {
+
+			.woocommerce-product-details__short-description {
+				margin: rem-calc(20 0 40);
+
+				a {
+					font-weight: 400;
+					background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+					background-position: left bottom, left bottom;
+					background-repeat: no-repeat, no-repeat;
+					background-size: 0 1px, 100% 1px;
+					transition: none 300ms ease-in-out;
+					transition-property: background-size, color;
+					word-wrap: break-word;		
+
+					&:hover {
+						background-size: 100% 1px, 100% 1px;
+					} 								
+				}
+
+
+			}
+			
+			.woocommerce-product-rating {
+				.star-rating {
+					vertical-align: top;
+					font-size: rem-calc(16);
+				}
+
+				.woocommerce-review-link {
+					margin-left: rem-calc(10);
+					color: #666;
+					vertical-align: top;
+					display: inline-block;
+					font-size: rem-calc(16);
+					line-height: 1.3; 
+					@include transition(color .3s);
+
+					&:hover {
+						color: #000;
+					}
+				}
+			}
+
+			.price {
+				margin-top: rem-calc(10);
+
+				.amount {
+					font-size: 30px;
+				}
+
+				.subscription-details,
+				.subscription-details .amount,
+				.from {
+					font-size: 16px;
+				}
+
+				del {
+					text-decoration: none;
+
+		    		span.amount {
+		    			position: relative;
+		    			color: #666;
+		    			font-size: 95%;
+		    			font-weight: 300;
+
+		    		}
+		    		.woocommerce-Price-amount:before {
+		    			width: 100%;
+						position: absolute;
+						content: "";
+						right: 0;
+						top: 50%;
+						height: 0px;
+						border-bottom: 1px solid #f9423a;
+						opacity: 0.7;
+						transform: rotate(-15deg);			    			
+		    		}		    							
+				}
+
+		    	ins {
+		    		margin-left: rem-calc(5);
+		    		color: #f9423a;
+		    		text-decoration: none;
+		    		line-height: 1;
+		    	}
+
+			}
+
+		}
+
+		// Product Summary Bottom
+
+		.product_summary_bottom {
+			position: relative;
+
+			p {
+				font-size: 16px;
+				// font-weight: 400;
+				margin: 0 0 15px 0;
+
+				&.stock {
+					&:before {
+					    content: "";
+					    width: 7px;
+					    height: 7px;
+					    margin-right: 0.5rem;
+					    margin-bottom: 0.1rem;
+					    display: inline-block;
+					    -webkit-border-radius: 50%;
+					    border-radius: 50%
+					}					
+				}
+
+				&.in-stock {
+					color: #85ab69;
+					font-weight: 400;
+					&:before {
+						background-color: #85ab69;
+					}
+				}
+				&.out-of-stock {
+					color: #da4343;
+					font-weight: 400;
+					&:before {
+						background-color: #da4343;
+					}					
+				}
+			}			
+
+			button.button {
+				margin-bottom: 0;
+			}
+
+			.give-as-present {
+				display: block !important;
+				margin-top: 20px !important;
+				font-size: 18px;
+				cursor: pointer;
+				position: relative;
+				padding-left: 25px;	
+
+				&:before {
+					position: absolute;
+					left: 0;
+					top: calc(50% - 10px);
+					font-size: 16px;
+					@include barberry-icon('\ea2f');				
+				}				
+			}
+
+			.gift-card-content-editor {
+			    margin-bottom: 20px;
+			}
+
+			.gift-card-content-editor.step-appearance,
+			.gift-card-content-editor.step-content {
+			    margin-bottom: 0px !important;
+			}
+
+			form.cart .added_to_cart {
+			    display: none !important;
+			}
+
+			form.cart {
+				@include breakpoint(530px down) {
+					justify-content: center;
+					.quantity {
+						line-height: 1.3;
+						min-width: 70px;
+						.plus-btn,
+						.minus-btn {
+							min-width: 26px;
+							height: 26px;
+							line-height: 38px;							
+						}						
+					}
+
+					input.custom-qty {
+						font-size: rem-calc(15);
+						width: 30px;
+					}
+
+					.button {
+						&.single_add_to_cart_button,
+						&.add_to_cart_button,
+						&.barberry-buy-now {
+							padding: 16px 18px 14px;
+						}
+
+					}
+
+					.single_variation_wrap {
+						.woocommerce-variation-add-to-cart {
+							.button {
+								padding: 16px 18px 14px;
+							}
+						}
+					}
+
+				}
+
+				@include breakpoint(450px down) {
+					.button {
+
+						&.barberry-buy-now {
+							margin-left: 0;
+							margin-right: 0;
+							margin-top: 10px;
+							width: 100%;
+							display: block;
+						}
+
+					}
+				}
+
+
+				@include breakpoint(450px down) {
+					.quantity {
+						line-height: 1.3;
+						margin-bottom: 20px;
+						margin-right: 0;
+						.plus-btn,
+						.minus-btn {
+							min-width: 32px;
+							height: 32px;
+							line-height: 38px;						
+						}						
+					}
+
+					input.custom-qty {
+						font-size: rem-calc(20);
+						width: rem-calc(40);
+					}
+					.button {
+						display: block;
+						width: 100%;
+						&.barberry-buy-now {
+							margin-top: -4px;
+						}
+					}
+
+					.woocommerce-variation-add-to-cart {
+						&.woocommerce-variation-add-to-cart-disabled {
+							.button {
+								&.barberry-buy-now {
+									margin-top: -1px;
+								}
+							}
+						}
+					}
+				}
+
+				&.grouped_form {
+					.barberry-buy-now {
+						margin-left: -9px;
+						@include breakpoint(450px down) {
+							margin-left: 0;
+						}
+					}
+				}
+
+			}	
+
+			.barberry-single-product-stock {
+				margin: 20px 0 40px 0;
+				clear: both;
+
+				.in-stock {
+					display: none;
+				}
+
+				.stock-sold {
+					color: #A0A0A0;
+					text-transform: uppercase;
+					font-size: rem-calc(12);
+					font-weight: 400;
+					letter-spacing: 2.5px;
+					margin-bottom: 10px;
+					display: inline-block;
+					span {
+						color: #000;
+						font-weight: 600;
+						font-size: rem-calc(16);
+					}
+
+					@include breakpoint(375px down) {
+						font-size: rem-calc(11);
+						letter-spacing: 2px;
+						span {
+							font-size: rem-calc(14);
+						}
+					}
+				}
+
+				.barberry-product-stock-progress {
+					width: 100%;
+					position: relative;
+					background: #EDEDED;
+					height: 3px;
+
+					.barberry-product-stock-progress-bar {
+						position: absolute;
+						left: 0;
+						top: 0;
+						height: 100%;
+						background: linear-gradient(325.12deg, #F9423A 0, #F1E04D 100%);
+						background-color: #F9423A;
+						z-index: 1;
+						color: #FFF;
+						line-height: inherit;
+						width: 2px;
+						height: 100%;
+						overflow: hidden;
+
+						@include transition(width 500ms ease);						
+					}					
+				}
+			}
+
+			.barberry-buy-now {
+				margin-left: -2px;
+				@include transition(opacity .3s ease);	
+				&:hover {
+					opacity: 0.5;
+				}
+				&.hide_btn {
+					opacity: 0;
+				}
+			}	
+
+		}
+	}
+}
+
+.product_layout {
+
+	&.product_layout_default,
+	&.product_layout_style_2,
+	&.product_layout_style_3 {
+		.product-info-cell {
+			.product_summary_bottom {
+				.cart:not(.variations_form):not(.grouped_form),
+				.variations_form .single_variation_wrap .woocommerce-variation-add-to-cart {
+
+					width: 100%;
+
+					.addtocart-button-group {
+						display: inline-block;
+						display: -webkit-box;
+						display: -moz-box;
+						display: -ms-flexbox;
+						display: -moz-flex;
+						display: -webkit-flex;
+						display: flex;
+
+						align-items: center;
+
+						@include breakpoint(450px down) {
+							
+							display: block;
+							text-align: center;
+						}													
+					}
+
+
+
+
+					// .barberry-buy-now {
+					// 	flex: 2 2 20em;
+					// }
+				}
+			}
+		}
+	}
+
+	// &.product_layout_default,
+	// &.product_layout_style_3 {
+	// 	.product-info-cell {
+	// 		.product_summary_bottom {
+
+	// 			.barberry-buy-now {
+	// 				@include breakpoint(1700px down) {
+	// 					margin-top: rem-calc(20);
+	// 					display: block;
+	// 					width: 100%;
+	// 				}
+
+	// 				@include breakpoint(940px down) {
+	// 					margin-top: 0;
+	// 					display: -webkit-inline-box;
+	// 					display: -ms-inline-flexbox;
+	// 					display: inline-flex;
+	// 					width: auto;
+	// 				}
+	// 			}
+	// 		}
+	// 	}	
+	// }
+
+	// &.product_layout_style_2 {
+	// 	.product-info-cell {
+	// 		.product_summary_bottom {
+	// 			.barberry-buy-now {
+	// 				@include breakpoint(1400px down) {
+	// 					margin-top: rem-calc(20);
+	// 					display: block;
+	// 					width: 100%;
+	// 				}
+
+	// 				@include breakpoint(940px down) {
+	// 					margin-top: 0;
+	// 					display: -webkit-inline-box;
+	// 					display: -ms-inline-flexbox;
+	// 					display: inline-flex;
+	// 					width: auto;
+	// 				}
+	// 			}
+	// 		}
+	// 	}	
+	// }
+}

@@ -1,0 +1,631 @@
+body[data-footer-reveal="0"] {
+	&.barberry-has-cart-fixed {
+		padding-bottom: 90px;
+
+		@include breakpoint(500px down) {
+			padding-bottom: 65px;
+		}
+
+		&.stickycart-not-show-mobile {
+			@include breakpoint(medium down) {
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
+body[data-footer-reveal="1"] {
+	&.barberry-has-cart-fixed {	
+
+		&.stickycart-not-show-mobile {
+			@include breakpoint(medium down) {
+				footer#site-footer {
+					.site-footer-inner {
+						margin-bottom: 0 !important;
+					}
+				}				
+			}
+		}	
+	}
+}
+
+body {
+	&.barberry-has-cart-fixed {	
+
+		.progress-page {
+			bottom: 120px;
+		}
+		
+		&.stickycart-not-show-mobile {
+			@include breakpoint(medium down) {
+				.barberry-add-to-cart-fixed {
+					display: none;
+				}	
+
+				.progress-page {
+					bottom: 20px;
+				}				
+			}
+		}
+
+	}
+}
+
+.barberry-add-to-cart-fixed {
+    backface-visibility: hidden;
+    position: relative;
+	-o-transition: 0.5s -o-filter ease;	
+    z-index: 3;
+
+    &.not-show-mobile {
+    	@include breakpoint(medium down) {
+    		display: none;
+    	}
+    }
+
+    .barberry-wrap-content-inner {
+    	opacity: 0;
+    	z-index: 3;
+    	position: fixed;
+    	background-color: #fff;
+    	bottom: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 90px;
+    	@include transform(translateY(0)); 
+    	@include animation(hide-addtocart .7s ease forwards);
+    	@include transition(opacity 1s cubic-bezier(.19,1,.22,1) .2s);
+
+    	@include breakpoint(500px down) {
+    		height: 65px;
+    	}
+
+		&:before {
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background: #fff;
+		  opacity: 0;
+		  @include transition(opacity 1s cubic-bezier(.19,1,.22,1));
+		}    	
+
+		&:after {
+			position: absolute;
+			right: 10%;
+			top: 0;
+			left: 10%;
+			z-index: -1;
+			height: 20px;
+			border-radius: 100%;
+			@include box-shadow(0 0 40px rgba(0,0,0,.07));
+			content: "";  
+			opacity: 0; 
+			@include transition(opacity 1s cubic-bezier(.19,1,.22,1));
+		}
+
+    }
+}
+
+body {
+	&.barberry-has-cart-fixed {
+		.barberry-add-to-cart-fixed {
+			.barberry-wrap-content-inner {
+				opacity: 1;
+				@include transition(opacity 1s cubic-bezier(.19,1,.22,1) .2s);
+				@include animation(show-addtocart .7s ease forwards);  
+
+				&:before,
+				&:after {
+				  opacity: 1;
+				} 				
+			}
+		}
+	}
+}
+
+
+
+
+.barberry-add-to-cart-fixed {
+
+	.barberry-wrap-content-inner {
+
+		.barberry-wrap-content {
+			position: relative;
+
+			@include breakpoint(500px down) {
+				padding-right: 1rem;
+				padding-left: 1rem;						
+			}
+
+			.barberry-wrap-content-sections {
+				padding: 10px 0;
+
+				// Product thumb and title, price
+
+				.barberry-fixed-product-info {
+					position: relative;
+					display: flex;
+					align-items: center;
+
+					.barberry-thumb-clone {
+						display: inline-block;
+						
+						margin-right: 20px;	
+						@include breakpoint(500px down) {
+							margin-right: 10px;
+						}
+						img {
+							height: 100%;
+							max-height: 70px;
+
+							@include breakpoint(500px down) {
+								max-height: 40px;
+							}
+						}							
+					}
+
+					.barberry-title-clone {
+						h3 {
+							font-size: 20px;
+							line-height: 1.6;
+							margin-bottom: -10px;
+							display: block;	
+
+							@include breakpoint(500px down) {
+								font-size: 16px;
+								overflow: hidden;
+								white-space: nowrap;
+								text-overflow: ellipsis;	
+								max-width: 130px;									
+							}	
+
+							@include breakpoint(320px down) {
+								max-width: 90px;
+							}							
+						}
+
+						.price {
+							.amount {
+								.amount {
+									font-size: 80%;
+								}
+							}
+							del {
+								font-size: 80%;
+							}
+
+							.subscription-details,
+							.subscription-details .amount {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+
+				// Product variables
+
+				.barberry-fixed-product-variations-wrap {
+
+					.barberry-fixed-product-variations {
+						position: relative;
+						text-align: center;
+						will-change: scroll-position;
+						-webkit-overflow-scrolling: auto;
+						-webkit-box-orient: horizontal;
+						-webkit-box-direction: normal;
+						-ms-flex-flow: row nowrap;
+						flex-flow: row nowrap;
+						-webkit-box-align: center;
+						-ms-flex-align: center;
+						align-items: center;
+						white-space: nowrap;
+
+
+
+						@include breakpoint(medium down) {
+							display: none;
+						}
+						.barberry-attr-wrap-clone {
+
+							display: inline-block;
+							margin-left: 20px;
+							&:first-child {
+								margin-left: 0;
+							}
+
+
+							span {
+								font-size: 0;
+								position: relative;
+								display: inline-block;
+								width: 22px;
+								height: 22px;
+								line-height: 1;
+								margin-right: 17px;
+								opacity: 1;
+								border: none;
+								vertical-align: middle;
+								cursor: pointer;
+								@include transition(all 0.3s);
+
+								&.barberry-attr-color-clone {
+									border-radius: 50%;
+									
+									&:hover {
+										@include transform(scale(1.4));
+									}	
+
+									&.selected {
+										@include transform(scale(1.4));
+										@include box-shadow(none);
+
+										&:before {
+											z-index: 4;
+										    @include transform(none);
+										    background-color: #fff;
+											border: none;
+											border-radius: 50%;
+											position: absolute;
+											top: 50%;
+											left: 50%;
+											transform: translate(-50%, -50%);
+											content: '';
+											width: 6px;
+											height: 6px;
+											opacity: 1;
+											transition: all .3s;
+										}									
+									}
+
+								}
+
+								&.barberry-attr-image-clone {
+									overflow: visible;
+									width: 34px;
+									height: 34px;
+									font-size: 0;
+									img {
+										border-radius: 100%;
+									}	
+									&:hover {
+										@include transform(scale(1.4));
+									}	
+									&.selected {
+										@include transform(scale(1.4));
+										@include box-shadow(none);
+
+										&:before {
+											z-index: 4;
+										    @include transform(none);
+										    background-color: #fff;
+											border: none;
+											border-radius: 50%;
+											position: absolute;
+											top: 50%;
+											left: 50%;
+											transform: translate(-50%, -50%);
+											content: '';
+											width: 6px;
+											height: 6px;
+											opacity: 1;
+											transition: all .3s;
+										}									
+									}																															
+								}	
+
+								&.barberry-attr-label-clone {
+									width: auto;
+									height: auto;
+									margin-right: 8px;
+									margin-top: 3px;
+									margin-bottom: 3px;
+									padding: 7px 8px 6px;
+									border-radius: 0;
+									font-size: 14px;
+									line-height: 1;
+									display: inline-block;
+									border: 1px solid #000;
+									background-color: #fff;
+									color: #000;
+									.swatch__tooltip {
+										display: none;
+									}
+									&:before {
+										display: none;
+									}
+									&:hover,
+									&.selected {
+										color: #fff;
+										background-color: #000;
+										border: 1px solid rgba(0, 0, 0, 1);
+										@include transform(none);
+									}
+
+								}
+
+
+								.swatch__tooltip {
+									color: #fff;
+									width: auto;
+									max-width: 15rem;
+									padding-top: 7px;
+									transition: all .3s ease; 
+									font-size: 11px;   
+									font-weight: 400;     
+									line-height: 11px;		
+									border-radius: 0;						
+									background-color: #000;
+									position: absolute;
+									top: -15px;
+									bottom: auto;
+									right: auto;
+									left: 50%;	
+									transform: translate3d(-50%, 0, 0);	
+
+							        @include breakpoint(large) {
+							          animation: shop_tooltip_hover_out .3s;
+							        }														
+
+									&:after {
+							            position: absolute;
+							            bottom: -16px;
+							            right: auto;
+							            left: 50%;
+							            margin-left: 0;
+							            transform: translate3d(-50%, 0, 0);
+							            content: '';
+							            width: 0;
+							            height: 0;
+							            border-style: solid;
+							            border-width: 10px;
+							            border-color: transparent transparent transparent;
+							            border-top-color: #0a0a0a;		
+							            background: transparent;							
+									}
+								}										
+
+
+								&:hover {
+									.swatch__tooltip {
+										animation: shop_tooltip_hover_in .3s;
+										animation-fill-mode: forwards;
+										visibility: visible;												
+									}
+								}																			
+							}
+
+						}
+
+						.barberry-attr-select_wrap-clone {
+							display: inline-block;
+							text-align: left;
+							label {
+								display: none;
+							}
+							.select2 {
+								width: auto !important;
+								min-width: 250px;
+								margin-bottom: 0;
+							}
+						}
+
+					}
+
+					&.add_scroll {
+						position: relative;
+
+						.barberry-fixed-product-variations {
+							overflow-x: scroll;
+							padding-left: 20px;
+							padding-right: 20px;
+						}
+
+						&:after {
+							z-index: 1;
+							content: "";
+							position: absolute;
+							top:0;
+							right: 0;
+							height: 100%;
+							width: 50px;
+							background: rgb(255,255,255);
+							background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 70%);
+						}								
+					}
+				}
+
+				.barberry-fixed-product-btn {
+					text-align: right;
+
+					.barberry-single-btn-clone {
+						.group_table,
+						.wc-pao-addon,
+						.product-addon-totals {
+							display: none;
+						}
+					}
+
+					.quantity {
+						@include breakpoint(small only) {
+							display: none;
+						}
+					}
+
+					.barberry-single-btn-clone {
+						.price {
+							display: inline-block;
+							margin-right: 20px;
+							@include breakpoint(small only) {
+								display: none;
+							}	
+
+							del {
+								font-size: 80%;
+							}								
+						}
+						.woocommerce-variation-add-to-cart-clone {
+							display: inline-block;
+
+							.single_add_to_cart_button,
+							.quantity {
+								@include breakpoint(1024px down) {
+									display: none;
+								}
+							}
+
+							.warranty_info {
+								display: none;
+							}
+
+							.woocommerce-variation-mob-btn-clone  {
+								&.button {
+									margin-bottom: 0;
+									display: none;
+									// padding: 22.8px 31.2px 20.52px;
+									.progress {
+										display: none;
+									}
+									@include breakpoint(1024px down) {
+										
+										display: inline-block;
+									}
+
+									@include breakpoint(500px down) {
+										padding: 10px 20px 10px;
+									}
+								}
+							}
+						}
+					}
+					.single_add_to_cart_button,
+					.woocommerce-variation-add-to-cart-clone {
+						margin-bottom: 0;
+						@include breakpoint(500px down) {
+							padding: 10px 20px 10px;
+						}
+
+						@include breakpoint(375px down) {
+							justify-content: left;
+							// max-width: 150px;
+							.btn-text {
+								overflow: hidden;
+							    white-space: nowrap;
+							    text-overflow: ellipsis;    
+							    max-width: 110px;	
+							}
+						}
+
+						@include breakpoint(320px down) {
+							max-width: 130px;
+							.btn-text { 
+							    max-width: 65px;	
+							}
+						}
+					}
+
+					.added_to_cart {
+						display: none;
+					}
+				}
+
+			}
+		}				
+	}
+}	
+
+
+
+
+
+
+@-webkit-keyframes hide-addtocart {
+    0% {
+    	-webkit-transform: translateX(0px) translateY(0);
+        transform: translateX(0px) translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out        
+    }
+
+    to {
+    	-webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+}
+
+
+
+@keyframes hide-addtocart {
+    0% {
+    	-webkit-transform: translateX(0px) translateY(0);
+        transform: translateX(0px) translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out        
+    }
+
+    to {
+    	-webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+}
+
+@-webkit-keyframes show-addtocart {
+    0% {
+    	-webkit-transform: translateY(120%);
+        transform: translateY(120%);
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    50% {
+    	-webkit-transform: translateY(20%) rotate(2deg);
+        transform: translateY(20%) rotate(2deg);
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    to {
+    	-webkit-transform: translateY(0) rotate(0deg);
+        transform: translateY(0) rotate(0deg);
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+@keyframes show-addtocart {
+    0% {
+    	-webkit-transform: translateY(120%);
+        transform: translateY(120%);
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    50% {
+    	-webkit-transform: translateY(20%) rotate(2deg);
+        transform: translateY(20%) rotate(2deg);
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    to {
+    	-webkit-transform: translateY(0) rotate(0deg);
+        transform: translateY(0) rotate(0deg);
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}

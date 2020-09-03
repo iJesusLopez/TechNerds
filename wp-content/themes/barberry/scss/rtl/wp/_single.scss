@@ -1,0 +1,188 @@
+body.single {
+
+	.page-header {
+
+		.barberry-entry-meta {
+
+			ul.entry-meta-list {
+
+				li {
+					margin-right: 0;
+					margin-left: 20px;
+
+					&:last-child {
+						margin-left: 0;
+					}
+
+					a {
+						background-position: right bottom, right bottom;
+					}
+
+					&.post-share {
+
+						.post-share-container {
+							&:before {
+								margin-right: 0;
+								margin-left: rem-calc(3);
+							}						
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.post {
+
+		.entry-content {
+
+			a:not(.button) {
+				background-position: right bottom, right bottom;
+			}
+
+			.page-links	{
+
+				span {
+					margin-right: 0; 
+					margin-left: rem-calc(32); 
+				}
+
+			}
+
+		}
+
+		footer.entry-meta {
+
+			.post_tags {
+
+			    a {
+
+					&:before {
+					    margin-right: 0;	
+					    margin-left: 0.5rem;		
+					}				    	
+			    }
+			}	
+		}
+	}
+
+	.single_navigation_container {
+
+
+		.nav-previous,
+		.nav-next {
+
+			a {
+
+
+				.nav-previous-title {
+					padding-left: 0;
+					padding-right: 22px;
+					&:before {
+						left: auto;
+						right: 0;
+						@include barberry-icon('\ea0f');
+					}				
+				}
+
+				.nav-next-title {
+					padding-right: 0;
+					padding-left: 22px;
+					&:after {
+						right: auto;
+						left: 0;
+						@include barberry-icon('\ea0e');
+					}				
+				}			
+			}
+		}
+
+		.nav-previous {
+			padding-right: 0;
+			padding-left: rem-calc(100);
+
+			@include breakpoint(medium down) {
+				padding-right: 0;
+				padding-left: rem-calc(50);
+			}
+
+			@include breakpoint(small only) {
+				padding-left: 0;
+			}
+		}
+
+		.nav-next {
+			border-left: none;
+			border-right: 1px solid #eee;
+			text-align: left;
+			padding-left: 0;
+			padding-right: rem-calc(100);
+
+			@include breakpoint(medium down) {
+				padding-left: 0;
+				padding-right: rem-calc(50);
+			}
+
+			@include breakpoint(small only) {
+				padding-right: 0;
+				border-right: none;
+				text-align: right;
+			}		
+		}
+
+	}
+
+
+	.related_post_container {
+
+		.single_related_posts {
+
+			.entry-title {
+
+				@include breakpoint(small only)	{
+					text-align: right;
+				}
+			}
+
+			.related-post {
+
+				&.has-post-thumbnail {
+
+					.related_post_content {
+						@include breakpoint(small only)	{
+							padding-left: 0;
+							padding-right: 20px;
+						}	
+
+					}
+				}
+			}
+		}
+	}
+
+
+}
+
+.comments-area {
+	.comment-list {
+		.comment {
+			article.comment-body {
+				.comment-content {
+					.comment-text {
+						a:not(.button) {
+							background-position: right bottom, right bottom;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.comment-respond {
+		.comment-form {
+			.logged-in-as > a {
+				background-position: right bottom, right bottom;
+			}
+		}
+	}
+}

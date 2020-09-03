@@ -1,0 +1,93 @@
+body.woocommerce-checkout {
+	@import "checkout/checkout_layout";
+	@import "checkout/checkout_billing";
+	@import "checkout/checkout_order";
+	@import "checkout/checkout_payment";
+}
+
+@import "checkout/checkout_modals";
+
+body.woocommerce-order-received {
+	@import "checkout/thankyou";
+}
+
+@import "checkout/klarna";
+
+body.woocommerce-checkout {
+	&.woocommerce-order-pay {
+
+		@include breakpoint(small only) {
+			.grid-container {
+				padding-left: 30px;
+				padding-right: 30px;
+			}			
+		}
+
+		.page-header {
+			display: block;
+		}
+
+		.woocommerce:not(.widget_shopping_cart) {
+			@include poly-fluid-sizing('max-width', (1024px:600px, 1280px:700px, 1440px:900px));
+			margin: 0 auto 100px; 
+
+			@include breakpoint(small only) {
+				max-width: 100%;
+			}	
+
+			.order_details {
+				list-style: none;
+				margin: 0 0 rem-calc(40) 0;				
+				display: flex;
+
+				@include breakpoint(small only) {
+					display: block;
+				}
+
+				li {
+					font-size: 20px;
+					margin-right: 20px;
+					padding-right: 20px;
+					width: 22%;
+					vertical-align: top;
+					border-right: 1px solid #eee;
+
+					&:last-child {
+						border-right: none;
+					}
+
+					@include breakpoint(small only) {
+						width: 100%;
+						border-right: none;
+						border-bottom: 1px solid #eee;
+						margin-bottom: 10px;
+						padding-bottom: 10px;
+						&:last-child {
+							border-bottom: none;
+						}
+					}
+
+					strong {
+					    display: block;
+					    font-weight: 600;
+					    // font-size: 1.4em;
+					    // text-transform: none;
+					    // line-height: 1.5;
+					}										
+				}
+			}	
+
+			.wc-stripe-checkout-button {
+				cursor: pointer;
+			}				
+		}
+
+
+		footer#site-footer {
+			z-index: -2;
+		}	
+
+
+	}
+
+}

@@ -1,0 +1,819 @@
+.single-product {
+
+	.product-content-area {
+
+		.product_layout {
+
+			&.product_layout_default {
+
+				.product-cells {
+					.product-images-cell {
+						padding-left: 0;
+						@include poly-fluid-sizing('padding-right', (768px:30px, 1199px:55px, 1200px:0));
+
+					}
+
+					.product-info-cell {
+						@include poly-fluid-sizing('padding-right', (768px:20px, 769px:40px, 1024px:70px, 1280px:100px, 1920px:140px));
+						@include poly-fluid-sizing('padding-left', (768px:20px, 1199px:60px, 1280px:0, 1920px:55px));			
+					}				
+				}
+
+			}
+
+			&.product_layout_style_2 {
+				.product-cells {
+					.product-images-cell {
+						padding-right: 0;
+					}				
+					.product-info-cell {
+						@include poly-fluid-sizing('padding-right', (768px:20px, 941px:40px, 1024px:70px, 1280px:100px, 1920px:200px));
+						@include poly-fluid-sizing('padding-left', (768px:20px, 941px:40px, 1280px:100, 1920px:200px));							
+					}
+				}
+
+				.thumbs-bottom {
+					.flickity-prev-next-button {
+						&.previous {
+							left: auto;
+							right: 7%;
+						}
+
+						&.next {
+							right: auto;
+							left: 7%;
+						}				
+					}
+				}
+
+				.thumbs-left {
+					.flickity-prev-next-button {
+						&.previous {
+							left: auto;
+							right: 20%;
+							@include breakpoint(1280px down) {
+								left: auto;
+								right: 25%;
+							}
+
+							@include breakpoint(1200px down) {
+								left: auto;
+								right: 5%;
+							}
+						}
+						&.next {
+							right: auto;
+							left: 5%;
+						}				
+					}
+				}	
+
+				.thumbs-right {
+					.flickity-prev-next-button {
+						&.previous {
+							left: auto;
+							right: 8%;
+
+						}
+						&.next {
+							right: auto;
+							left: 10%;					
+						}				
+					}
+				}							
+
+			}
+
+			&.product_layout_default,
+			&.product_layout_style_2 {
+				.product-cells {
+
+					.product-images-cell {
+						@include breakpoint(small only) {
+							padding-right: 0;
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+
+	.product_layout {
+
+		.product-info-cell {
+
+			// Product Summary Top
+
+			.product_summary_top {
+				padding-right: 0;
+				padding-left: rem-calc(60);
+			}
+
+			// Product Summary Middle
+
+			.product_summary_middle {
+
+				.woocommerce-product-details__short-description {
+					a {
+						background-position: right bottom, right bottom;
+					}
+				}
+
+				.woocommerce-product-rating {
+
+					.woocommerce-review-link {
+						margin-left: 0;
+						margin-right: rem-calc(10);
+					}
+				}
+
+				.price {
+
+					del {
+
+			    		.woocommerce-Price-amount:before {
+							right: auto;
+							left: 0;
+							transform: rotate(15deg);			    			
+			    		}		    							
+					}
+
+			    	ins {
+			    		margin-left: 0;
+			    		margin-right: rem-calc(5);
+			    	}
+
+				}
+
+			}
+
+			// Product Summary Bottom
+
+			.product_summary_bottom {
+
+				p {
+
+					&.stock {
+						&:before {
+						    margin-right: 0;
+						    margin-left: 0.5rem;
+						}					
+					}
+				}					
+			}
+		}
+	}
+
+
+	.product_summary_bottom_inner {
+
+		.sizeguide-link {
+			.barberry-sizeguide-btn {
+				padding-left: 0; 
+				padding-right: rem-calc(24);
+
+				&:before {
+					margin-right: 0;
+					margin-left: rem-calc(8);
+				    left: auto;
+				    right: 0;
+				}				
+			}
+		}
+
+		.compare-btn {
+			margin-right: 0;
+			margin-left: rem-calc(20);
+			a.compare-link {
+				padding-left: 0; 
+				padding-right: rem-calc(24); 
+				&:before {
+					margin-right: 0;
+					margin-left: rem-calc(8);
+				    left: auto;
+				    right: 0;
+				}				
+			}			
+		}
+
+		.yith-wcwl-add-to-wishlist {
+			margin-right: 0;
+			margin-left: rem-calc(20);
+
+			.yith-wcwl-add-button {
+
+				.add_to_wishlist { 
+					padding-left: 0; 
+					padding-right: rem-calc(24);
+
+					
+					&:before {
+						margin-right: 0;
+						margin-left: rem-calc(8);
+					    left: auto;
+					    right: 0;
+					}
+
+					&:hover {
+						&:before {
+							animation: beat .6s ease-in-out infinite;
+						}
+					}
+				}
+
+				&.loading {
+					.add_to_wishlist {
+						&:after {
+						    left: auto;
+						    right: 0;
+						}						
+					}					
+				}				
+			}
+		}
+
+		.yith-wcwl-wishlistaddedbrowse,
+		.yith-wcwl-wishlistexistsbrowse {
+
+			a {
+				padding-left:0; 
+				padding-right: rem-calc(24); 
+				
+				&:before {
+					margin-right: 0;
+					margin-left: 0.5rem;						
+				    left: auto;
+				    right: 0;
+				}
+			}
+
+		}
+
+	}
+
+
+	.woocommerce-tabs {
+
+		ul.tabs {
+			li {
+				a {
+					background-image: linear-gradient(to left, #000, #000 50%, rgba(0,0,0,.3) 50%);
+				}
+			}
+		}
+
+
+
+		#reviews  {
+
+			#comments {
+				padding-right: 0;
+				padding-left: rem-calc(60);
+				width: 55%;
+				float: right;
+
+				@include breakpoint(large down) {
+					padding-left: 0;
+					float: none;
+				}
+
+
+				.comment_container {
+					text-align: right;
+
+					.comment-text {
+						padding-left: 0;
+						padding-right: rem-calc(90);
+
+						@include breakpoint(small only) {
+							padding-right: rem-calc(70);
+						}
+					}
+				} 
+
+				.avatar {
+					left: auto;
+					right: 0;
+
+					@include breakpoint(small only) {
+						width: rem-calc(50);
+						height: rem-calc(50);
+					}						        	
+				} 
+				.star-rating {
+					float: left;            	
+				} 
+
+				.meta {
+
+					strong {
+						&.woocommerce-review__author {
+							margin-right: 0;
+							margin-left: rem-calc(10);        			
+						}
+					}
+				} 
+
+			}
+
+			#review_form_wrapper {
+				border-left: none;
+				border-right: 1px solid #f0f0f0;
+				padding-left: 0;
+				padding-right: rem-calc(60);
+
+				float: right;
+
+				@include breakpoint(large down) {
+					border-right: none;
+					float: none;
+					padding-right: 0;
+				}
+
+
+				.comment-form {
+
+					.stars {
+						a {
+							margin-right: 0;
+							margin-left: 5px;
+
+
+							&:before {
+								left: auto;
+								right: 0;
+							}
+											
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	.product_meta {
+		.product_meta_ins {
+			.cell {
+				> span {
+					a {
+						background-position: right bottom, right bottom;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.product_layout {
+
+	&.product_layout_style_3 {
+
+		.product-images-inner {
+
+			.product_tool_buttons_placeholder {
+				right: auto;
+				left: 27.7vw;
+				@include breakpoint(1280px down) {
+					right: auto;
+					left: 23.5vw;
+				}
+				@include breakpoint(940px down) {
+					right: auto;
+					left: 20px;
+				}
+
+
+			}			
+		}
+
+		.product-title-section-wrapper {
+			.product-title-section-right {
+				right: auto;
+				left: 27.7vw;
+				@include breakpoint(1280px down) {
+					right: auto;
+					left: 23vw;
+				}	
+
+				.box-share-master-container {
+					right: auto;
+					left: 0;
+				}
+			}
+
+			.product-title-section-wrapper-inner {
+				left: auto;
+				right: 18vw;
+				@include breakpoint(1280px down) {
+					left: auto;	
+					right: 13vw;
+				}
+
+				.product_summary_middle {
+					.woocommerce-product-rating {
+
+						.woocommerce-review-link {
+							margin-left: 0;
+							margin-right: rem-calc(10);
+
+						}
+					}					
+				}			
+			}
+		}	
+
+		.product-info-cell {
+			@include breakpoint(1200px down) {
+				@include poly-fluid-sizing('padding-right', (768px:30px, 1024px:45px, 1200px:55px));
+				@include poly-fluid-sizing('padding-left', (768px:30px, 1024px:45px, 1200px:55px));				
+			}	
+
+			.product_summary_middle {
+				padding-right: 0;
+				padding-left: rem-calc(70);
+				@include breakpoint(1024px down) {
+					padding-left: rem-calc(40);
+				}
+				@include breakpoint(940px down) {
+					padding-left: 0;
+				}				
+			}
+
+			.product_summary_bottom {
+				border-left: none;
+				border-right: 1px solid #eee;
+				padding-left: 0;
+				padding-right: rem-calc(70);
+				@include breakpoint(1024px down) {
+					padding-left: none;
+					padding-right: rem-calc(40);
+				}		
+				@include breakpoint(940px down) {
+					border-right: none;
+					padding-right: 0;
+				}		
+			}					
+		}
+
+	}
+}
+
+
+
+.single-product,
+#barberry_woocommerce_quickview {
+	form.variations_form {
+		table {
+			tbody {
+
+				tr {
+
+					td {
+
+						&.label {
+							background: transparent;
+							label {
+								padding: 17px 0 16px 30px;
+								@include breakpoint(small only) {
+									padding-right: 0;
+									padding-left: 20px;
+								}
+							}
+						}
+
+						&.value {
+							padding-left: 0;
+							padding-right: 5px;
+
+							@include breakpoint(small only) {
+								padding-right: 0;
+								padding-left: 0;
+							}
+
+							.reset_variations {
+							    padding-left: 0;
+							    padding-right: 20px;
+							    margin-left: 0;
+							    margin-right: 10px;
+							    
+								@include breakpoint(small only) {
+									margin-right: 0;
+								}
+
+								&:before {
+									left: auto;
+									right: 0;
+								}						    
+							}						
+
+
+							.tawcvs-swatches {
+
+
+								span {
+									margin-right: 0;
+									margin-left: 17px;
+
+
+									&.swatch-label {
+										margin-right: 0;
+										margin-left: 8px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.product_layout:not(.woocommerce-sidebar-active) {
+
+	.thumbs-left {
+		.product-vr-thumbnails-wrapper {
+			left: auto;
+			right: -60px;
+			@include breakpoint(xlarge down) {
+				left: auto;
+				right: -40px;
+			}
+		}
+	}
+
+	.thumbs-right {
+		.product-vr-thumbnails-wrapper {
+			right: auto;
+			left: -60px;
+			@include breakpoint(xlarge down) {
+				right: auto;
+				left: -40px;
+			}
+		}
+	}
+
+	&.product_layout_style_2 {
+		.thumbs-left {
+			.product-vr-thumbnails-wrapper {
+				left: auto;
+				@include poly-fluid-sizing('right', (768px:25px, 1920px:80px));
+			}
+		}
+	}
+
+	.thumbs-left {
+		.flickity-prev-next-button {
+			&.previous {
+				left: auto;
+				right: 9%;
+				@include breakpoint(1200px down) {
+					left: auto;
+					right: 2.5%;
+				}
+			}			
+		}
+	}	
+
+	.thumbs-right {
+		.flickity-prev-next-button {
+			&.next {
+				right: auto;
+				left: 9%;
+				@include breakpoint(1200px down) {
+					right: auto;
+					left: 2.5%;
+				}				
+			} 			
+		}		
+	}
+}
+
+.is-mobile {
+	.woocommerce-tabs {
+		ul.tabs {
+			li {
+				a {
+					background-image: none;
+				}
+			}
+		}
+	}	
+}
+
+
+#sizeGuideModal .close-icon {
+    right: auto;
+    left: 40px;
+}
+
+body {
+	&.barberry-has-cart-fixed {
+		.barberry-add-to-cart-fixed {
+			.barberry-wrap-content-inner {
+				.barberry-wrap-content {
+					.barberry-wrap-content-sections {
+						.barberry-fixed-product-info {
+							.barberry-thumb-clone {
+								margin-right: 0;	
+								margin-left: 20px;
+								@include breakpoint(500px down) {
+									margin-right: 0;
+									margin-left: 10px;
+								}								
+							}
+						}
+
+						.barberry-fixed-product-variations-wrap {
+							.barberry-fixed-product-variations {
+								.barberry-attr-wrap-clone {
+									margin-left: 0;
+									margin-right: 20px;
+									span {
+										margin-right: 0;
+										margin-left: 17px;
+
+										&.barberry-attr-label-clone {
+											margin-right: 0;
+											margin-left: 8px;
+										}
+									}
+								}
+							}
+						}
+
+						.barberry-fixed-product-btn {
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Grouped product
+
+.single-product {
+	.grouped_form {
+		@include breakpoint(530px down) {
+			text-align: center;
+		}	
+	}	
+}
+
+.single-product {
+	.product-type-grouped {
+
+		.group_table {
+			text-align: right;
+
+			tr {
+
+				td {
+
+					&:first-child {
+						padding-right: 0;
+					}
+
+					&:last-child {
+						text-align: left;
+					}
+	
+
+					&.woocommerce-grouped-product-list-item__label {
+						label {
+							padding: 0;
+							padding-left: 0;
+							padding-right: 10px;						
+						}
+					}
+
+					&.woocommerce-grouped-product-list-item__quantity {
+						.quantity {
+							margin-left: 0;
+						}
+					}
+
+					&.woocommerce-grouped-product-list-item__price {
+						text-align: left;
+
+						.barberry-single-product-stock {
+							margin: 0;
+						}	
+
+						.in-stock,
+						.out-of-stock {
+							position: relative;
+							display: inline;
+							margin: 0;
+							padding-left: 15px;
+							&:before {
+								position: absolute;
+								left: 0;
+								top: 5px;
+							    content: "";
+							    width: 7px;
+							    height: 7px;
+							    margin-right: 0.5rem;
+							    margin-left: 0;
+							    margin-bottom: 0;
+							    display: inline-block;
+							    -webkit-border-radius: 50%;
+							    border-radius: 50%;
+							    @include breakpoint(375px down) {
+							    	display: none;
+							    }
+							}	
+							@include breakpoint(375px down) {
+								padding-left: 0;
+							}						
+						}
+						.stock-sold,
+						.barberry-product-stock-progress {
+							display: none;
+						}				
+
+						del {
+							text-decoration: none;
+
+							// > .amount {
+							// 	font-size: 18px;
+							// 	line-height: 1.2;
+							// }
+
+				    		span.amount {
+				    			position: relative;
+				    			color: #666;
+				    			font-size: 85%;
+				    			font-weight: 300;
+				    			line-height: 1.2;
+
+					    		.amount:before {
+					    			width: 100%;
+									position: absolute;
+									content: "";
+									right: 0;
+									top: 50%;
+									height: 0px;
+									border-bottom: 1px solid #f9423a;
+									opacity: 0.7;
+									transform: rotate(-15deg);			    			
+					    		}		    			
+				    		}					
+						}
+
+				    	ins {
+				    		// margin-left: rem-calc(5);
+				    		color: #f9423a;
+				    		text-decoration: none;
+				    		line-height: 1;
+				    		.amount {
+				    			font-size: 18px;
+				    			line-height: 1.2;
+				    		}
+				    	}
+
+				    	p.stock {
+				    		display: block;
+				    		margin-top: 0px;
+				    		margin-bottom: 0;
+				    		line-height: 1;
+				    	}
+
+					}
+
+
+				}
+
+
+
+			}
+		}
+	}
+
+	.product_related_wrapper {
+		&[data-rel-scroll="1"] {
+			&.product_related_wrapper {		
+				
+				.product_carousel {
+					&.related_has_slider,
+					&.upselles_has_slider {
+						@include poly-fluid-sizing('margin-left', (768px:-30px, 1920px:-100px));
+						@include poly-fluid-sizing('margin-right', (768px:-30px, 1920px:-100px));
+	
+						@include breakpoint(small only) {
+							margin-left: -1.5rem;
+							margin-right: -1.5rem;
+						}
+					}
+				}
+			}	
+		}		
+	}
+}
+

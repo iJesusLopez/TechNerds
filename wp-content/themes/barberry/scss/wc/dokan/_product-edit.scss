@@ -1,0 +1,15 @@
+.content-page-wrapper {
+	&.grid-container {
+		padding-top: 0;
+
+		.dokan-product-edit {
+			.dokan-input-group {
+
+				input[type='number'] {
+					margin-bottom: 0;
+				}
+
+			}
+		}
+	}
+}

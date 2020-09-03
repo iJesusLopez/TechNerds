@@ -1,0 +1,20 @@
+// Shop Styles
+
+body.woocommerce-shop {
+	@import "shop/shop_filters";
+}
+
+@import "shop/shop_sidebar";
+@import "shop/shop_grid";
+@import "shop/shop_products";
+@import "shop/shop_product";
+@import "shop/shop_category";
+@import "shop/shop_product_title_style";
+@import "shop/mini-cart";
+@import "shop/track-order";
+
+
+@import "shop/wishlist";	
+
+
+

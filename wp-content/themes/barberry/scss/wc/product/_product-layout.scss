@@ -1,0 +1,123 @@
+.product-content-area {
+    position: relative;
+    z-index: 5;
+    border-bottom: 1px solid #eee;
+}
+
+.product_layout {
+
+	&.product_layout_default {
+
+		.product-cells {
+			.product-images-cell {
+				padding-bottom: rem-calc(120);
+				padding-left: 0;
+				@include poly-fluid-sizing('padding-left', (768px:30px, 1199px:55px, 1200px:0));
+				&.thumbs-left,
+				&.thumbs-right {
+					padding-bottom: 0;
+				}
+
+				@include breakpoint(767px down) {
+					width: 100%;
+					padding-left: 0;
+					padding-bottom: rem-calc(0);					
+				}					
+			}
+
+
+
+			.product-info-cell {
+				@include poly-fluid-sizing('padding-left', (768px:30px, 769px:40px, 1024px:70px, 1280px:100px, 1920px:140px));
+				@include poly-fluid-sizing('padding-right', (768px:20px, 1199px:60px, 1280px:0, 1920px:55px));
+				padding-bottom: rem-calc(40);	
+				@include breakpoint(767px down) {
+					width: 100%;
+				}								
+			}				
+		}
+
+	}
+
+
+	&.product_layout_style_2 {
+		.product-cells {
+			.product-images-cell {
+				padding-bottom: rem-calc(120);
+				padding-left: 0;
+
+				@include breakpoint(768px down) {
+					padding-left: rem-calc(30);
+					width: 41.6666666667%;
+				}
+
+				@include breakpoint(767px down) {
+					width: 100%;
+					padding-bottom: rem-calc(0);
+				}
+
+				&.thumbs-left,
+				&.thumbs-right {
+					padding-bottom: 0;
+				}
+			}	
+						
+			.product-info-cell {
+				@include poly-fluid-sizing('padding-left', (768px:30px, 941px:40px, 1024px:70px, 1280px:100px, 1920px:200px));
+				@include poly-fluid-sizing('padding-right', (768px:20px, 941px:40px, 1280px:100, 1920px:200px));
+				padding-bottom: rem-calc(40);	
+
+				@include breakpoint(768px down) {
+					width: 58.3333333333%;
+				}
+
+				@include breakpoint(767px down) {
+					width: 100%;
+
+				}								
+			}
+		}
+	}
+
+	&.product_layout_default,
+	&.product_layout_style_2 {
+		.product-cells {
+
+			.product-images-cell {
+				@include breakpoint(small only) {
+					padding-left: 0;
+					padding-bottom: 0;
+					width: 100%;
+				}
+			}
+			.product-info-cell {
+				@include breakpoint(small only) {
+					padding-bottom: 0;
+					margin-top: rem-calc(40);
+					width: 100%;
+				}				
+			}
+		}
+	}
+	
+	&.product_layout_default,
+	&.product_layout_style_2,
+	&.product_layout_style_3 {
+		.product-images-cell {
+			@include breakpoint(940px down) {
+				padding-bottom: 0;
+			}				
+		}
+		.product-info-cell {
+			@include breakpoint(767px down) {
+				margin-top: rem-calc(40);
+			}
+		}
+	}
+}
+
+
+// Product Shortcode
+
+
+

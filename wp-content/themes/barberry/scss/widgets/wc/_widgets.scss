@@ -1,0 +1,84 @@
+@import "../mixins";
+
+.widget.woocommerce {
+
+	//==============================================================================
+	// widget_product_categories
+	//==============================================================================
+
+	&.widget_product_categories	{
+		@include widget_product_categories();
+	}
+
+
+	//==============================================================================
+	// widget_product_categories_with_icon
+	//==============================================================================
+
+	&.widget_product_categories_with_icon {
+		@include widget_product_categories_with_icon();
+	}
+
+	//==============================================================================
+	// widget_layered_nav
+	//==============================================================================
+
+	&.widget_layered_nav,
+	&.woocommerce-widget-layered-nav,
+	&.barberry-price-filter-list {
+		@include widget_layered_nav;
+	}
+
+	//==============================================================================
+	// widget_layered_nav_filters
+	//==============================================================================
+
+	&.widget_layered_nav_filters {
+		@include widget_layered_nav_filters;
+	}
+
+	//==============================================================================
+	// widget_price_filter
+	//==============================================================================
+
+	&.widget_price_filter {
+		@include widget_price_filter;
+	}	
+
+	//==============================================================================
+	// widget_product_tag_cloud
+	//==============================================================================
+
+	&.widget_product_tag_cloud {
+		@include widget_tags;
+	}
+
+	//==============================================================================
+	// widget_products
+	//==============================================================================
+
+	&.widget_products,
+	&.widget_recent_reviews,
+	&.widget_recently_viewed_products,
+	&.widget_top_rated_products {
+		@include widget_products;
+	}
+
+	//==============================================================================
+	// widget_product_search
+	//==============================================================================
+
+	&.widget_product_search	{
+		@include widget_search;
+	}
+}
+
+body {
+	&.tag-cloud-equal {
+		.widget.woocommerce {
+			&.widget_product_tag_cloud	{
+				@include widget_tags_equal();
+			}
+		}
+	}
+}

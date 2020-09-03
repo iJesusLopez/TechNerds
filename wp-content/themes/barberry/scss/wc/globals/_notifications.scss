@@ -1,0 +1,341 @@
+body.bb_classic_notif {
+
+	.woocommerce-message,
+	.woocommerce-info {
+		text-align: left;
+		font-weight: 600;
+		transition: opacity .2s, height 1s;
+		height: auto;
+		opacity: 1;
+		margin-bottom: rem-calc(30);
+
+		&.hidden-notice {
+			opacity: 0;
+			height: 0;
+			margin: 0;
+			padding: 0;
+			.button {
+				display: none;
+			}
+		}
+
+		.woocommerce-message-wrapper {
+			position: relative;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			  -ms-flex-align: center;
+			      align-items: center;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			  -ms-flex-direction: row;
+			      flex-direction: row;
+			-ms-flex-wrap: wrap;
+			  flex-wrap: wrap;	
+
+			background-color: #fff;
+			padding-left: rem-calc(80);
+
+
+			.remove-notif {
+				color: #000;
+				position: absolute;
+				top: calc(50% - 8px);
+				right: 20px;
+    			display: inline-block;
+    			font-size: 0px;				
+				width: 18px;
+				height: 18px;
+
+
+				&:before {
+					position: absolute;
+					left: calc(50% - 7px);
+					top: calc(50% - 7px);
+					
+					font-size: 16px;
+					@include barberry_icon('\ea2a');
+				}
+
+			}
+
+			.success-icon {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				text-align: center;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 60px;
+				height: 100%;
+
+				i {
+					color: #fff;
+					font-weight: 700;
+					margin: 0;
+					width: auto;
+				}
+			}	
+
+			.notice_text {
+				position: relative;
+				width: 100%;
+				padding: 20px 0;
+				padding-right: 20px;
+				font-size: 18px;
+				line-height: 1.2;
+
+				a {
+					color: #000;
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 1.2;
+					background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+					background-position: left bottom, left bottom;
+					background-repeat: no-repeat, no-repeat;
+					background-size: 0 1px, 100% 1px;
+					transition: none 300ms ease-in-out;
+					transition-property: background-size, color;
+					word-wrap: break-word;
+
+					&:hover {
+						background-size: 100% 1px, 100% 1px;
+					}					
+				}
+
+				.button {
+
+					background-color: transparent;
+					border:none;
+					position: relative;
+					border-left: none;
+					padding: 0;
+					margin-right: rem-calc(10);					
+					margin: 0;
+					font-size: 18px;
+					text-transform: none;
+					line-height: 1.2;
+
+					@include transition(.3s opacity);
+
+					&:hover {
+						opacity: 0.6;
+					}
+					&:before {
+						display: none;
+					}
+				}
+			}	
+		}
+
+	}
+
+	&.single-product {
+		.woocommerce-message {
+			opacity: 0;
+		}
+	}
+
+	.woocommerce-message {
+		.woocommerce-message-wrapper {
+			background-color: #effae6;			
+		}
+		.success-icon {
+			background-color: #85ab69;
+		}
+
+	}
+
+	.woocommerce-message,
+	.woocommerce-info,
+	.woocommerce-error {
+		font-size: 18px;
+		line-height: 1.2;		
+		position: relative;
+		list-style: none;
+		margin: 0;
+		margin-bottom: rem-calc(30);
+		padding-left: rem-calc(80);
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+
+		a {
+			font-size: 18px;
+			&:hover {
+				opacity: 0.5;
+			}
+
+			&.button {
+				color: #0a0a0a;
+				border:none;
+				background-color: transparent;
+				float: right;
+				padding: 0;
+				margin: 0;
+				text-transform: inherit;
+				font-weight: 600;
+				transition: opacity .5s ease;
+				&:before {
+					display: none;
+				}
+
+				&:hover {
+					opacity: 0.5;
+				}
+			}
+		}
+
+		&:before {
+			color: #fff;
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		  	width: 60px;
+		  	height: 100%;
+		  	font-size: 24px;			
+			font-weight: 700;
+		}		
+	}
+
+	.woocommerce-message {
+		background-color: #effae6;
+		&:before {
+			background-color: #85ab69;			
+			@include barberry-icon('\ea2b');
+			font-weight: 700;
+		}		
+	}
+
+	.woocommerce-info {
+		background-color: #faf1e1;
+		&:before {
+			background-color: #e6b659;			
+			@include barberry-icon('\ea2d');
+			font-weight: 700;
+		}
+	}
+
+	.woocommerce-error {
+		background-color: #f9dddd;
+
+		&:before {
+			background-color: #da4343;			
+			@include barberry-icon('\ea2d');
+			font-weight: 700;
+		}
+
+		li {
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 1.4;
+			color:#000;
+
+			a {
+				color:#000;
+				font-size: 18px;
+				line-height: 1.4;				
+			}
+
+			strong {
+				font-weight: 600;
+			}	
+
+			&:last-child {
+				margin-bottom: 0;
+			}	
+		}
+	}
+
+	&.notice_clickable {
+		.woocommerce-message,
+		.woocommerce-info {
+			cursor: pointer;
+		}
+	}
+
+}
+
+body:not(.woocommerce-account),
+body:not(.woocommerce-cart),
+body:not(.woocommerce-checkout),
+body:not(.woocommerce-shop) {
+
+	&.bb_classic_notif {
+		.woocommerce-error {
+			width: 836px;
+			margin: 0 auto 30px !important;
+			max-width: 100%;				
+		}
+	}
+		
+}
+
+body.woocommerce-checkout {
+	&.bb_classic_notif {
+		.woocommerce-message:first-child,
+		.woocommerce-error:first-child,
+		.woocommerce-info:first-child {
+			z-index: 2;
+			@include breakpoint(768px down) {
+				margin-right: 1.5rem;
+				margin-left: 1.5rem;				
+			}
+		}
+	}
+}
+
+body.single-product {
+	&.bb_classic_notif {
+		.woocommerce-error {
+			width: auto;
+			// margin: 0 auto 30px !important;
+			max-width: 100%;
+
+			@include breakpoint(small only) {
+				margin-bottom: 0 !important;
+			}
+
+				.button {
+					background-color: transparent;
+					border:none;
+					position: relative;
+					border-left: none;
+					padding: 0;
+					margin-right: rem-calc(10);					
+					margin: 0;
+					font-size: 18px;
+					text-transform: none;
+					line-height: 1.2;
+
+					@include transition(.3s opacity);
+
+					&:hover {
+						opacity: 0.6;
+					}
+					&:before {
+						display: none;
+					}
+				}							
+		}
+	}
+}
+
+body.woocommerce-account.bb_classic_notif {
+	.woocommerce-error {
+		width: 100%;
+	}
+}
+
+
+
+
+

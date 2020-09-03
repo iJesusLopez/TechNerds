@@ -1,0 +1,19 @@
+@mixin widget_nav_menu() {
+	@include widget_links_list;
+
+	ul {
+		li {
+			width: 100%;
+			// display: block;
+			a {
+				display: inline;
+				color: #000;
+				padding: rem-calc(4) 0;
+
+				&:hover {
+					opacity: .6;
+				}
+			}
+		}
+	}
+}

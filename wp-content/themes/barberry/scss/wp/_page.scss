@@ -1,0 +1,33 @@
+body.page {
+	.entry-content {
+
+		a:not(.button) {
+       
+		}
+
+		.page-links	{
+			display: flex;
+			justify-content: center;
+			font-size: rem-calc(18); 
+			clear: both;
+
+			a {
+				background-image: none;
+				@include transition(opacity .3s);
+				&:hover {
+					opacity: .6;
+				}
+			}
+
+			span,a {
+				font-size: rem-calc(18);
+			}
+
+			span {
+				margin-right: rem-calc(32); 
+			}
+		}		
+	}
+}
+
+@import "page/404";

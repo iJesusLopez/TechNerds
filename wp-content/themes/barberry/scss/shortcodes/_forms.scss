@@ -1,0 +1,10 @@
+.wpcf7 {
+	p:not(.form-row) {
+		margin-bottom: 0;
+
+		.wpcf7-form-control-wrap {
+			display: block;
+			margin-top: 7px;
+		}
+	}
+}

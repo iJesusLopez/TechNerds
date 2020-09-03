@@ -1,0 +1,37 @@
+/*
+
+Theme Name: Barberry
+Version: 2.3
+
+*/
+
+@import 'settings';
+@import "base/utilities";
+
+@import "rtl/grid";
+@import "rtl/globals";
+@import "rtl/notifications";
+@import "rtl/widgets";
+
+@import "rtl/layout/offcanvas";
+@import "rtl/layout/header";
+@import "rtl/layout/navigation";
+@import "rtl/layout/footer";
+
+@import "rtl/wc/mini-cart";
+@import "rtl/wc/shop";
+@import "rtl/wc/product";
+@import "rtl/wc/quickview";
+@import "rtl/wc/cart";
+@import "rtl/wc/checkout";
+@import "rtl/wc/thankyou";
+@import "rtl/wc/myaccount";
+@import "rtl/wc/wishlist";
+@import "rtl/wc/compare";
+
+@import "rtl/wp/globals";
+@import "rtl/wp/blog-archive";
+@import "rtl/wp/single";
+
+@import "rtl/shortcodes/slider";
+@import "rtl/shortcodes/blog";

@@ -1,0 +1,15 @@
+.vendor-wrapper {
+	.cell {
+		h2 {
+			text-align: center;
+			margin: 10px auto 30px;
+		}
+		form {
+			margin-bottom: 60px;
+		}
+		@include breakpoint(small only) {
+			padding-right: 1.5rem;
+			padding-left: 1.5rem;				
+		}
+	}
+}

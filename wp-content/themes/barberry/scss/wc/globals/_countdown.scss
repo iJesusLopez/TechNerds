@@ -1,0 +1,107 @@
+.barberry-timer {
+	display: block;
+	font-size: 0;
+	line-height: 1;
+	margin-bottom: 30px;
+
+	> span {
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		padding: 10px;
+
+		margin-left: -1px;
+		min-width: 85px;
+		min-height: 80px;
+		font-size: 24px;
+		line-height: 30px;
+		// background-color: white;
+		color: #333333;
+		font-weight: 600;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #eee;
+
+		@include breakpoint(small only) {
+			min-width: 65px;
+			min-height: 60px;		
+			font-size: 20px;
+			line-height: 26px;
+				
+		}	
+
+		span {
+			font-size: 11px;
+			line-height: 16px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: #999;
+
+			@include breakpoint(small only) {
+				font-size: 10px;
+				line-height: 14px;				
+			}
+		}	        		
+	}
+}
+
+ul.products {
+
+		.product {
+
+			.barberry-timer {
+				z-index: 1;
+				position: absolute;
+				right: 20px;
+				top: 20px;
+				margin-bottom: 0;
+				@include breakpoint(small only) {
+					right: 10px;
+					top: 10px;					
+				}
+
+				> span {
+					text-align: center;
+					display: block;
+					min-width: auto;
+					min-height: auto;
+					font-size: 16px;
+					@include poly-fluid-sizing('font-size', (768px:12px, 1920px:16px));
+					line-height: 1.2;	
+					padding: 10px;
+					@include poly-fluid-sizing('padding', (768px:5px, 1920px:10px));
+					margin-left: 1px;
+					margin-top: -1px;
+					background-color: rgba(255,255,255,0.8);
+
+					span {
+						font-size: 9px;
+						@include poly-fluid-sizing('font-size', (768px:6px, 1920px:9px));
+						line-height: 1.2;
+						letter-spacing: 1px;
+						display: block;
+					}
+				}
+			}	
+
+			&.has-default-attributes {
+				.barberry-timer {
+					top: 45px;
+					@include breakpoint(small only) {
+						top: 30px;					
+					}					
+				}
+			}		
+		}
+
+}

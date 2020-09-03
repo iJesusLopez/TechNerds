@@ -1,0 +1,11 @@
+body.woocommerce-account,
+body.logged-in.woocommerce-wishlist,
+body.woocommerce-order-received {
+	@import "account/account-layout"; 
+	@import "account/account-navigation"; 
+	@import "account/account-orders"; 
+	
+	@import "account/account-login";  
+}
+
+@import "account/order-detail";

@@ -1,0 +1,290 @@
+.account-nav-top {
+
+	.title-wrapper {
+		margin-bottom: rem-calc(40);
+
+		@include breakpoint(medium down) {
+			background-color: #fff;
+			text-align: center;
+			padding-bottom: rem-calc(50);
+			margin-bottom: 0;
+		}
+
+		.breadcrumbs-wrapper {
+			overflow: hidden;
+			margin-bottom: 20px;
+
+			@include breakpoint(medium down) {
+				margin-bottom: 15px;
+			}						
+			@include breakpoint(small only) {
+				margin-bottom: 10px;
+			}					
+
+			.breadcrumbs {
+				opacity: 0;
+
+			    a {
+			    	font-weight: 300 !important;
+			    }
+
+			    a, span {
+				    font-weight: 300;					    	
+			    }
+			}
+		}
+
+		.page-title-wrapper {
+			display: inline-block;
+			overflow: hidden;
+			vertical-align: bottom;	
+
+			
+			h1 {
+				display: block;
+				@include poly-fluid-sizing('font-size', (1280px:60px, 1440px:70px));
+				margin: 0;
+			}		
+		}
+
+	}
+
+	.woocommerce-MyAccount-navigation {
+
+		@include breakpoint(medium down) {
+			margin: 0 auto;
+			margin-top: rem-calc(30);
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+
+			li {
+				position: relative;
+				margin-bottom: rem-calc(15);
+				padding: 0;
+
+				@include breakpoint(1280px down) {
+					margin-bottom: rem-calc(10);
+				}
+
+				@include breakpoint(medium down) {
+					margin: 0;
+					padding: 10px 0 6px;
+					border-bottom: 1px solid rgba(0,0,0,0.1);
+
+					&:after {
+						position: absolute;
+						top: calc(50% - 6px);
+						right: 0;
+						font-size: 12px;
+						@include barberry-icon('\ea11');
+
+						@include breakpoint(medium down) {
+							@include poly-fluid-sizing('right', (768px:25px, 1024px:40px));
+						}
+					}
+				}
+
+				a {
+					position: relative;
+					padding: 10px 0 10px 40px;
+					font-size: 22px;
+					font-weight: 400;
+					background-image: none !important;
+					transition: opacity .3s !important;
+
+					@include breakpoint(1280px down) {
+						padding: 5px 0 5px 30px;
+						font-size: 20px;
+					}	
+				
+					@include breakpoint(medium down) {
+						@include poly-fluid-sizing('padding-left', (768px:60px, 1024px:75px));
+					}
+
+					&:hover {
+						opacity: 0.5
+					}
+
+					&:before {
+						position: absolute;
+						left: 0;
+						top: calc(50% - 14px);
+						font-size: 22px;
+
+						@include breakpoint(1280px down) {
+							font-size: 18px;
+							top: calc(50% - 12px);
+						}	
+
+						@include breakpoint(medium down) {
+							@include poly-fluid-sizing('left', (768px:30px, 1024px:40px));
+						}					
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--dashboard {
+					a:before {
+						@include barberry-icon('\ea34');
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--orders {
+					a:before {
+						@include barberry-icon('\ea2f');
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--gift-cards {
+					a:before {
+						@include barberry-icon('\ea3f');
+					}					
+				}
+
+				&.woocommerce-MyAccount-navigation-link--subscriptions {
+					a:before {
+						@include barberry-icon('\ea3e');
+					}					
+				}
+				
+				&.woocommerce-MyAccount-navigation-link--woocommerce-waitlist {
+					display: none;
+					&.show-waitlist {
+						display: list-item;
+					}
+					a:before {
+						@include barberry-icon('\ea40');
+					}					
+				}
+
+				&.woocommerce-MyAccount-navigation-link--downloads {
+					a:before {
+						@include barberry-icon('\ea30');
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--edit-address {
+					a:before {
+						@include barberry-icon('\ea31');
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--payment-methods {
+					a:before {
+						@include barberry-icon('\ea3d');
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--edit-account {
+					a:before {
+						@include barberry-icon('\ea32');
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--bookmarks {
+					a:before {
+						@include barberry-icon('\ea4c');
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--customer-logout {
+					display: none;
+				}
+
+				&.woocommerce-MyAccount-navigation-link--wishlist  {
+					a:before {
+						@include barberry-icon('\ea3c');
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--waitlist  {
+					a:before {
+						@include barberry-icon('\ea40');
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--points,
+				&.woocommerce-MyAccount-navigation-link--points-and-rewards  {
+					a:before {
+						@include barberry-icon('\ea4a');
+					}
+				}
+				
+				// Dokan My Account icons
+
+				&.woocommerce-MyAccount-navigation-link--dokan  {
+					a:before {
+						@include barberry-icon('\ea42');
+					}
+				}	
+
+				
+
+				&.woocommerce-MyAccount-navigation-link--rma-requests,
+				&.woocommerce-MyAccount-navigation-link--refund-requests  {
+					a:before {
+						@include barberry-icon('\ea45');
+					}
+				}
+
+				&.woocommerce-MyAccount-navigation-link--following  {
+					a:before {
+						@include barberry-icon('\ea46');
+					}
+				}	
+
+				&.woocommerce-MyAccount-navigation-link--support-tickets  {
+					a:before {
+						@include barberry-icon('\ea44');
+					}
+				}														
+			}
+		}
+	}
+
+}
+
+.account-nav-bottom {
+	a {
+		position: relative;
+		margin: 0;
+		padding: 10px 0 10px 40px;
+		font-size: 22px;
+		font-weight: 400;
+		background-image: none !important;
+		transition: opacity .3s !important;	
+
+		@include breakpoint(1280px down) {
+			padding: 5px 0 5px 30px;
+			font-size: 20px;
+		}
+
+		@include breakpoint(medium down) {
+			@include poly-fluid-sizing('padding-left', (768px:60px, 1024px:75px));
+		}		
+
+		&:hover {
+			opacity: 0.5
+		}
+
+		&:before {
+			position: absolute;
+			left: 0;
+			top: calc(50% - 14px);
+			font-size: 22px;
+			@include barberry-icon('\ea33');
+
+			@include breakpoint(1280px down) {
+				font-size: 18px;
+				top: calc(50% - 10px);
+			}
+
+			@include breakpoint(medium down) {
+				@include poly-fluid-sizing('left', (768px:30px, 1024px:40px));
+			}
+
+		}			
+	}
+}

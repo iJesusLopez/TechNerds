@@ -1,0 +1,359 @@
+.cart-totals {
+	h2 {
+		font-size: 30px;
+	}
+
+	.cart_totals {
+		&.calculated_shipping.processing,
+		&.processing  {
+			.blockUI {
+				background-color: #f4f4f4 !important;
+				@include loader(24px, 24px);
+		
+				&:after {
+					border-top-color: #000;
+					z-index: 4;
+					position: absolute;
+					top: calc(50% - 12px);
+					left: calc(50% - 12px);
+				}						
+			}
+		}		
+	}
+
+
+	.cart-totals-inner {
+		position: relative;
+	}
+
+	.shop_table {
+		tr {
+			border-bottom-color:#dbdbdb;
+			border-bottom-width: 1px;
+
+			&.cart-subtotal {
+				border-bottom: none;
+				td {
+					font-size: rem-calc(18);
+					line-height: 1.2;					
+				}
+			}
+
+			&.recurring-totals {
+				background-color: #fff;
+				th {
+					position: relative;
+					padding: 22px 25px 20px 25px;
+					color: #000;
+					font-size: 16px;
+					font-weight: 600;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					background-image: none;
+				}
+			}
+
+			&.recurring-total {
+
+				&.cart-subtotal,
+				&.shipping {
+					background-color: #fff !important;
+					border-bottom: 0 !important;
+					th {
+						padding-left: 25px !important;
+					}
+
+					td {
+						padding-right: 25px !important;
+					}
+				}
+				&.shipping {
+					th {
+						font-size: 1rem;
+						font-weight: 300;
+					}
+					td {
+						text-align: right;
+						.amount {
+							float: none;
+						}
+					}
+				}
+				&.order-total {
+					td {
+						font-size: rem-calc(18);
+						line-height: 1.2;
+						.first-payment-date {
+							small {
+								font-size: rem-calc(18);
+							}
+						}
+					}
+				}
+			}
+
+		}
+		tbody {
+			border: none;
+			background-color: transparent;
+
+			tr:nth-child(even) {
+			    border-bottom: 1px solid;
+			    border-bottom-color:#dbdbdb;
+			    background-color: transparent;
+			}
+
+			td {
+				padding-left: 0;
+			}	
+
+			.cart-empty-tr {
+				td {
+					padding-top: rem-calc(60);
+					line-height: 1.2;
+				}
+			}		
+
+
+			.cart-subtotal {
+				th {
+					padding-left: 0;
+					font-size: 20px;
+				}
+
+				td {
+					text-align: right;
+					.amount {
+						font-size: 24px;
+						@include breakpoint(small only) {
+							font-size: 20px;
+						}
+					}
+				}
+			}
+
+			.cart-discount {
+			    border-top: 1px solid;
+			    border-top-color:#dbdbdb;				
+				th {
+					font-weight: 300;
+					font-size: 18px;
+					line-height: 1.4;
+					padding-left: 0;
+				}
+
+				td {
+					position: relative;
+					text-align: right;
+					padding-right: 25px;
+					> .amount {
+						margin-left: 10px;
+					}
+
+					.woocommerce-remove-coupon {
+						color: #000;
+						position: absolute;
+						top: calc(50% - 9px);
+						right: 0;
+						// position: relative;
+		    			display: inline-block;
+		    			font-size: 0px;				
+						width: 18px;
+						height: 18px;
+						border-radius:50%;
+						border:1px solid #000;
+						background-color: #fff;	
+
+						&:before {
+							position: absolute;
+							left: calc(50% - 7px);
+							top: calc(50% - 7px);
+							
+							font-size: 14px;
+							@include barberry_icon('\ea2a');
+						}
+
+						&:hover {
+							background-color: #000;
+							&:before {
+								color: #fff;
+							}
+						}						
+					}
+				}
+			}
+
+			.shipping {
+				border-top: 1px solid #dbdbdb;
+				border-bottom: none !important;
+				background-color: transparent;
+
+				th {
+					display: none;				
+				}
+
+				td {
+					font-size: 1rem;
+					.amount {
+						float: right;
+					}
+				}
+
+				.shipping-th-title {
+					color: #000;
+					font-size: 20px;
+					font-weight: 400;
+					margin-bottom: rem-calc(10);
+				}
+
+				ul#shipping_method {
+					margin: 0;
+					list-style: none;
+					li {
+						margin-bottom: 5px;
+						input.shipping_method {
+							display: none;
+						}
+						label {
+							font-weight: 300;
+							width: 100%;
+							margin-left: 0;
+							.amount {
+								float: right;
+							}
+						}
+					}
+				}
+
+				.woocommerce-shipping-destination {
+					margin-top: 10px;
+					font-size: 1rem;
+					color: #000;
+					strong {
+						font-weight: 600;
+					}
+				}
+
+				&.recurring-total {
+					th {
+						display: table-cell;
+						padding-left: 0;
+					}
+				}					
+			}
+
+		
+
+			.shipping-calc-wrap {
+				border-bottom: none !important;
+
+				.woocommerce-shipping-calculator {
+					> p {
+						margin-bottom: 0;
+					}	
+					margin-bottom: rem-calc(30);				
+				}
+
+				.shipping-calculator-button {
+					position: relative;
+					padding: 22px 30px 20px 30px;
+					color: #000;
+					display: block;
+					width: 100%;
+					background-color: #fff;
+					font-size: 12px;
+					// line-height: 1;
+					font-weight: 400;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					background-image: none;
+
+					&:after {
+						position: absolute;
+						top: calc(50% - 6px);
+						right: 20px;
+						font-size: 12px;
+						@include barberry-icon('\ea13');
+						transition: transform .7s ease, top .7s ease;
+					}
+				}
+
+				.shipping-calculator-form {
+					padding: 5px 30px 15px 30px;
+					background-color: #fff;
+
+					p {
+						margin-bottom: rem-calc(12);
+						input {
+							margin-bottom: 0;
+						}
+					}
+
+					.select2 {
+						margin-bottom: 0;
+					}
+
+					button {
+						width: 100%;
+						margin-top: 5px;
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.order-total {
+				border-bottom: none !important;
+				border-top: 6px solid #000;
+				background-color: transparent;
+
+				th, td {
+					padding-left: 0;
+					padding-top: rem-calc(30); 	
+				}
+
+				th {
+					font-size: rem-calc(26);
+					line-height: 1.2;
+					font-weight: 600;
+				}
+
+				td {
+					text-align: right;
+					.amount {
+						font-size: 36px;
+						@include breakpoint(small only) {
+							font-size: 30px;
+						}
+					}
+					.includes_tax {
+						font-size: 14px;
+						line-height: 1.4;
+						display: block;
+						font-weight: 300;
+
+						.amount {
+							font-size: 14px;
+						}
+					}					
+				}
+			}
+		}
+	}
+
+	.wc-proceed-to-checkout {
+		a {
+			width: 100%;
+		}
+	}
+}
+
+
+.sidebar{
+    will-change: min-height;
+}
+
+.sidebar__inner{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}

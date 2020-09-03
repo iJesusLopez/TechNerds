@@ -1,0 +1,42 @@
+.error404 {
+
+	.site-content {
+		display: flex;
+		align-items: center;
+		justify-content: center;		
+		height: 100vh;
+		text-align: center;	
+
+		section {
+			
+			@include breakpoint(medium down) {
+				padding: 0 rem-calc(60);
+			}
+
+			@include breakpoint(small only) {
+				padding: 0 rem-calc(30);
+			}
+		}
+
+		.page-header {
+			.page-title-wrapper {
+				position: relative;
+				display: inline-block;
+				overflow: hidden;
+				text-align: center;	
+
+				h1.page-title {
+					margin: 0;
+				}
+			}
+		}
+
+		.error-404-searchform {
+			margin: rem-calc(60) 0 0;
+			padding: 0 rem-calc(60);
+			@include breakpoint(medium down) {
+				padding: 0;
+			}
+		}
+	}
+}

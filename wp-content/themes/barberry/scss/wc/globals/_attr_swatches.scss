@@ -1,0 +1,206 @@
+ul.products {
+	li.product {
+
+		.attr-swatches {
+			max-width: 70%;
+			height: auto;
+			vertical-align: top;
+			display: inline-block;
+			opacity: 0;
+			z-index: 4;
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			text-align: right;
+			z-index: 2;
+
+			@include breakpoint(small only) {
+				right:10px;
+				top: 10px;
+			}
+
+			.swatch {
+				margin: 0 5px;
+				display: inline-block;
+				vertical-align: top;
+
+				@include breakpoint(small only) {
+					margin: 0 3px;
+				}
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&.ev-swatch-variation-image {
+					cursor: pointer;
+				}
+			}
+
+
+			.swatch-label {
+				cursor: pointer;
+				display: inline-block;
+				float: right;
+				border: 1px solid rgba(0,0,0,0.2);
+				border-radius: 0;
+				color: #666;
+				padding: 5px 5px 4px;
+				margin: 0 3px 3px 0;
+				font-size: 0;
+				// line-height: 1;
+				background-color: #fff;
+				@include transition(all 0.3s);
+
+				span {
+				font-size: 12px;
+				line-height: 12px;					
+				}
+
+				&:hover,
+				&.selected {
+					border-color: rgba(0,0,0,0.8);
+					color: #fff !important;
+				}
+			}
+
+			.swatch-color,
+			.swatch-image {
+				cursor: pointer;
+				// border: 1px solid transparent;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				position: relative;
+
+				&:last-child {
+					margin-right: 0;
+				}				
+
+				@include breakpoint(small only) {
+					width: 10px;
+					height: 10px;					
+				}
+
+				.sub-swatch {
+					width: 12px;
+					height: 12px;
+					display: inline-block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+
+					.sub-swatch-bg {
+						left: 0;
+						top: 0;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+						transition: all .3s;
+					}
+
+					@include breakpoint(small only) {
+						width: 10px;
+						height: 10px;						
+					}
+				}
+
+				&:hover {
+					.sub-swatch {
+						.sub-swatch-bg {
+							transform: scale(1.2);
+						}
+					}
+					
+				}				
+
+				&.selected {
+					
+					span.sub-swatch {
+						// width: 18px;
+						// height: 18px;
+
+
+						@include breakpoint(small only) {
+							width: 14px;
+							height: 14px;						
+						}
+
+						.sub-swatch-bg {
+							transform: scale(1.4);
+
+							@include breakpoint(small only) {
+								transform: scale(1);
+							}
+
+							&:before {
+								border: none;
+								border-radius: 50%;
+								position: absolute;
+								top: 50%;
+								left: 50%;	
+								transform: translate(-50%, -50%);								
+								content: '';
+								width: 3px;
+								height: 3px;
+								background-color: #fff;
+							}							
+						}
+
+								
+					}
+
+					// border-color: rgba(0,0,0,0.3);
+				}
+			}
+
+			.swatch-image {
+				width: 22px;
+				height: 22px;
+				@include breakpoint(small only) {
+					width: 16px;
+					height: 16px;						
+				}
+				.sub-swatch {
+					width: 22px;
+					height: 22px;
+					@include breakpoint(small only) {
+						width: 16px;
+						height: 16px;						
+					}
+					.sub-swatch-bg {
+						&:before {
+							width: 4px !important;
+	    					height: 4px !important;
+						}
+					}	
+
+
+
+					img {
+						border-radius: 50%;	
+					}			
+				}
+
+				&.selected {
+					.sub-swatch {
+						.sub-swatch-bg {
+							transform: scale(1.2) !important;
+						}
+					}
+				}
+			}
+		}
+
+		&.active {
+			.attr-swatches {
+				transition-delay:1s;
+				opacity: 1;
+				@include transition(opacity 1s ease);
+			}
+		}
+	}
+
+}

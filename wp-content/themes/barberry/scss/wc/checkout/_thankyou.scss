@@ -1,0 +1,155 @@
+.account-cells {
+
+	.account-intro {
+
+		.account-intro-inner {
+
+			@include breakpoint(1024px down) {
+				background-color: #f4f4f4;
+				padding: rem-calc(40);
+		
+			}
+
+			@include breakpoint(768px down) {
+				padding-left: rem-calc(20);
+				padding-right: rem-calc(20);
+			}
+		}
+		
+		.title-wrapper {
+			.page-title-wrapper {
+				display: inline-block;
+				overflow: hidden;
+				vertical-align: bottom;	
+				
+				h1 {
+					// opacity: 0;
+					display: block;
+					@include poly-fluid-sizing('font-size', (768px:40px, 1280px:50px, 1440px:64px));
+					margin: 0;
+
+					&.woocommerce-thankyou-order-failed {
+						@include poly-fluid-sizing('font-size', (1280px:30px, 1440px:36px));
+					}
+				}	
+
+				ul.order_details {
+					list-style: none;
+					margin: 0;
+					margin-top: rem-calc(60);
+
+					@include breakpoint(1024px down) {
+						margin-top: rem-calc(30);
+					}
+
+					li {
+						color:#000;
+						margin-bottom: rem-calc(10);
+						font-size: 22px;
+						line-height: 1.4;
+
+						@include breakpoint(small only) {
+							font-size: 18px;
+							margin-bottom: rem-calc(5);
+						}
+
+						strong {
+							font-weight: bold;
+							font-weight: 600;
+							.amount {
+								font-size: 24px	;
+								@include breakpoint(small only) {
+									font-size: 20px	;
+								}
+							}
+						}
+					}
+				}		
+			}
+		}
+
+	}
+
+	.account-content {
+		.woocommerce-MyAccount-content {
+			padding-top: rem-calc(20) !important;
+		}
+	}
+
+	.account-content-failed {
+		text-align: center;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@include breakpoint(small only) {
+			min-height: auto;
+			display: block;
+			padding-left: rem-calc(50) !important;
+			padding-right: rem-calc(50) !important;
+		}
+
+		// i.alert-icon {
+		// 	margin-bottom: 30px;
+		// 	&:before {
+		// 		font-size: 80px;
+		// 		font-weight: bold;
+		// 		color: #f9423a;
+		// 		@include barberry-icon('\ea2d');
+		// 	}
+		// }
+
+		h1 {
+			padding-top: 120px;
+			position: relative;
+
+			@include breakpoint(medium down) {
+				padding-top: 90px;
+			}
+
+			&:before {
+				position: absolute;
+				top: 0;
+				left: calc(50% - 40px);
+				font-size: 80px;
+				color: #f9423a;
+				@include barberry-icon('\ea35');
+				
+				@include breakpoint(medium down) {
+					
+					left: calc(50% - 30px);
+					font-size: 60px;
+				}
+
+			}
+
+
+			@include poly-fluid-sizing('font-size', (768px:30px, 1024px:40px, 1280px:50px, 1440px:64px));
+			// @include poly-fluid-sizing('margin-top', (1280px:50px, 1440px:64px));
+		}
+
+		.woocommerce-thankyou-order-failed-actions {
+			margin-top: rem-calc(40);
+			margin-bottom: rem-calc(40);
+			// margin-bottom: 0;
+			width: 100%;
+
+			a {
+				display: inline-block;
+				margin-bottom: 0;
+				margin-left: 5px;
+				&:first-child {
+					margin-left: 0;
+				}
+
+				@include breakpoint(500px down) {
+					display: block;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+}

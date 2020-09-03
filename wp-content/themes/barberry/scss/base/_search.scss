@@ -1,0 +1,93 @@
+@mixin submit_button_position {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: rem-calc(40);
+	height: rem-calc(40);
+	cursor: pointer;
+}
+
+.search-form,
+.woocommerce-product-search,
+.searchform {
+	color: #000;
+	position: relative;
+	width: 100%;
+	border-bottom: 2px solid;
+	border-color: rgba(119,119,119,0.15);
+
+	.screen-reader-text	{
+		display: none;
+	}
+
+	label {
+		padding: 0;
+		width: 100%;
+	}	
+
+	&:before {
+		background-color: #000;
+	}
+
+	@include bottom_line_transition();
+
+
+	&:after	{
+		@include submit_button_position;
+		@include barberry_icon('\ea39');
+		font-size: 20px;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: $input-transition;
+		pointer-events: none;
+	}
+
+	input[type='text'],
+	.search-field {
+		margin: 0;
+		padding-left: 0;
+		padding-right: rem-calc(48);
+		width: 100%;
+		border: 0;
+		box-shadow: none;
+		font-size: 18px;
+
+		&::placeholder	{
+			@include global-transition();
+			opacity: 0.6;
+		}
+
+		&:hover,
+		&:focus	{
+			border-top: none;
+			border-left: none;
+			border-right: none;  
+			background: none; 
+			box-shadow: none; 
+		}
+
+		&:focus	{
+			&::placeholder {
+				opacity: 1; 
+			}
+		}				
+	}
+
+	[type=submit] {
+		@include submit_button_position;
+
+		padding: 0;
+		font-size: 0;
+		color: transparent;
+		opacity: 0;
+		
+		&:hover,
+		&:focus	{
+			opacity: 0;
+		}
+	}
+
+}

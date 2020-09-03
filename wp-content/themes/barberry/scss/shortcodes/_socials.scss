@@ -1,0 +1,13 @@
+.site-social-icons-shortcode {
+	ul.social-icons {
+		&.center {
+			text-align: center;
+		}		
+		&.right {
+			text-align: right;
+		}
+		li {
+			opacity: 1;			
+		}
+	}
+}

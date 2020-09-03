@@ -1,0 +1,208 @@
+.login-cells {
+
+	.login-content {
+		// background-color: #eee;
+		width: 100%;
+	    max-width: 550px;	
+	    margin: 0 auto;
+
+	    padding-left: rem-calc(20);	
+	    padding-right: rem-calc(20);
+	    padding-bottom: rem-calc(60);
+	    min-height: 100vh;
+
+	    .login-content-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			#bb-login-wrap {
+				.form-row-first,
+				.form-row-last {
+					float: none;
+					width: 100%;
+				}
+
+				#bb-show-register-button {
+					width: 100%;
+				}
+			}
+
+	    	#bb-login-wrap,
+	    	#bb-register-wrap,
+	    	#bb-password-wrap {
+	    		opacity: 0;
+	    		z-index: -1;
+	    		width: 100%;
+	    		position: absolute;
+	    		left: 0;
+	    		top: 30px;
+	    		@include transition(all 0.3s ease);
+
+				&.inline {
+					position: relative;
+					z-index: 100;
+				}	
+
+				&.fade-in {
+					opacity: 1;
+				}
+
+				&.slide-up {
+					top: 0px;
+				}
+
+				.woocommerce-form-register {
+					p:nth-child(2) {
+						margin-bottom: 20px;
+					}
+				}
+
+				.woocommerce-password-strength {
+					&:before {
+						margin-right: 5px;
+						@include barberry-icon('\ea48');
+					}
+
+					font-size: 16px;
+					font-weight: 600;
+					&.bad {
+						color: #f9423a;
+					}
+					&.good,
+					&.strong {
+						color: #7fb34d;
+					}
+
+				}
+
+				.woocommerce-password-hint {
+					display: block;
+					color: #666;
+					font-size: 16px;
+					line-height: 1.4;
+				}
+
+				.woocommerce-password-text {
+					p, a {
+						font-weight: 400;
+						font-size: 18px;
+					}
+					border-bottom: 1px solid #eee;
+					margin-bottom: 30px;
+				}					
+
+				.woocommerce-privacy-policy-text {
+					p, a {
+						font-size: 18px;
+					}
+				}			    		
+
+	    		.title-wrapper {
+	    			text-align: center;
+	    			margin-bottom: rem-calc(40);
+
+					.breadcrumbs-wrapper {
+						overflow: hidden;
+						margin-bottom: 20px;
+
+						@include breakpoint(medium down) {
+							margin-bottom: 15px;
+						}						
+						@include breakpoint(small only) {
+							margin-bottom: 10px;
+						}					
+
+						.breadcrumbs {
+							// opacity: 0;
+						    font-size: 12px;
+						    line-height: 16px;
+
+						    color: #000;
+
+						    > a,
+						    > span {
+								display: inline-block;
+
+								// &:after {
+								//     content: "/";
+								//     display: inline-block;
+								//     padding: 0 8px
+								// }
+						    }
+
+						    > span {
+						    	padding: 0 10px;
+						    	&:first-child {
+									padding-left: 0;
+						    	}
+						    	&.delimiter {
+						    		padding: 0;
+						    	}
+						    }
+
+						    a {
+						    	color: #000;
+						    	font-weight: 300 !important;
+						    	background-image: none !important;
+						    	&:hover {
+						    		opacity: 0.5;
+						    	}
+						    }
+
+						    a, span {
+							    text-decoration: none;
+							    font-size: 16px;
+							    font-weight: 300;					    	
+						    }
+						}
+					}
+
+					.page-title-wrapper {
+						display: inline-block;
+						overflow: hidden;
+						vertical-align: bottom;	
+
+						
+						h1 {
+							// opacity: 0;
+							display: block;
+							@include poly-fluid-sizing('font-size', (1280px:60px, 1440px:80px));
+							margin: 0;
+						}		
+					}
+
+	    		}
+	    	}
+
+	    	#bb-password-wrap {
+	    		opacity: 1;
+	    		top:0;
+
+	    		p:not(.form-row) {
+	    			font-size: 18px;
+	    		}
+
+	    		.form-row {
+	    			margin-top: rem-calc(10);
+	    		}
+
+				.form-row-first, .form-row-last,
+				.button {
+				    width: 100%;
+				    margin-bottom: 0;
+				}
+
+	    	}
+
+	    	#bb-login-wrap {
+	    		// position: relative;
+	    	}
+
+	    	#bb-register-wrap {
+
+	    	}
+	    }
+	}
+
+}

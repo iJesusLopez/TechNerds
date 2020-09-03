@@ -1,0 +1,116 @@
+.page-header {
+	display: none;
+
+	.page-header-bg {
+		background: transparent;
+		background-color: transparent;
+	}
+}
+
+.breadcrumbs-wrapper {
+	display: none;
+}
+
+.content-page-wrapper {
+	padding: 0;
+}
+
+.woocommerce-notices-wrapper {
+	z-index: 5;
+	position: relative;
+}
+
+.checkout-wrapper {
+	@include poly-fluid-sizing('padding-left', (768px:30px, 1920px:130px));
+	@include poly-fluid-sizing('padding-right', (768px:30px, 1920px:130px));
+
+	@include breakpoint(768px down) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&:after {
+		z-index: 1;
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		left: auto;
+		width: 30%;
+		@include poly-fluid-sizing('width', (768px:325px, 1024px:435px, 1025px:355px, 1280px:450px, 1920px:670px, 2560px:890px));
+		content: "";
+		background: #f4f4f4;
+
+		@include breakpoint(768px down) {
+			display: none;
+		}
+	}
+
+	.woocommerce-NoticeGroup {
+		position: relative;
+		z-index: 4;
+		margin-bottom: 20px;
+		
+		@include breakpoint(768px down) {
+			padding-left: rem-calc(20);
+			padding-right: rem-calc(20);
+		}
+	}
+}
+
+.checkout-cells-empty {
+	text-align: center;	
+	.checkout-empty-text {
+		font-size: 30px;
+		line-height: 1.2;
+		margin-bottom: rem-calc(30);		
+	}
+}
+
+.checkout-cells {
+	z-index: 4;
+	position: relative;
+	margin-top: rem-calc(50);
+
+	@include breakpoint(1280px down) {
+		margin-top: rem-calc(40);
+	}
+	@include breakpoint(1024px down) {
+		margin-top: rem-calc(20);
+	}
+	@include breakpoint(768px down) {
+		margin-top: rem-calc(0);
+	}
+
+	.cell {
+		position: relative;
+		padding-top: 0;
+		@include poly-fluid-sizing('padding-bottom', (768px:50px, 1920px:130px));
+
+		&.checkout-billing {
+			position: relative;
+			@include poly-fluid-sizing('padding-right', (1024px:40px,1025px:40px, 1920px:130px));
+
+			@include breakpoint(768px down) {
+				padding-left: rem-calc(25);
+				padding-right: rem-calc(25);
+			}
+
+			@include breakpoint(768px down) {
+				width: 100%;
+				padding-right: rem-calc(25);
+			}
+		}
+
+		&.checkout-order {
+			@include poly-fluid-sizing('padding-left', (1024px:40px,1025px:40px, 1920px:130px));
+
+			@include breakpoint(768px down) {
+				width: 100%;
+				background-color: #f4f4f4;
+				padding: rem-calc(35 25);
+			}
+		}
+	}
+
+}

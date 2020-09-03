@@ -1,0 +1,245 @@
+.grouped_form {
+	@include breakpoint(530px down) {
+		text-align: center;
+	}	
+}
+
+.product-type-grouped {
+	@include tooltip(woocommerce-grouped-product-list-item__quantity, button, '\ea02' );
+
+
+	.group_table {
+		table-layout: fixed;
+		border:none;
+		text-align: left;
+
+
+		tbody {
+			border:none;
+		}
+
+		tr {
+			border-bottom-width: 0;
+			background-color: transparent;
+			border-bottom: 1px solid #eee;
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			&:first-child {
+				td {
+					@include breakpoint(small only)	{
+						padding-top: 0;
+					}
+				}
+			}
+
+			&:last-child { 
+				td {
+					padding-bottom: rem-calc(16); 
+				}
+			}
+
+			&.outofstock {
+				td.woocommerce-grouped-product-list-item__quantity {
+					a {
+						&:before {
+							// display: none;
+						}
+					}
+				}
+			}
+
+			td {
+				vertical-align: middle;
+				// padding-bottom: 0;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&.woocommerce-grouped-product-list-item__quantity {
+					// min-width: 120px;
+					.quantity {
+						margin-right: 0;
+						min-width: 120px;
+						margin-bottom: 0 !important;
+						@include breakpoint(375px down) {
+							line-height: 1.3 !important;
+							min-width: 70px !important;
+							.plus-btn,
+							.minus-btn {
+								min-width: 26px !important;
+								height: 26px !important;
+								line-height: 38px !important;							
+							}
+						}
+					}
+
+					input.custom-qty {
+						@include breakpoint(375px down) {
+							font-size: rem-calc(15) !important;
+							width: 25px !important;
+						}
+					}					
+
+					a {
+						&.button {
+							text-align: center;
+							text-transform: capitalize;
+							padding: 15px 0;
+							border-width: 0px;
+							width: 120px;
+							display: inline-block;
+							background: #f5f5f5;
+							margin-bottom: 0;
+							letter-spacing: 0;
+							// background-color: #000;
+							&:before {
+								display: none;
+							}
+							&:after {
+								color: #000;
+							}
+						}
+				    // margin: 0;
+				    // border-width: 1px;
+				    // position: relative;
+				    // height: auto;
+				    // font-size: 13px;
+				    // font-weight: 600;
+				    // padding: 10px 10px 10px;
+				    // text-transform: capitalize;
+				    // letter-spacing: 0;
+				    // margin-bottom: 0;
+				    // min-height: 40px;
+				    // color: #000;
+				    // background-color: #fff;
+				    // white-space: normal;						
+					}
+				}
+
+				a {
+
+					&.product_type_external,
+					&.product_type_simple,
+					&.product_type_variable {
+						font-size: 0;
+						padding: rem-calc(18) 0;
+						position: relative;
+						opacity: 1; 
+						width: 100%;						
+					}					
+				}	
+
+				&.woocommerce-grouped-product-list-item__label {
+					label {
+						padding: 0;
+						padding-left: 10px;
+
+						a {
+							color: inherit;
+							font-size: rem-calc(18); 
+							line-height: 1.3;
+							font-weight: 400 !important;
+
+							@include breakpoint(small only) {
+								font-size: rem-calc(16); 
+							}
+
+							&:hover {
+								opacity: 0.6;
+							}
+						}						
+					}
+				}
+
+				&.woocommerce-grouped-product-list-item__price {
+					text-align: right;
+					font-size: 18px;
+					line-height: 1.2;
+
+					.barberry-single-product-stock {
+						margin: 0;
+						.in-stock {
+							display: inline;
+							margin: 0;
+							&:before {
+							    content: "";
+							    width: 7px;
+							    height: 7px;
+							    margin-right: 0.5rem;
+							    margin-bottom: 0;
+							    display: inline-block;
+							    -webkit-border-radius: 50%;
+							    border-radius: 50%;
+
+							    @include breakpoint(375px down) {
+							    	display: none;
+							    }
+							}							
+						}
+						.stock-sold,
+						.barberry-product-stock-progress {
+							display: none;
+						}
+					}					
+
+					del {
+						text-decoration: none;
+
+						// > .amount {
+						// 	font-size: 18px;
+						// 	line-height: 1.2;
+						// }
+
+			    		span.amount {
+			    			position: relative;
+			    			color: #666;
+			    			font-size: 85%;
+			    			font-weight: 300;
+			    			line-height: 1.2;
+
+				    		.amount:before {
+				    			width: 100%;
+								position: absolute;
+								content: "";
+								right: 0;
+								top: 50%;
+								height: 0px;
+								border-bottom: 1px solid #f9423a;
+								opacity: 0.7;
+								transform: rotate(-15deg);			    			
+				    		}		    			
+			    		}					
+					}
+
+			    	ins {
+			    		// margin-left: rem-calc(5);
+			    		color: #f9423a;
+			    		text-decoration: none;
+			    		line-height: 1;
+			    		.amount {
+			    			font-size: 18px;
+			    			line-height: 1.2;
+			    		}
+			    	}
+
+			    	p.stock {
+			    		display: block;
+			    		margin-top: 0px;
+			    		margin-bottom: 0;
+			    		line-height: 1;
+			    	}
+
+				}
+
+
+			}
+
+
+
+		}
+	}
+}

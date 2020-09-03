@@ -1,0 +1,45 @@
+.content-area,
+.blog-content-area,
+.post-content-area {
+	position: relative;
+	z-index: 5;
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+
+	.site-content {
+
+		.content-page-wrapper {
+			.header-has-no-title.header-has-overlap:not(.tax-product_cat) & {
+				padding-top: 0;
+			}			
+		}
+	}
+
+
+	.grid-container {
+		padding-top: rem-calc(60px);
+		padding-bottom: rem-calc(100px);
+
+		@include breakpoint(medium down) {
+			padding-top: 40px;
+			padding-bottom: 60px;
+		}
+		@include breakpoint(small only) {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}		
+	}
+}
+
+
+
+.content-area,
+.blog-content-area,
+.post-content-area,
+.product-content-area {
+	@include breakpoint(medium down) {
+		body[data-footer-reveal="1"] & {
+			margin-bottom: 0 !important;
+		}
+	}
+}

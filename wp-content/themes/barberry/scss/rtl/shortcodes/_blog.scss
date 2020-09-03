@@ -1,0 +1,14 @@
+@include breakpoint(small only) {
+  .related_post_container {
+    .single_related_posts {
+      .related-post.has-post-thumbnail {
+        .related_post_content {
+          padding-left: 0px;
+          padding-right: 20px;        
+        }
+      }
+    }
+  }
+}
+
+

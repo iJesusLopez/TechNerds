@@ -1,0 +1,9 @@
+body.woocommerce-cart {
+	@import "cart/cart-layout";
+	@import "cart/cart-items";
+	@import "cart/cart-action";
+	@import "cart/cart-totals";
+	@import "cart/cart-modals";
+}
+
+@import "cart/cart-freeshipping"; 

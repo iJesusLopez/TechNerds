@@ -1,0 +1,12 @@
+// Product Breadcrumbs
+.breadcrumbs-wrapper {
+	.breadcrumbs {
+		// font-size: 0;
+		span {
+			&:nth-last-child(-n+2),
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+}

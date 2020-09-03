@@ -1,0 +1,183 @@
+.checkout-billing {
+
+	.backto-cart {
+		position: absolute;
+		top: -35px;
+		left: -35px;
+		padding-left: 35px;
+		display: inline-block;
+		font-size: 18px;
+		// line-height: 1.6;
+		color: #000;
+		font-weight: 400;
+		background-image: none !important;
+		transition: transform .3s !important;
+
+		@include breakpoint(1280px down) {
+			left: 0px;
+		}
+
+		@include breakpoint(medium down) {
+			display: none;
+		}
+
+		&:before {
+			position: absolute;
+			left: 0;
+			font-size: 24px;
+			@include barberry_icon('\ea14');
+			transition: transform .3s;
+		}
+
+		&:hover {
+			transform: translateX(-5px);
+			&:before {
+				transform: translateX(-5px);
+			}
+		}		
+	}
+
+	.checkout-links {
+		// margin-top: 5px;
+		float: right;
+		text-align: right;
+
+		@include breakpoint(medium down) {
+			float: none;
+			text-align: left;
+			margin-top: 0;
+			// margin-bottom: 10px;
+		}
+
+		.wc-amazon-checkout-message {
+			display: block;
+			.woocommerce-info {
+				cursor: default;
+				font-size: 0;
+				@include breakpoint(medium down) {
+					// float: left;
+				}
+			}
+
+			@include breakpoint(medium down) {
+				text-align: left;
+				
+			}
+		}
+
+		span {
+			position: relative;
+			display: inline-block;
+			margin-left: 40px;
+			padding-left: 25px;
+
+
+			@include breakpoint(1440px down) {
+				margin-left: 30px;
+			}
+
+			@include breakpoint(1280px down) {
+				display: block;
+				width: auto;
+				float: right;
+				text-align: right;
+				clear: both;
+			}
+
+			@include breakpoint(1024px down) {
+				margin-left: 20px;
+				margin-bottom: 10px;
+				float: none;
+			}			
+
+			@include breakpoint(medium down) {
+				display: inline-block;
+				text-align: left;
+				&:last-child {
+					margin-left: 0px;
+				}
+				
+			}	
+		
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			a {
+				font-size: 22px;
+				font-weight: 600;
+
+				@include breakpoint(large down) {
+					font-size: 20px;
+				}
+
+				@include breakpoint(small only) {
+					font-size: 18px;
+					font-weight: 400;
+				}				
+			}
+
+			&:before {
+				position: absolute;
+				left: 0;
+				top: calc(50% - 10px);
+			}
+
+			&.checkout-coupon-link {
+				&:before {
+					font-size: 16px;
+					@include barberry-icon('\ea09');
+				}				
+			}	
+
+			&.checkout-login-link {
+				&:before {
+					font-size: 16px;
+					@include barberry-icon('\ea0a');
+				}				
+			}	
+
+			&.checkout-gift-link {
+				&:before {
+					font-size: 16px;
+					@include barberry-icon('\ea2f');
+				}				
+			}
+			
+		}
+	}
+
+
+	.woocommerce-billing-fields {
+
+		h3 {
+			display: inline-block;
+			font-size: 50px;
+			@include poly-fluid-sizing('font-size', (1024px:40px, 1280px:44px, 1440px:50px));
+		}
+
+		.woocommerce-billing-fields__field-wrapper {
+			margin-top: 20px;
+			@include breakpoint(medium down) {
+				margin-top: 0;
+			}
+		}
+
+		p.woocommerce-invalid {
+			input,
+			input:-internal-autofill-selected {
+				border-color: #f9423a;
+				background-color: #fff3f2;
+			}
+		}
+		p.woocommerce-validated {
+			input,
+			input:-internal-autofill-selected {
+				border-color: #7fb34d;
+				background-color: #f1f9e9;
+			}
+		}		
+	}
+
+}

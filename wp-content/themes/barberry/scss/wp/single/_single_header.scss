@@ -1,0 +1,70 @@
+.page-header {
+	background-color: #fff;
+
+	.barberry-entry-meta {
+		width: 100%;
+		position: relative;
+		overflow: hidden;		
+
+		ul.entry-meta-list {
+			list-style: none;
+			margin: 0;
+
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				margin-bottom: 0;
+				// font-size: 20px;
+				line-height: 1.4;
+				margin-right: 20px;
+				// color: #333;
+
+				@include breakpoint(small only) {
+					// font-size: 18px;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				span, a {
+					color: #000;
+					// font-size: 20px;
+					line-height: 1.4;
+					// font-style: normal;
+					font-weight: 400;
+					@include breakpoint(small only) {
+						// font-size: 18px;
+					}
+				}
+
+				a {
+					background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+					background-position: left bottom, left bottom;
+					background-repeat: no-repeat, no-repeat;
+					background-size: 0 1px, 100% 1px;
+					transition: none 300ms ease-in-out;
+					transition-property: background-size, color;
+					word-wrap: break-word;
+
+					&:hover {
+					background-size: 100% 1px, 100% 1px;
+					} 					
+				}
+
+				&.post-share {
+					.post-share-container {
+						&:before {
+							font-size: 16px;
+							margin-right: rem-calc(3);
+							@include barberry-icon('\ea0c');
+						}						
+						position: relative;
+					}
+				}
+			}
+		}
+	}
+}
+
+

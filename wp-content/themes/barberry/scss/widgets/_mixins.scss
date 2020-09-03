@@ -1,0 +1,278 @@
+$links_list_item_margin_vertical: rem-calc(4) !default;
+
+@mixin widget() {
+	padding: 0;
+	margin: 0;
+    margin-bottom: rem-calc(60);
+
+    &:last-child {
+    	margin-bottom: 0;
+    }
+
+	.widget-title {
+		@include widget_title();
+	}
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;   	
+    }
+
+	ul
+	{
+		ul
+		{
+			margin: $links_list_item_margin_vertical 0 $links_list_item_margin_vertical rem-calc(16);
+
+			ul
+			{
+				margin: $links_list_item_margin_vertical 0 $links_list_item_margin_vertical rem-calc(16);
+
+				ul
+				{
+					margin: $links_list_item_margin_vertical 0 $links_list_item_margin_vertical rem-calc(16);
+
+					ul
+					{
+						margin: 8px 0 0 !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin widget_products() {
+	li {
+		@include clearfix;
+		min-height: rem-calc(78);
+		padding: 0 0 0 rem-calc(94);
+		margin: rem-calc(20) 0;
+		position: relative;
+		line-height: 1;
+
+		&:first-child {
+			margin: 0 0 rem-calc(16);
+		}		
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		> a {
+			display: block;	
+
+			&:first-child {
+				margin-bottom: rem-calc(4);
+			}					
+		}
+
+		.product-title {
+			padding-top: rem-calc(5);
+			display: block;
+			font-size: 18px;
+			line-height: 1.4;
+			font-weight: 300 !important;
+			@include global-transition();
+
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+
+		img {
+			transition: opacity .3s;
+			float: left;
+			max-width: rem-calc(78);
+			height: auto;
+			margin-left: rem-calc(-94);						
+		}
+
+		.star-rating {
+			display: block;
+			font-size: 10px;
+			margin: rem-calc(3) 0 rem-calc(6);
+		}
+
+		.reviewer {
+			font-size: rem-calc(16);
+		}
+
+		.subscription-details,
+		.from {
+			font-size: rem-calc(14);
+		}
+
+    	.amount {
+	    	font-size: rem-calc(16);
+	    	line-height: 1.2;
+	    	font-weight: 600;
+    	}
+
+    	sup {
+		    font-size: 60%;
+		    font-weight: 400;
+		    line-height: 1.6;
+		    margin-left: 0.1rem;			    		
+    	}
+
+
+    	del {
+    		font-size: 16px;
+    		// text-align: right;
+    		position: relative;
+    		// display: inline;
+    		// width: 100%;
+    		text-decoration: none;
+
+    		.amount {
+    			position: relative;
+    			font-size: 85%;
+    			font-weight: 300;
+    			line-height: 1.4;
+
+	    		span {
+	    			color: #333;
+	    			font-size: 85%;
+	    			font-weight: 300;
+	    		}	    			
+    		}
+
+
+
+    		sup {
+    			font-weight: 300;
+    		}
+				    		
+
+    		.amount:before {
+    			width: 100%;
+				position: absolute;
+				content: "";
+				right: 0;
+				top: 50%;
+				// right: 0;
+				height: 0px;
+				border-bottom: 1px solid #f9423a;
+				opacity: 0.7;
+				transform: rotate(-15deg);			    			
+    		}
+    	}
+
+    	ins {
+    		color: #f9423a;
+    		text-decoration: none;
+    		// display: block;
+    		line-height: 1;
+    		padding: 0;
+    		// width: 100%;
+    		margin-top: -2px;
+    	}
+
+
+    	.woocommerce-Price-currencySymbol {
+    		font-size: 70%;
+    		margin-right: 3px;
+    	}
+
+	}
+}
+
+@mixin widget_search() {
+	
+}
+
+@mixin widget_dropdown() {
+	.screen-reader-text	{
+		display: none;
+	}
+
+}
+
+@mixin widget_links_list() {
+	ul {
+		li {
+			// font-size: 18px;
+			// line-height: 1.8;
+			
+			&:not(:last-child) {
+				margin: 0 0 $links_list_item_margin_vertical;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			a {
+				font-size: 94%;
+				line-height: 1.4;
+				color: #333;
+				&:hover {
+					color: #000;
+				} 				
+			}
+
+			ul {
+				margin-top: $links_list_item_margin_vertical;
+				margin-bottom: 0;
+			}
+
+		}
+	}
+}
+
+@mixin widget_title() {
+	line-height: $global-lineheight;
+	margin-bottom: rem-calc(25);
+	font-weight: 400;
+	a {
+		img	{
+			display: none;
+		}
+	}
+}
+
+@mixin widget_layered_nav_checkbox {
+
+	display: flex;
+	align-items: center;
+	position: relative;
+	
+	a {
+		line-height: rem-calc(18); 
+
+		&:before {
+			display: inline-block;
+			content: "";
+			width: 10px;
+			height: 10px;
+			margin-right: 10px;
+			border: 1px solid;
+			transition: background .3s;
+		}
+	}
+
+	&.chosen {
+		a {
+			&:before {
+				//background: #ff0000;
+				//border-color: #ff0000;
+			}
+		}
+	}
+	
+	&:not(.chosen) {
+		a {
+			&:before {
+				//border-color: #ccc;
+			}
+
+			&:hover	{
+				&:before {
+					//background: #ccc;
+				}
+			}
+		}
+	}
+}

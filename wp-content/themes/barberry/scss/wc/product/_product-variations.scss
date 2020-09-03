@@ -1,0 +1,649 @@
+form.variations_form {
+	table {
+		border: none;
+		tbody {
+			border: none;
+
+			tr {
+				border: none;
+				background-color: transparent;
+
+
+				td {
+					vertical-align: middle;
+					padding: 0;
+					padding-bottom: 15px;
+
+					@include breakpoint(320px down) {
+						display: block;
+					}
+
+					@include breakpoint(small only) {
+						&:first-child {
+							// max-width: 100px;
+						}
+					}
+
+					&.label {
+						background: transparent;
+						label {
+							padding: 17px 30px 16px 0;
+							font-size: 18px;
+
+							&:after {
+								content: ":";
+								margin-left: 2px;								
+							}
+
+							@include breakpoint(small only) {
+								padding-right: 20px;
+							}
+							@include breakpoint(320px down) {
+								padding: 0;
+
+							}
+						}
+					}
+
+					&.value {
+						vertical-align: middle;
+						position: relative;
+						padding-left: 5px;
+						width: 100%;
+
+						@include breakpoint(small only) {
+							padding-right: 0;
+						}
+						@include breakpoint(320px down) {
+							padding-left: 0;
+						}
+
+						.reset_variations {
+							display: inline-block !important;
+						    position: relative;
+						    padding-left: 20px;
+						    margin-left: 10px;
+						    vertical-align: middle;
+						    font-weight: 400;
+						    font-size: rem-calc(11);
+						    line-height: rem-calc(11);
+						    color: inherit;
+						    text-transform: uppercase;
+
+						    
+							@include breakpoint(small only) {
+								margin-left: 0;
+								display: block !important;								
+								margin-top: 20px;
+								position: relative;
+							}
+
+						    &:hover {
+						    	opacity: .6;
+						    }
+
+							&:before {
+								position: absolute;
+								left: 0;
+								top: -4px;
+								width: 10px;
+								height: 10px;
+								font-size: 16px;
+							    @include barberry-icon('\ea2a');
+							}						    
+						}						
+
+						.select2 {
+							display: inline-block;
+							max-width: 75%;
+							border-color: #000;
+							@include breakpoint(small only) {
+								max-width: rem-calc(250);
+							}
+							@include breakpoint(320px down) {
+								margin-top: 10px;
+							}
+
+							.select2-selection__placeholder {
+							    color: #000 !important;
+							}							
+						}
+
+						.tawcvs-swatches {
+							max-width: 75%;
+							display: inline-block;
+							overflow: visible;
+							padding: 5px 0 5px 0;
+
+							@include breakpoint(small only) {
+								max-width: 100%;
+							}
+
+							span {
+								width: 22px;
+								height: 22px;
+								line-height: 1;
+								margin-right: 17px;
+								opacity: 1;
+								border: none;
+
+								&:hover {
+									@include transform(scale(1.4));
+								}
+
+								&.selected {
+									@include transform(scale(1.4));
+									@include box-shadow(none);
+
+									&:before {
+										margin: 0;
+										z-index: 4;
+									    @include transform(none);
+									    background-color: #fff;
+										border: none;
+										border-radius: 50%;
+										position: absolute;
+										top: 50%;
+										left: 50%;
+										transform: translate(-50%, -50%);
+										content: '';
+										width: 6px;
+										height: 6px;
+										opacity: 1;
+										transition: all .3s;
+									}									
+								}
+
+								&.swatch-image {
+									width: 34px;
+									height: 34px;
+									font-size: 0;									
+								}
+
+								&.swatch-label {
+									width: auto;
+									height: auto;
+									margin-right: 8px;
+									margin-bottom: 6px;
+									padding: 8px 10px 7px;
+									border-radius: 0;
+									font-size: 16px;
+									line-height: 1;
+									display: inline-block;
+									border: 1px solid #000;
+									background-color: #fff;
+									color: #000;
+
+									.swatch__tooltip {
+										display: none;
+									}
+
+									&:before {
+										display: none;
+									}
+									&:hover,
+									&.selected {
+										color: #fff;
+										background-color: #000;
+										border: 1px solid rgba(0, 0, 0, 1);
+										@include transform(none);
+									}
+
+									&.out-of {
+										cursor: not-allowed;
+										pointer-events: none;
+										// background: rgba(0,0,0,0.05);
+										color: #999;
+										border-color:  rgba(0,0,0,0.1);
+
+									}
+
+								}
+							}
+
+							.swatch__tooltip {
+								width: auto;
+								max-width: 15rem;
+								margin: 0;
+								// padding: 8px 9px 18px 9px;
+								padding-top: 7px;
+								transition: all .3s ease; 
+								font-size: 11px;   
+								font-weight: 400;     
+								line-height: 11px;		
+								border-radius: 0;						
+								background-color: #000;
+								position: absolute;
+								top: -32px;
+								bottom: auto;
+								right: auto;
+								left: 50%;	
+								transform: translate3d(-50%, 0, 0);	
+
+						        @include breakpoint(large) {
+						          animation: shop_tooltip_hover_out .3s;
+						        }														
+
+								&:after {
+						            position: absolute;
+						            bottom: -16px;
+						            right: auto;
+						            left: 50%;
+						            margin-left: 0;
+						            transform: translate3d(-50%, 0, 0);
+						            content: '';
+						            width: 0;
+						            height: 0;
+						            border-style: solid;
+						            border-width: 10px;
+						            border-color: transparent transparent transparent;
+						            border-top-color: #0a0a0a;		
+						            background: transparent;							
+								}
+							}
+
+							.swatch:hover {
+								.swatch__tooltip {
+						          @include breakpoint(large)
+						          {
+						            animation: shop_tooltip_hover_in .3s;
+						            animation-fill-mode: forwards;
+						            visibility: visible;
+						          }									
+								}
+							}
+
+
+						}
+
+					}
+				}
+
+				&:last-child {
+					td {
+						padding-bottom: 0;
+					}
+					
+				}
+			}
+		}
+	}
+
+	.select2 {
+		margin-bottom: 0;
+	}
+
+	.single_variation_wrap {
+		.woocommerce-variation-description {
+			p {
+				font-size: 18px;
+			}
+			
+		}
+
+		.woocommerce-variation-price {
+			.price {
+
+				.amount {
+					font-size: 30px;
+				}
+
+				del {
+
+		    		span.amount {
+		    			font-size: 95%;		    			
+		    		}	
+		    		.woocommerce-Price-amount:before {
+		    			width: 100%;
+						position: absolute;
+						content: "";
+						right: 0;
+						top: 50%;
+						height: 0px;
+						border-bottom: 1px solid #f9423a;
+						opacity: 0.7;
+						transform: rotate(-15deg);			    			
+		    		}			    						
+				}
+
+		    	ins {
+		    		
+		    		margin-left: rem-calc(5);
+		    		color: #f9423a;
+		    		text-decoration: none;
+		    		line-height: 1;
+		    	}
+
+			}
+		}
+
+		.woocommerce-variation-availability {
+			margin-bottom: 20px;
+			p {
+				font-size: 16px;
+				font-weight: 400;
+				margin: 0;
+				&.in-stock {
+					color: #85ab69;
+				}
+				&.out-of-stock {
+					color: #da4343;
+				}
+			}
+
+			.barberry-single-product-stock {
+				margin-top: 0;
+				.stock-sold,
+				.barberry-product-stock-progress {
+					display: none;
+				}
+				.in-stock {
+					position: relative;
+					display: block;
+					&:before {
+						background-color: #85ab69;
+					    content: "";
+					    width: 7px;
+					    height: 7px;
+					    margin-right: 0.5rem;
+					    margin-bottom: 0.1rem;
+					    display: inline-block;
+					    -webkit-border-radius: 50%;
+					    border-radius: 50%
+					}					
+				}
+			}
+		}
+
+	}	
+}
+
+.select2-results__option:last-of-type {
+    padding-bottom: 0;
+}
+
+
+
+.woocommerce-variation {
+	@include breakpoint(530px down) {
+		text-align: center;
+	}
+}
+
+.woocommerce-variation-add-to-cart {
+	display: inline-block;
+	@include breakpoint(530px down) {
+		    justify-content: center;
+	}
+
+	.barberry-buy-now {
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+
+	&.woocommerce-variation-add-to-cart-disabled {
+
+		.barberry-buy-now {
+			margin-left: -8px;
+			cursor: not-allowed;
+            border-width: 1px;
+            border-color: #e1e1e1;
+            background-color: #fff;
+            color: #000;  
+            opacity: 0.25;
+            @include transition(opacity 0.3s);
+
+
+            &:before {
+                display: none;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }  			
+		}
+
+		.button {
+			&:hover {
+				opacity: 0.25;
+			}
+		}		
+	}
+}
+
+.woocommerce-variation-add-to-cart.woocommerce-variation-add-to-cart-disabled .button:hover {
+	opacity: 0.25 !important;
+}
+
+#wc-stripe-payment-request-wrapper {
+	width: 100%;
+	clear: none !important;
+	display: inline-block;
+}
+
+.product_summary_bottom_inner {
+	padding-top: rem-calc(30);
+	@include breakpoint(530px down) {
+		text-align: center;
+	}
+
+	small {
+		font-size: rem-calc(16);		
+	}
+
+	.dokan-report-abuse-button {
+		display: inline-block;
+		font-weight: 400;
+		padding-left: rem-calc(24); 
+		font-size: rem-calc(16);
+		line-height: rem-calc(16);	
+		position: relative;	
+		i {
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			top: -2px;
+			left: 0;
+			&:before {
+				@include barberry-icon('\ea47');
+				font-size: rem-calc(16);  
+			}
+		}
+
+		&.working {
+			i {
+				@include loader(16px, 16px);
+				&:before {
+					display: none;
+				}
+				&:after {
+					border-top-color: #000;
+					z-index: 4;
+					position: absolute;
+				    top: -2px;
+				    left: 0;
+				}				
+			}
+		}
+	}
+
+	.yith-wcwl-add-to-wishlist {
+		display: inline-block;
+		margin-top: 0;
+		margin-right: rem-calc(20);
+
+		& .clear, &+.clear {
+		    display: none;
+		}			
+
+		.yith-wcwl-add-button {
+
+				.blockUI {
+					display: none !important;
+				}
+
+				> img {
+					display: none !important;
+				}
+				.add_to_wishlist {
+					position: relative;
+					font-weight: 400;
+					font-size: rem-calc(16);
+					line-height: rem-calc(16);  
+					padding-left: rem-calc(24); 
+					display: flex;
+					align-items: center; 
+
+					.yith-wcwl-icon {
+						display: none;
+					}
+					
+					&:before {
+						opacity: 1;
+						@include barberry-icon('\ea06');
+						margin-right: rem-calc(8);
+						font-size: rem-calc(16);  
+						position: absolute;
+					    top: -2px;
+					    left: 0;
+					}
+
+					&:hover {
+						&:before {
+							animation: beat .6s ease-in-out infinite;
+						}
+					}
+				}
+
+				&.loading {
+					.add_to_wishlist {
+						@include loader(16px, 16px);
+						&:after {
+							border-top-color: #000;
+							z-index: 4;
+							position: absolute;
+						    top: -2px;
+						    left: 0;
+						}						
+						&:before {
+							opacity: 0;
+						}
+					}					
+				}				
+
+		}
+	}
+
+	.yith-wcwl-wishlistaddedbrowse,
+	.yith-wcwl-wishlistexistsbrowse {
+		display: flex;
+		align-items: center;
+
+		span.feedback {
+			display: none;
+		}
+
+		a {
+			position: relative;
+			font-weight: 400;
+			font-size: rem-calc(16);
+			line-height: rem-calc(16);  
+			padding-left: rem-calc(24); 
+			display: flex;
+			align-items: center; 
+			
+			&:before {
+				opacity: 1;
+				@include barberry-icon('\ea05');
+				margin-right: rem-calc(8);
+				font-size: rem-calc(16);  
+				position: absolute;
+			    top: -2px;
+			    left: 0;
+			}
+
+			&:hover {
+				&:before {
+					animation: beat .6s ease-in-out infinite;
+				}
+			}
+		}
+
+	}
+
+	// Yith Compare
+
+	.compare-btn {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		margin-right: rem-calc(15);
+
+		a.compare-link {
+			position: relative;
+			font-weight: 400;
+			font-size: rem-calc(16);
+			line-height: rem-calc(16);  
+			padding-left: rem-calc(24); 
+			display: flex;
+			align-items: center; 
+
+			.blockUI {
+				display: none !important;
+			}
+
+			&:before {
+				opacity: 1;
+				@include barberry-icon('\ea41');
+				margin-right: rem-calc(8);
+				font-size: rem-calc(16);  
+				position: absolute;
+			    top: -2px;
+			    left: 0;
+			}
+
+			&:hover {
+				&:before {
+					animation: rotateIn .6s ease-in-out infinite;
+				}
+			}	
+
+			&.loading {
+				@include loader(16px, 16px);
+				&:after {
+					border-top-color: #000;
+					z-index: 4;
+					position: absolute;
+				    top: -2px;
+				    left: 0;
+				}						
+				&:before {
+					opacity: 0;
+				}
+				&.added {
+					&:after {
+						display: none;
+					}
+					&:before {
+						opacity: 1;
+					}					
+				}				
+			}					
+		}
+	}
+
+}
+
+.single_variation_wrap {
+	.woocommerce-variation {
+		.woocommerce-variation-price {
+			.price {
+				.subscription-details,
+				.subscription-details .amount {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

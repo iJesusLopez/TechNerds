@@ -1,0 +1,37 @@
+body.woocommerce-order-received {
+	.account-cells {
+
+
+		.account-content-failed {
+
+			h1 {
+
+				&:before {
+					left: auto;
+					right: calc(50% - 40px);
+					
+					@include breakpoint(medium down) {
+						left: auto;
+						right: calc(50% - 30px);
+					}
+				}
+
+			}
+
+			.woocommerce-thankyou-order-failed-actions {
+
+				a {
+					margin-right: 5px;
+					&:first-child {
+						margin-right: 0;
+					}
+
+					@include breakpoint(500px down) {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+	}
+}

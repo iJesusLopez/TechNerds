@@ -1,0 +1,315 @@
+.page-header {
+	display: none;
+
+	@include breakpoint(768px down) {
+		// display: block;
+	}
+
+	.page-header-bg {
+		background: transparent;
+		background-color: transparent;
+	}
+}
+
+.content-page-wrapper {
+	padding: 0;
+}
+
+.account-cells {
+
+	.cell {
+		@include poly-fluid-sizing('padding-left', (1024px:40px, 1920px:130px));
+		@include poly-fluid-sizing('padding-right', (1024px:40px, 1920px:130px));
+		@include poly-fluid-sizing('padding-bottom', (1024px:50px, 1920px:130px));
+
+		@include breakpoint(medium down) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+	}
+
+	.account-intro {
+		background: #f4f4f4;
+		min-height: 100vh;
+
+		@include breakpoint(medium down) {
+			background-color: #fff;
+			min-height: auto;
+			padding-bottom: 0;
+		}
+
+		.account-intro-wrapper {
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+
+		    -webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		    justify-content: space-between;			
+			// padding-top: 9.375vw;
+			height: 100%;			
+		}
+
+		.account-nav-top {
+			@include breakpoint(medium down) {
+				background: #f4f4f4;
+			}
+		}
+
+
+		.account-nav-bottom {
+
+			@include breakpoint(medium down) {
+				background: #f4f4f4;
+			
+			}
+
+			a {
+				@include breakpoint(medium down) {
+					display: block;
+					padding-top: 10px;
+					margin: 0 auto;	
+					margin-bottom: rem-calc(40);
+
+					&:after {
+						position: absolute;
+						top: calc(50% - 6px);
+						right: 0;
+						font-size: 12px;
+						@include barberry-icon('\ea11');
+
+						@include breakpoint(medium down) {
+							@include poly-fluid-sizing('right', (768px:25px, 1024px:40px));
+						}						
+					}								
+				}				
+			}
+		}	
+	}
+
+	.account-content {
+		@include poly-fluid-sizing('padding-left', (1024px:40px, 1920px:150px));
+		@include poly-fluid-sizing('padding-right', (1024px:40px, 1920px:150px));
+
+		@include breakpoint(medium down) {
+			padding-top: 0 !important;
+		}
+
+		@include breakpoint(small only) {
+			@include poly-fluid-sizing('padding-left', (768px:20px, 1024px:40px));
+			@include poly-fluid-sizing('padding-right', (768px:20px, 1024px:40px));
+		}
+
+		.woocommerce-MyAccount-content {
+			padding-top: rem-calc(60);
+
+			.subscription_details {
+				tbody {
+					tr {
+
+						td {
+							padding: rem-calc(10) 0;
+							&:first-child {
+								font-weight: 500;
+							}
+						}
+
+						&:last-child {
+							td {
+								padding-top: rem-calc(20);
+							}
+						}
+					}
+				}
+			}
+
+			.woocommerce-message:nth-child(2) {
+				display: none;
+			}
+
+			.woocommerce-pagination {
+				.woocommerce-button--next {
+					float: right;
+				}				
+				.woocommerce-button--previous {
+					float: left;
+				}
+			}
+
+			.wishlist-wrapper {
+				.cell {
+					padding: 0;
+					width: 100%;
+					margin-left: 0;
+				}
+			}
+
+			.account-no-orders {
+				p {
+					font-size: 18px;
+					display: inline-block;
+				}
+			}
+				
+			.wishlist-title h2,
+			h2 {
+				padding: 0;
+				font-size: rem-calc(40);
+				margin-bottom: rem-calc(40);
+
+				@include breakpoint(1280px down) {
+					font-size: rem-calc(36);
+					margin-bottom: rem-calc(30);
+				}
+
+				&.woocommerce-addresses__title {
+					margin-bottom: 0;
+				}
+			}
+
+			.addresses-grid {
+				margin-top: rem-calc(50);
+				.cell {
+					padding: 0;
+					h3 {
+						font-size: rem-calc(26);
+					}
+					address {
+						font-size: rem-calc(20);
+						line-height: 1.4;
+						margin-bottom: rem-calc(20);
+					}
+
+					@include breakpoint(small only) {
+						margin-bottom: rem-calc(40);
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+
+			.dashboard-sections {
+
+				.account-orders-table {
+					@include poly-fluid-sizing('margin-top', (768px:60px, 1440px:100px));
+				}
+
+				.dashboard-intro {
+					@include poly-fluid-sizing('font-size', (768px:26px, 1024px:30px, 1440px:34px));
+					line-height: 1.4;
+					font-weight: 300;
+					// @include poly-fluid-sizing('padding-bottom', (768px:60px, 1440px:100px));
+
+					a {
+						@include poly-fluid-sizing('font-size', (768px:26px, 1024px:30px, 1440px:34px));
+						line-height: 1.4;
+						font-weight: normal;
+						color: #000;
+						background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+						background-position: left bottom, left bottom;
+						background-repeat: no-repeat, no-repeat;
+						background-size: 0 1px, 100% 1px;
+						transition: none 300ms ease-in-out;
+						transition-property: background-size, color;
+						word-wrap: break-word;
+
+						&:hover {
+						background-size: 100% 1px, 100% 1px;
+						} 						
+					}
+				}
+
+				> p {
+					margin-top: 30px;
+					margin-bottom: 30px;
+				}
+
+				h2 {
+					display: none;
+				}
+
+				.account-no-orders {
+					p {
+						font-size: 18px;
+						display: inline-block;
+					}
+				}
+
+				.addresses-grid {
+					@include poly-fluid-sizing('padding-bottom', (768px:40px, 1024px:60px, 1440px:100px));
+					margin-top: 0;
+
+					.cell {
+						h3 {
+							@include poly-fluid-sizing('font-size', (768px:26px, 1024px:30px, 1440px:40px));
+						}
+					}
+				}
+				table {
+					// margin-top: rem-calc(80);
+					margin-bottom: 0;
+				}
+			}
+
+			.woocommerce-address-fields {
+				button {
+					margin-top: rem-calc(20);
+				}
+			}
+
+			.edit-account {
+				p.woocommerce-form-row {
+					span {
+						em {
+							display: block;
+							color: #666;
+							font-size: 16px;
+							font-style: normal;
+							line-height: 1.2;	
+							margin-bottom: rem-calc(10);						
+						}
+					}
+				}
+
+				fieldset,
+				.fieldset {
+					margin-top: rem-calc(40);
+					legend {
+						font-size: rem-calc(30);
+						line-height: 1.4;
+					}
+				}	
+
+				button {
+					margin-top: rem-calc(20);
+				}
+			}
+
+			.dokan-account-migration-lists {
+				li {
+					font-size: 18px;
+
+					p {
+						font-size: 18px;
+						strong {
+							font-size: 22px;
+							font-weight: 600;
+						}
+					}
+					.btn {
+						font-size: 18px;
+						line-height: 1.4;						
+					}
+				}
+			}
+
+		}
+	}
+
+}
+

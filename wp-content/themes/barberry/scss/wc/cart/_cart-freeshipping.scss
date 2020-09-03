@@ -1,0 +1,85 @@
+// WooCommerce_Advanced_Free_Shipping
+
+.barberry-total-condition-wrap {
+
+	.barberry-total-condition {
+		width: 100%;
+		position: relative;
+		background: #EDEDED;
+		height: 3px;
+		line-height: 3px;
+		font-size: 60%;
+		margin-top: rem-calc(40);	
+		margin-bottom: rem-calc(30);
+
+		.barberry-total-condition-hin {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 0;
+			line-height: inherit;
+			color: #555555;
+			text-align: center;
+			font-weight: 600;
+			-webkit-transition: width 500ms ease;
+			-moz-transition: width 500ms ease;
+			-o-transition: width 500ms ease;
+			transition: width 500ms ease;	
+
+			span {
+				font-size: 18px;
+				color: #F9423A;
+				padding: 0 10px;
+				background-color: #fff;
+				z-index: 9999;
+				height: 3px;
+				display: inline-block;
+				position: absolute;
+				right: -25px;
+				top: 0;
+			}					
+		}
+
+		.barberry-subtotal-condition {
+			position: relative;
+			background: linear-gradient(325.12deg, #F9423A 0, #F1E04D 100%);
+    		background-color: #F9423A;
+			z-index: 1;
+			color: #FFF;
+			line-height: inherit;
+			width: 2px;
+			height: 100%;
+			overflow: hidden;
+			text-align: center;
+			font-weight: 600;
+			-webkit-transition: width 500ms ease;
+			-moz-transition: width 500ms ease;
+			-o-transition: width 500ms ease;
+			transition: width 500ms ease;			
+		}
+	}
+	
+
+	.barberry-total-condition-desc {
+    	margin: 15px auto 30px auto;
+    	font-size: 16px;
+    	line-height: 1.6;
+    	strong {
+    		font-weight: 600;
+    	}	
+
+    	.backtoshoplink {
+    		margin-left: 10px;
+    		display: inline-block;
+    		position: relative;
+    		font-size: 16px;
+    		line-height: 1.6;
+    		font-weight: 600;
+
+			&:hover {
+				opacity: 0.5;
+			}    		
+    	}
+	}
+}

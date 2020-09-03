@@ -1,0 +1,91 @@
+.topbar {
+	position: relative;
+	z-index: 6;
+	width: 100%;
+	border-bottom: 1px solid;
+
+	@include breakpoint(medium down) {
+		display: none;
+	}
+
+	.topbar-sections {
+		height: 50px;
+
+
+		.topbar-left,
+		.topbar-right {
+
+			.topbar-socials {
+				margin-right: rem-calc(15);
+				display: inline-block;
+				.social-icons {
+					margin-bottom: 0;
+					li {
+						opacity:1;
+						margin-right: rem-calc(15);
+						margin-bottom: 0;
+
+						a {
+							width: 18px;
+							height: 18px;		
+							svg {
+								margin-top: -2px;
+								width: 18px;
+								height: 18px;									
+							}					
+						}
+					}
+				}
+			}
+
+			.topbar-contact {
+				font-size: 16px;
+				line-height: 16px;
+				display: inline-block;
+				strong {
+					font-weight: 600;
+				}
+			}
+		}
+
+		.topbar-right {
+			text-align: right;
+			.topbar-socials {
+				margin-right: 0;
+				margin-left: rem-calc(15);
+				.social-icons {
+					li {
+						margin-right: 0;
+						margin-left: rem-calc(15);
+					}					
+				}
+
+			}
+
+			.topbar-wpml {
+				display: inline-block;
+				vertical-align: middle;
+
+				.language_currency_switcher {
+
+					.language_switcher,
+					.currency_switcher {
+						> span {
+							@include breakpoint(1200px down) {
+								display: none;
+							}
+						}
+						&.intro-text-off {
+							.intro-text {
+								display: none;
+							}
+						}						
+					}
+
+
+				}
+			}
+		}
+
+	}
+}

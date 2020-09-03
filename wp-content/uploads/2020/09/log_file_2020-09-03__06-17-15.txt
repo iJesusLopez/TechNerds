@@ -1,0 +1,65 @@
+
+---Downloaded files---
+The import files for: Default were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost:8080/TechNerds
+Data file = C:\wamp64\www\TechNerds/wp-content/themes/barberry/inc/demo/barberry.wordpress.xml
+Widget file = C:\wamp64\www\TechNerds/wp-content/themes/barberry/inc/demo/barberry.widgets.wie
+Customizer file = C:\wamp64\www\TechNerds/wp-content/themes/barberry/inc/demo/barberry.export.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+[WARNING] Failed to import action-group wc_update_product_lookup_tables
+[WARNING] Failed to import action-group woocommerce-db-updates
+
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Widget already exists
+Recent Posts - No Title - Imported
+Categories - No Title - Imported
+Archives - No Title - Imported
+Meta - No Title - Imported
+
+Shop Sidebar : 
+
+Product Categories - No Title - Imported
+Filter Products by Price - Filter by price - Imported
+Barberry Attributes Filter - Filter by color - Imported
+Products - Recent Products - Imported
+Product Tag Cloud - Product tags - Imported
+
+Shop Filters : 
+
+Filter Products by Price - Filter by price - Imported
+Barberry Attributes Filter - Filter by size - Imported
+Barberry Attributes Filter - Filter by material - Imported
+Barberry Attributes Filter - Filter by color - Imported
+
+Footer 1 : 
+
+Navigation Menu - No Title - Imported
+
+Footer 2 : 
+
+Navigation Menu - No Title - Imported
+
+Footer 3 : 
+
+Navigation Menu - No Title - Imported
+
+Footer 4 : 
+
+Text - Newsletter Widget - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+

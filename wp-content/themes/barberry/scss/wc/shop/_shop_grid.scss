@@ -1,0 +1,262 @@
+ul.products {
+	list-style: none;
+	@include xy-grid('horizontal');
+
+    &.columns-2,
+    &.columns-2 .flickity-slider {
+        @include xy-grid-layout(2, '.product', true, 100, 'padding',  left right bottom  );
+        @include xy-gutters(100, 'padding', $negative:true); 
+
+        @include breakpoint(1280px down) {
+            @include xy-grid-layout(2, '.product', true, 65, 'padding',  left right bottom  );
+            @include xy-gutters(65, 'padding', $negative:true); 
+        } 
+
+        @include breakpoint(667px down) {
+            @include xy-grid-layout(2, '.product', true, 40, 'padding',  left right bottom  );
+            @include xy-gutters(40, 'padding', $negative:true);    
+        }  
+
+        @include breakpoint(small only) {
+            @include xy-grid-layout(2, '.product', true, 25, 'padding',  left right bottom  );
+            @include xy-gutters(25, 'padding', $negative:true);         
+        }
+    }
+
+    &.columns-3,
+    &.columns-3 .flickity-slider {
+        @include xy-grid-layout(3, '.product', true, 100, 'padding',  left right bottom  );
+        @include xy-gutters(100, 'padding', $negative:true); 
+
+        @include breakpoint(1280px down) {
+            @include xy-grid-layout(3, '.product', true, 70, 'padding',  left right bottom  );
+            @include xy-gutters(70, 'padding', $negative:true); 
+        } 
+
+        @include breakpoint(medium down) {
+            @include xy-grid-layout(3, '.product', true, 50, 'padding',  left right bottom  );
+            @include xy-gutters(50, 'padding', $negative:true);                     
+        }
+
+        @include breakpoint(667px down) {
+            @include xy-grid-layout(3, '.product', true, 30, 'padding',  left right bottom  );
+            @include xy-gutters(30, 'padding', $negative:true);                
+        }
+
+        @include breakpoint(small only) {
+            @include xy-grid-layout(2, '.product', true, 25, 'padding',  left right bottom  );
+            @include xy-gutters(25, 'padding', $negative:true);                      
+        }
+
+    }
+
+	&.columns-4,
+    &.columns-4 .flickity-slider {
+        @include xy-grid-layout(4, '.product', true, 60, 'padding',  left right bottom  );
+        @include xy-gutters(60, 'padding', $negative:true); 
+
+        @include breakpoint(1280px down) {
+            @include xy-grid-layout(4, '.product', true, 50, 'padding',  left right bottom  );
+            @include xy-gutters(50, 'padding', $negative:true); 
+        } 
+
+        @include breakpoint(medium down) {
+            @include xy-grid-layout(3, '.product', true, 40, 'padding',  left right bottom  );
+            @include xy-gutters(40, 'padding', $negative:true);         
+        }
+
+        @include breakpoint(667px down) {
+            @include xy-grid-layout(3, '.product', true, 30, 'padding',  left right bottom );
+            @include xy-gutters(30, 'padding', $negative:true);    
+        }
+
+        @include breakpoint(small only) {
+            @include xy-grid-layout(2, '.product', true, 25, 'padding',  left right bottom  );
+            @include xy-gutters(25, 'padding', $negative:true);         
+        }
+	}
+
+    &.columns-5,
+    &.columns-5 .flickity-slider {
+        @include xy-grid-layout(5, '.product', true, 50, 'padding',  left right bottom  );
+        @include xy-gutters(50, 'padding', $negative:true); 
+
+        @include breakpoint(1280px down) {
+            @include xy-grid-layout(4, '.product', true, 40, 'padding',  left right bottom  );
+            @include xy-gutters(40, 'padding', $negative:true); 
+        } 
+
+        @include breakpoint(medium down) {
+            @include xy-grid-layout(3, '.product', true, 40, 'padding',  left right bottom  );
+            @include xy-gutters(40, 'padding', $negative:true);         
+        }
+
+        @include breakpoint(667px down) {
+            @include xy-grid-layout(3, '.product', true, 30, 'padding',  left right bottom );
+            @include xy-gutters(30, 'padding', $negative:true);    
+        }
+
+        @include breakpoint(small only) {
+            @include xy-grid-layout(2, '.product', true, 25, 'padding',  left right bottom  );
+            @include xy-gutters(25, 'padding', $negative:true);         
+        }   
+    }
+
+    &.columns-6,
+    &.columns-6 .flickity-slider {
+        @include xy-grid-layout(6, '.product', true, 50, 'padding',  left right bottom  );
+        @include xy-gutters(50, 'padding', $negative:true); 
+
+        @include breakpoint(1280px down) {
+            @include xy-grid-layout(5, '.product', true, 40, 'padding',  left right bottom  );
+            @include xy-gutters(40, 'padding', $negative:true); 
+        } 
+
+        @include breakpoint(medium down) {
+            @include xy-grid-layout(3, '.product', true, 40, 'padding',  left right bottom  );
+            @include xy-gutters(40, 'padding', $negative:true);         
+        }
+
+        @include breakpoint(667px down) {
+            @include xy-grid-layout(3, '.product', true, 30, 'padding',  left right bottom );
+            @include xy-gutters(30, 'padding', $negative:true);    
+        }
+
+        @include breakpoint(small only) {
+            @include xy-grid-layout(2, '.product', true, 25, 'padding',  left right bottom  );
+            @include xy-gutters(25, 'padding', $negative:true);         
+        }   
+    }
+
+}
+
+
+.search-results-inner {
+    list-style: none;
+    @include xy-grid('horizontal');
+
+        @include xy-grid-layout(6, '.autocomplete-suggestion', true, 50, 'padding',  left right bottom  );
+        @include xy-gutters(50, 'padding', $negative:true); 
+
+        @include breakpoint(1280px down) {
+            @include xy-grid-layout(5, '.autocomplete-suggestion', true, 40, 'padding',  left right bottom  );
+            @include xy-gutters(40, 'padding', $negative:true); 
+        } 
+
+        @include breakpoint(medium down) {
+            @include xy-grid-layout(3, '.autocomplete-suggestion', true, 40, 'padding',  left right bottom  );
+            @include xy-gutters(40, 'padding', $negative:true);         
+        }
+
+        @include breakpoint(667px down) {
+            @include xy-grid-layout(3, '.autocomplete-suggestion', true, 30, 'padding',  left right bottom );
+            @include xy-gutters(30, 'padding', $negative:true);    
+        }
+
+        @include breakpoint(small only) {
+            @include xy-grid-layout(2, '.autocomplete-suggestion', true, 25, 'padding',  left right bottom  );
+            @include xy-gutters(25, 'padding', $negative:true);         
+        }   
+
+}
+
+.site-content.woocommerce-sidebar-active {
+
+    ul.products {
+
+        &.columns-2 {
+            @include xy-grid-layout(2, '.product', true, 80, 'padding',  left right bottom  );
+            @include xy-gutters(80, 'padding', $negative:true); 
+
+            @include breakpoint(1280px down) {
+                @include xy-grid-layout(2, '.product', true, 60, 'padding',  left right bottom  );
+                @include xy-gutters(60, 'padding', $negative:true); 
+            }   
+
+             @include breakpoint(667px down) {
+                @include xy-grid-layout(2, '.product', true, 40, 'padding',  left right bottom  );
+                @include xy-gutters(40, 'padding', $negative:true);    
+            }   
+
+            @include breakpoint(small only) {
+                @include xy-grid-layout(2, '.product', true, 25, 'padding',  left right bottom  );
+                @include xy-gutters(25, 'padding', $negative:true);         
+            } 
+        }
+
+        &.columns-3 {
+            @include xy-grid-layout(3, '.product', true, 70, 'padding',  left right bottom  );
+            @include xy-gutters(70, 'padding', $negative:true);  
+
+            @include breakpoint(1280px down) {
+                @include xy-grid-layout(3, '.product', true, 50, 'padding',  left right bottom  );
+                @include xy-gutters(50, 'padding', $negative:true); 
+            } 
+
+            @include breakpoint(medium down) {
+                @include xy-grid-layout(3, '.product', true, 50, 'padding',  left right bottom  );
+                @include xy-gutters(50, 'padding', $negative:true);         
+            }
+
+            @include breakpoint(667px down) {
+                @include xy-grid-layout(3, '.product', true, 30, 'padding',  left right bottom  );
+                @include xy-gutters(30, 'padding', $negative:true);    
+            } 
+            
+            @include breakpoint(small only) {
+                @include xy-grid-layout(2, '.product', true, 25, 'padding',  left right bottom  );
+                @include xy-gutters(25, 'padding', $negative:true);         
+            } 
+        }
+
+        &.columns-4 {
+            @include xy-grid-layout(4, '.product', true, 50, 'padding',  left right bottom  );
+            @include xy-gutters(50, 'padding', $negative:true);     
+
+            @include breakpoint(1440px down) {
+                @include xy-grid-layout(3, '.product', true, 50, 'padding',  left right bottom  );
+                @include xy-gutters(50, 'padding', $negative:true); 
+            } 
+
+            @include breakpoint(medium down) {
+                @include xy-grid-layout(3, '.product', true, 50, 'padding',  left right bottom  );
+                @include xy-gutters(50, 'padding', $negative:true);         
+            }
+
+            @include breakpoint(667px down) {
+                @include xy-grid-layout(3, '.product', true, 30, 'padding',  left right bottom  );
+                @include xy-gutters(30, 'padding', $negative:true);    
+            } 
+            
+            @include breakpoint(small only) {
+                @include xy-grid-layout(2, '.product', true, 25, 'padding',  left right bottom  );
+                @include xy-gutters(25, 'padding', $negative:true);         
+            } 
+        }
+
+        &.columns-5 {
+            @include xy-grid-layout(4, '.product', true, 50, 'padding',  left right bottom  );
+            @include xy-gutters(50, 'padding', $negative:true);     
+
+            @include breakpoint(1440px down) {
+                @include xy-grid-layout(3, '.product', true, 50, 'padding',  left right bottom  );
+                @include xy-gutters(50, 'padding', $negative:true); 
+            } 
+
+            @include breakpoint(medium down) {
+                @include xy-grid-layout(3, '.product', true, 50, 'padding',  left right bottom  );
+                @include xy-gutters(50, 'padding', $negative:true);         
+            }
+
+            @include breakpoint(667px down) {
+                @include xy-grid-layout(3, '.product', true, 30, 'padding',  left right bottom  );
+                @include xy-gutters(30, 'padding', $negative:true);    
+            } 
+            
+            @include breakpoint(small only) {
+                @include xy-grid-layout(2, '.product', true, 25, 'padding',  left right bottom  );
+                @include xy-gutters(25, 'padding', $negative:true);         
+            }             
+        }
+    }
+}

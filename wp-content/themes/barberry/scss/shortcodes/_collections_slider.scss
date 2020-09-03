@@ -1,0 +1,379 @@
+.shortcode_barberry_collections_slider {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@include breakpoint(769px down) {
+		// justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		align-content: flex-start;
+	}
+
+	.barberry_slider_small {
+		position: relative;
+		overflow: hidden;
+		flex-basis: 10%;
+		height: 70%;
+		
+		@include breakpoint(large down) {
+			display: none;
+		}
+
+		.carousel-cell {
+		  width: 100%;
+		  height: 100%;	
+		  overflow: hidden;
+		  transition-delay: .2s;
+		  @include transition(.4s transform cubic-bezier(.645,.045,.355,1));
+
+			.cell-img {
+				@include transition(transform 0s ease);
+				@include transition-delay(2s);
+
+				.bg-wrapper {
+					background-position: center center;
+					background-size: cover;					
+				}
+			}
+
+			&.is-selected {
+			  .cell-img {
+			  	height: 100%;
+			  	transition: transform 2s ease;
+			  	transition-delay: 0s;
+			  }
+			}					  			
+		}		
+	}
+
+	.barberry_slider_content {
+		position: relative;
+		flex-basis: 15%;
+		height: 70%;
+		@include breakpoint(large down) {
+			
+			height: 70%;
+			flex-basis: 20%;
+		}
+
+		@include breakpoint(768px down) {
+			align-self: flex-start;
+			height: 100%;
+		}
+
+		@include breakpoint(769px down) {
+			order: 2;
+			flex-basis: 100%;
+			height: auto;
+			min-height: 300px;
+		}
+
+		.slider_content-wrapper {
+			padding: 60px;
+			z-index: 4;
+			position: absolute;
+			left: -2px;
+			top: 60px;
+			width: 180%;
+			height: 100%;
+			background-color: #fff;
+			@include poly-fluid-sizing('padding-left', (768px:40px, 1280px:80px, 1920px:110px));
+
+			@include breakpoint(medium down) {
+				padding: 40px;
+			}
+
+			@include breakpoint(769px down) {
+				// position: relative;
+				// left: 0;
+				top: 0;
+				width: 100%;
+				padding-top: 20px;
+			}
+
+
+			.flickity-viewport {
+				overflow: visible;
+			}
+
+			.flickity-slider {
+			  transform: none !important;
+			}			
+
+			.carousel-cell {
+				width: 100%;
+				height: 100%;	
+				// overflow: hidden;
+				left: 0 !important;
+				opacity: 0;
+				transition: opacity .3s ease-in-out; // Changed
+				transition-delay:0s;
+				z-index: 1; // Changed	
+				background-color: #fff;
+
+				&.is-previous {
+					.slider-content {
+						.slide-subtitle {
+							@include transform(translateX(-100px) translateZ(0));
+						}
+						.slide-title {
+							@include transform(translateX(-110px) translateZ(0));
+						}
+						.slide-description {
+							@include transform(translateX(-120px) translateZ(0));
+						}						
+						.slide-button {
+							@include transform(translateX(-130px) translateZ(0));
+						}
+					}
+				}
+
+				&.is-next {
+					.slider-content {
+						.slide-subtitle {
+							@include transform(translateX(100px) translateZ(0));
+						}
+						.slide-title {
+							@include transform(translateX(110px) translateZ(0));
+						}
+						.slide-description {
+							@include transform(translateX(120px) translateZ(0));
+						}						
+						.slide-button {
+							@include transform(translateX(130px) translateZ(0));
+						}
+					}
+				}			
+							
+				.slider-content {
+
+					.slide-subtitle {
+						@include fontSmooth;
+						display: inline-block;
+						@include poly-fluid-sizing('font-size', (768px:10px, 1280px:12px, 1440px:14px));
+						font-weight: 600;
+						line-height: 1.1;
+						text-transform: uppercase;
+						letter-spacing: 3px;
+						margin-bottom: rem-calc(25);
+						opacity: 0;
+						@include transform(translateX(100px) translateZ(0));
+    					@include transition( transform 1s cubic-bezier(.165,.84,.44,1) .3s, opacity 2s cubic-bezier(.165,.84,.44,1) 2s);
+
+					}
+
+
+					.slide-title {
+						text-indent: -34px;
+						@include fontSmooth;
+						@include poly-fluid-sizing('font-size', (768px:28px, 1280px:40px, 1440px:55px));
+						line-height: 1.1;
+						margin-bottom: 0;
+						display: block;
+						opacity: 0;
+						@include transform(translateX(110px) translateZ(0));
+    					@include transition( transform 1s cubic-bezier(.165,.84,.44,1) .3s, opacity 2s cubic-bezier(.165,.84,.44,1) 2s);
+
+						@include breakpoint(medium down) {
+							text-indent: 0px;
+						}    					
+							
+					}
+
+					.slide-description {
+						opacity: 0;
+						opacity: .6;
+						margin-top: rem-calc(20);
+						@include poly-fluid-sizing('font-size', (768px:16px, 1280px:16px, 1440px:18px));
+						line-height: 1.4;
+						@include transform(translateX(120px) translateZ(0));
+    					@include transition( transform 1s cubic-bezier(.165,.84,.44,1) .3s, opacity 2s cubic-bezier(.165,.84,.44,1) 2s);						
+					}
+
+					.slide-button {
+
+						opacity: 0;
+						@include transform(translateX(130px) translateZ(0));
+    					@include transition( transform 1s cubic-bezier(.165,.84,.44,1) .3s, opacity 2s cubic-bezier(.165,.84,.44,1) 2s);	
+
+						a {
+							@include fontSmooth;
+							margin-top: rem-calc(15);
+							display: inline-block;
+							@include poly-fluid-sizing('font-size', (768px:10px, 1280px:10px, 1440px:12px));
+							line-height: 2;
+							font-weight: 700 !important;
+							text-transform: uppercase;
+							letter-spacing: 3px;
+							border-bottom: 3px solid #000;	
+							background-image: none !important;	
+							transition: border-color .3s !important;
+
+							&:hover {
+								border-bottom: 2px solid transparent!important;
+							}	
+							@include breakpoint(medium down) {
+								margin-top: rem-calc(20);
+							}
+							@include breakpoint(400px down) {
+								margin-top: rem-calc(15);
+								border-width: 2px;
+							}											
+						}
+
+					}
+
+				}
+
+
+
+				&.is-selected {
+					opacity: 1;
+					transition: opacity .3s ease-in-out; // Changed (Added)
+					transition-delay:.1s;
+					z-index: 2; // Changed
+
+					.slider-content {
+
+						.slide-title,
+						.slide-subtitle,
+						.slide-description,
+						.slide-button {
+							 opacity: 1;
+							 transition-delay: 0s;
+							 transform: translateX(0) translateZ(0);
+						}
+
+						.slide-description {
+							opacity: 0.6;
+						}
+					}
+				}	
+
+			}
+
+			.flickity-page-dots {
+				z-index: 4;
+				bottom: 50px;
+				width: auto;
+				li {
+					cursor: default;
+					pointer-events: none;
+				}
+
+				@include breakpoint(medium down) {
+					bottom: 80px;
+				}
+				@include breakpoint(769px down) {
+					left: auto;
+					bottom: auto;
+					right: auto;
+					top: -30px;
+					padding: 5px 10px;
+					background-color: #fff;
+					li {
+						cursor: pointer;
+						pointer-events: visible;
+					}					
+				}
+			}
+
+			.flickity-button {
+				height: 60px;
+				width: 65px;
+				border-radius: 0;
+				background-color: #000;
+			    opacity: 1;
+			    @include transform(translateX(0) !important);
+
+			    svg {
+			    	top: calc(50% - 12px);
+			    	left: calc(50% - 11px);
+			    	width: 50%;
+			    	fill: #fff;
+			    	position: absolute;
+			    	@include transition(opacity .3s);
+
+			    	path {
+			    		 @include transform(none);
+			    	}
+			    }
+
+			    &:hover {
+			    	svg {
+			    		opacity: .6;
+			    	}
+			    }
+
+			    &.flickity-prev-next-button {
+
+			    	&.previous {
+			    		top: -60px;
+			    		left: 0;			    		
+			    	}
+
+			    	&.next {
+			    		top: -60px;
+			    		left: 66px;
+
+			    		svg {
+			    			path {
+			    				@include transform(scaleX(-1) translateX(-70px));
+			    				-ms-filter: fliph; /*IE*/
+								filter: fliph; /*IE*/
+			    			}
+			    		}
+			    	}	
+
+			    }
+
+			}
+		}
+	}
+
+	.barberry_slider_big {
+		position: relative;
+		overflow: hidden;
+		flex-basis: 75%;
+		align-self:flex-end;
+		@include breakpoint(large down) {
+			flex-basis: 80%;
+		}
+
+		@include breakpoint(769px down) {
+			order: 1;
+			flex-basis: 100%;
+		}
+
+
+		.carousel-cell {
+		  width: 100%;
+		  height: 100%;	
+		  overflow: hidden;
+		  transition-delay: .2s;
+		  @include transition(.4s transform cubic-bezier(.645,.045,.355,1));	
+
+			.cell-img {
+				// transform: scale(1.1);
+				@include transition(transform 0s ease);
+				@include transition-delay(2s);
+
+				.bg-wrapper {
+					background-position: center center;
+					background-size: cover;					
+				}
+			}
+
+			&.is-selected {
+			  .cell-img {
+			  	height: 100%;
+			  	// transform: scale(1);
+			  	transition: transform 2s ease;
+			  	transition-delay: 0s;
+			  }
+			}		  		
+		}		
+	}
+}

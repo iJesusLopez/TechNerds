@@ -1,0 +1,74 @@
+.blog-content-area {
+	.blog-list-cells {
+		@include breakpoint(1280px down) {
+			width: 100%;
+		}
+	}	
+
+	.blog-listing {
+		.cell:not(.site-main-content-wrapper) {
+			padding-left: rem-calc(30);
+			@include breakpoint(1440px down) {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+
+
+.blog-listing {
+
+	@import "archive/archive_post_navigation";
+
+	.blog-articles {
+
+		@import "archive/archive_blog_articles";
+
+		.post,
+		.type-page {
+			margin-bottom: rem-calc(60);
+
+			@include breakpoint(medium) {
+				margin-bottom: rem-calc(80);
+			} 			
+
+			@import "archive/archive_post_content";
+		}
+
+	}
+
+	.right-sidebar-wrapper {
+		@include breakpoint(small only) {
+			margin-top: rem-calc(40);
+		}
+	}
+
+	.no-results {
+		a:not(.button) {
+		  font-weight: normal;
+		  color: #000;
+		  background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+		  background-position: left bottom, left bottom;
+		  background-repeat: no-repeat, no-repeat;
+		  background-size: 0 1px, 100% 1px;
+		  transition: none 300ms ease-in-out;
+		  transition-property: background-size, color;
+		  word-wrap: break-word;
+
+		  &:hover {
+		    background-size: 100% 1px, 100% 1px;
+		  }         
+		}
+	}
+
+}
+
+
+body.posts-has-parallax {
+	.blog-listing .blog-articles article.has-post-thumbnail .entry-thumbnail img,
+	.related_post_container .single_related_posts .related-post .entry-thumbnail .related_post_image .wp-post-image.size-large {
+		transform: scale(1.15);
+	}	
+}
+

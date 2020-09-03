@@ -1,0 +1,198 @@
+.select2 {
+	width: 100% !important;
+	padding: 0 !important;
+
+	border: 2px solid;
+    border-color: inherit;
+    height: calc(100%);	
+}
+
+
+.select2-container {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    
+
+    .woocommerce-ordering & {
+    	min-width: 230px;
+        @include breakpoint(medium down) {
+            min-width: 200px;
+        }
+    }
+}
+
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    border: none;
+    height: auto;
+    background-color: transparent;
+    padding: 12px 30px 12px 20px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    text-overflow: ellipsis !important;
+    color: #000;
+    padding-right: 10px !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__clear {
+    position: relative;
+    font-size: 24px !important;
+    line-height: 20px !important;
+    font-weight: 300 !important;
+}
+
+.select2-container .select2-selection--multiple {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    min-height: 32px;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 0px;
+}
+
+
+.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+.select2-dropdown {
+	position: absolute;
+    background-color: #fff !important;
+    box-sizing: border-box;
+    display: block;
+	border: 2px solid;
+    border-color: inherit;
+    border-radius: 0;
+
+    .select2-search--dropdown {
+        padding: 0;
+    }
+
+    .select2-search__field {
+        padding: 0 20px;
+        border-bottom: 2px solid #000!important;
+        border-right: 0!important;
+        border-left: 0!important;
+        border-top: 0!important;
+        margin-bottom: 0;
+    }
+
+}
+
+
+.select2-results__option {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+
+	font-size: 16px;
+    padding: 2px 20px !important;
+    opacity: 1;
+    position: relative;
+    font-weight: 400;
+    opacity: 0.5;
+    @include transition(opacity 1s cubic-bezier(.19,1,.22,1));
+
+    &:first-child {
+    	padding-top: 14px !important;
+    }
+	&:last-of-type {
+	    padding-bottom: 14px !important;
+	}
+}
+
+.select2-results__option[aria-selected] {
+    cursor: pointer
+}
+
+.select2-container--default .select2-results__option[aria-selected=true],
+.select2-container--default .select2-results__option[data-selected=true] {
+    background-color: transparent;
+    opacity: 1;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted[data-selected] {
+    background-color: transparent !important;
+    color: #000;
+    opacity: 1;
+}
+
+ul.select2-results__options {
+	max-height: 0;
+	opacity: 0;
+	@include transition(opacity 1s cubic-bezier(.19,1,.22,1));
+	transition-delay: 1s;
+
+		.select2-container--open & {
+			opacity: 1;
+			transition-delay: 1s;
+		}
+}
+
+
+.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+
+.select2-container .select2-selection--single {
+    outline: 0
+}
+
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    font-weight: 400;
+    font-size: 16px;
+    // line-height: 25px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered:before,
+.select2-container .select2-selection--single .select2-selection__rendered:after {
+    font-size: 8px;
+    line-height: 1;
+    position: absolute;
+    right: 1.7em;
+    width: 8px;
+    height: 8px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered:before {
+
+    @include barberry-icon('\ea12');
+    top: calc(50% - 9px);
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered:after {
+
+    @include barberry-icon('\ea13');
+    top: calc(50% - 0px);
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow {
+	display: none;
+}

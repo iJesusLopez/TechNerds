@@ -1,0 +1,283 @@
+#bb-container {
+  overflow: hidden; 
+  height: auto;
+  width: 100%; 
+}
+
+
+body:not(.woocommerce-cart) {
+  #content .entry-content {
+    p a:not(.button) {
+      font-weight: normal;
+      color: #000;
+      background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+      background-position: left bottom, left bottom;
+      background-repeat: no-repeat, no-repeat;
+      background-size: 0 1px, 100% 1px;
+      transition: none 300ms ease-in-out;
+      transition-property: background-size, color;
+      word-wrap: break-word;
+
+      &:hover {
+        background-size: 100% 1px, 100% 1px;
+      }         
+    }
+
+  }  
+}
+
+
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.svg-defs {
+    display: none;
+}
+
+svg {
+    // height: 1.4em;
+    // width: 1.4em;
+    position: relative;
+    top: -.1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+p {
+  color: #666;
+	font-size: 20px;
+  margin-bottom: rem-calc(30);
+}
+
+a {
+  @include transition(all .3s ease);
+}
+
+h1:first-child {
+    margin-top:-0.13em;
+}
+
+h1, h1 a {
+  font-size: 1.875rem;
+  line-height: 1.3em; }
+
+h2, h2 a {
+  font-size: 1.6875rem;
+  line-height: 1.2em; }
+
+h3, h3 a {
+  font-size: 1.4375rem;
+  line-height: 1.3em; }
+
+h4, h4 a {
+  font-size: 1.125rem;
+  line-height: 1.55555em; }
+
+h5, h5 a {
+  font-size: 1rem;
+  line-height: 1.625em; }
+
+h6, h6 a {
+  font-size: 13px;
+  line-height: 1.71428em; }
+
+@include breakpoint(large up) {
+
+  h1, h2, h3, h4, h5, h6,
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    margin-bottom: 1.5rem;
+  }
+
+  h1, h1 a, h2, h2 a {
+    line-height: 1.13; }
+  h1 {
+    font-size: 3.125rem; }
+  h2 {
+    font-size: 2.3125rem; }
+  h3, h3 a {
+    font-size: 1.875rem;
+    line-height: 1.2em; }
+  h4, h4 a {
+    font-size: 1.4375rem;
+    line-height: 1.391304em; }
+  h5, h5 a {
+    font-size: 1.125rem;
+    line-height: 1.55555em; }
+  h6, h6 a {
+    line-height: 1.625em; } 
+}
+
+
+table {
+
+  border-collapse: collapse;
+  margin-bottom: rem-calc(32);
+
+  thead,
+  tbody,
+  tfoot {
+    color: #000;
+  }
+
+  tr
+  {   
+    border-bottom: 1px solid;
+    border-bottom-color: #f1f1f1;
+
+    th, td
+    {
+      padding: rem-calc(15) 0;
+      padding-left: rem-calc(15);
+    }
+
+    th
+    {
+      text-align: left;
+      padding-left: rem-calc(15);
+      padding-right: rem-calc(15);
+      font-weight: normal;
+    }
+
+    td
+    {
+      p:last-child
+      {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+table:not(.woocommerce-grouped-product-list) {
+  tbody {
+    tr {
+      td {
+        a { 
+        font-weight: 600;
+        &:hover:not(.button) {
+          opacity: 0.6;
+        }        
+        }
+      }
+    }
+  }
+}
+
+ul, ol, dl 
+{
+  ul, ol, dl
+  {
+    margin-top: rem-calc(8);
+  }
+   
+  > li
+  {
+    margin-bottom: rem-calc(8);
+  }
+}
+
+ul ul, ol ul, ul ol, ol ol 
+{
+  margin-left: rem-calc(35);
+}
+
+
+dl dt
+{
+  margin-top: rem-calc(30);
+}
+
+figure
+{
+  //margin: 0;
+}
+
+figcaption
+{
+  margin-top: rem-calc(16);
+  margin-bottom: rem-calc(32); 
+  font-size: rem-calc(14);
+}
+
+pre
+{
+  padding: rem-calc(25);
+  margin: rem-calc(30) 0;
+}
+
+kbd
+{
+  background-color: $content-background;
+  color: $primary-color;
+  padding: $code-padding;
+  border-radius: 0;
+}
+
+blockquote
+{
+
+  font-size: rem-calc(20);
+  border-color: #000;
+
+  p
+  {
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+}
+
+cite
+{
+  display: inline-block;
+  font-size: $cite-font-size;
+  color: $cite-color;
+
+  &:before
+  {
+    content: '\2014 \0020';
+  }
+}
+
+hr
+{
+  margin-bottom: rem-calc(32);
+  margin-top: rem-calc(32);
+  border-bottom-color: $primary-color;
+}
+
+.sticky {
+  z-index: 10;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.screen-reader-text
+{
+  @extend .show-for-sr;
+}
+
+.kirki-customizer-loading-wrapper
+{
+  background-image: none !important;
+}
+
+a[href^=tel] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  background-image: none !important;
+}

@@ -1,0 +1,120 @@
+.single-product {
+    @import 'product/product-layout';   
+    @import 'product/product-sidebar'; 
+    @import 'product/product-info';
+    @import 'product/product-video';
+    @import 'product/product-navigation';   
+    @import 'product/product-meta';
+    @import 'product/product-related';
+    @import 'product/product-breadcrumb';
+    @import 'product/product-reviews'; 
+}
+
+.single-product,
+#barberry_woocommerce_quickview {
+	@import 'product/product-variations';
+}
+
+.single-product,
+#barberry_woocommerce_quickview {
+   @import 'product/product-grouped';
+}
+
+@import 'product/product-progress-button';
+@import 'product/product-labels';
+@import 'product/product-tabs';
+@import 'product/product-gallery';
+@import 'product/product-gallery-vertical';
+@import 'product/product-slider';
+@import 'product/product-quickview';
+@import 'product/product-size-guide';
+@import 'product/product-sticky-addtocart';
+
+
+body.product-sidebar-active {
+    &.single-product {
+        .product_layout.product_layout_default {
+
+            .single-product-container {
+                @include breakpoint(medium down) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+
+            .product-info-cell {
+                padding-top: 0;
+            }
+
+            .product-cells {
+                .product-images-cell {
+                    @include poly-fluid-sizing('padding-left', (768px:0px,769px:30px, 1024px:50px, 1025px:0px, 1199px:0px, 1200px:0));
+                }                
+                .product-info-cell {
+                    @include poly-fluid-sizing('padding-left', (768px:25px, 769px:40px, 1024px:50px, 1280px:50px, 1920px:80px));
+                    @include poly-fluid-sizing('padding-right', (768px:25px, 769px:30px, 1024px:50px, 1025px:20px, 1199px:20px, 1280px:0px, 1920px:20px));
+                    padding-bottom: rem-calc(40);               
+                }                
+            }
+
+            .product_meta .product_meta_ins {
+                border-left: 1px solid #eee;
+                border-right: 1px solid #eee;
+                @include breakpoint(small only) {
+                    border-left: none;
+                    border-right: none;
+                }
+            }
+        }
+
+        &.product-sticky-sidebar {
+            .sidebar-container {
+               @include breakpoint(medium down) {
+                display: none;
+               }
+            }
+        }
+    } 
+}
+
+// Biy It Now
+
+body.buy_now_enable {
+    .product_layout {
+        &.product_layout_default,
+        &.product_layout_style_2,
+        &.product_layout_style_3 {
+            .product-info-cell {
+                .product_summary_bottom {
+                    .cart:not(.variations_form):not(.grouped_form),
+                    .variations_form .single_variation_wrap .woocommerce-variation-add-to-cart,
+                    .single_variation_wrap .woocommerce-variation-add-to-cart {
+                        width: 100%;
+                        .addtocart-button-group {
+                            @include breakpoint(450px down) {
+                                display: block;
+                                text-align: center;
+                            }
+                        }
+                    }                    
+                }
+            }
+        }        
+    }
+}
+
+.single-product {
+    .product-type-external {
+        .barberry-buy-now {
+            display: none;
+        }
+    }
+}
+
+.single-product .product_layout.product_layout_style_3 .product-info-cell .product_summary_bottom .barberry-single-product-stock {
+    margin-top: 0;
+}
+
+
+
+

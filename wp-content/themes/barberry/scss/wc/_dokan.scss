@@ -1,0 +1,16 @@
+.dokan-store {
+    @import 'dokan/store';    
+    @import 'dokan/reviews';  
+}
+
+body.dokan-theme-barberry {
+	@import 'dokan/vendor'; 
+}
+
+body.dokan-dashboard {
+	@import 'dokan/product-edit'; 
+}
+
+@import 'dokan/lists';
+@import 'dokan/dashboard';  
+@import 'dokan/buttons'; 

@@ -1,0 +1,519 @@
+table.woocommerce-orders-table,
+table.woocommerce-table--order-downloads,
+table.wishlist_table,
+table.my_account_orders,
+table.shop_table {
+
+	.blockUI {
+		background: none !important;
+		@include loader(24px, 24px);
+
+
+		&:after {
+			border-top-color: #000;
+			z-index: 4;
+			position: absolute;
+		    top: calc(50% - 12px);
+		    left: calc(50% - 12px);
+		}						
+	}
+
+
+
+	tr {
+		border:none;
+		th, td {
+			padding: rem-calc(20) 0;
+		}
+		td {
+			text-align: left;
+			padding: rem-calc(25) 0;
+		}
+		th {
+			padding-right: rem-calc(15);
+
+
+		}
+	}
+
+	thead {
+		background-color: transparent;
+		border: none;
+
+		tr {
+
+			border-bottom: 6px solid #000;
+			th {
+				border-top: none;
+				padding-top: 0;
+				line-height: 1;
+
+				&:last-child {
+					padding-right: 0;
+					text-align: right;
+				}
+				span {
+					@include poly-fluid-sizing('font-size', (1024px:16px, 1440px:20px));
+					font-weight: 400;
+				}
+
+				@include breakpoint(500px down) {
+					&.woocommerce-orders-table__header-order-date,
+					&.download-remaining,
+					&.product-thumbnail {
+						display: none;
+					}
+					&.waitlist-remove {
+						display: table-cell;
+					}
+				}
+
+				@include breakpoint(375px down) {
+					&.product-stock-status {
+						display: none;
+					}
+				}
+
+			}
+		}
+
+	}
+
+	tbody {
+		background-color: transparent;
+		border: none;
+		tr {
+			background-color: transparent;
+			border-bottom: 1px solid #dbdbdb;
+
+			&:last-child {
+				border-bottom: none;
+			}
+			
+			td {
+				padding-right: rem-calc(15);
+				font-size: 18px;
+				line-height: 1.4;
+
+			    	del {
+			    		text-align: right;
+			    		position: relative;
+			    		display: inline;
+			    		width: 100%;
+			    		text-decoration: none;
+
+			    		.amount {
+			    			line-height: 1.4;
+			    		}
+
+			    		span {
+			    			color: #666;
+			    			font-size: 85%;
+			    			font-weight: 300;
+			    		}
+
+			    		sup {
+			    			font-weight: 300;
+			    		}
+				    		
+
+			    		.amount:before {
+			    			width: 100%;
+							position: absolute;
+							content: "";
+							right: 0;
+							top: 50%;
+							height: 0px;
+							border-bottom: 1px solid #f9423a;
+							opacity: 0.7;
+							transform: rotate(-15deg);			    			
+			    		}
+			    	}
+
+			    	ins {
+			    		color: #f9423a;
+			    		text-decoration: none;
+
+			    		line-height: 1;
+
+			    	}				
+
+				&.waitlist-thumbnail {
+					width: 10%;
+					@include breakpoint(small down) {
+						width: auto;
+					}
+				}
+
+				&.waitlist-thumbnail a.go-shop-link {
+					display: inline;
+				}
+
+				a {
+					background-image: none !important;
+					@include transition(opacity .3s !important);
+
+					&:hover {
+						opacity: .6
+					}
+				}
+
+
+
+				&:first-child {
+					a {
+						font-size: 18px;
+						line-height: 1.4;
+						font-weight: 400;
+						@include breakpoint(500px down) {
+							font-size: 16px;
+						}
+					}
+				}
+
+				&:last-child {
+					padding-right: 0;
+					text-align: right;	
+
+					&.woocommerce-orders-table__cell-order-actions {
+						@include breakpoint(small only) {
+							a {
+								display: block;
+								margin-top: 15px;
+								&:first-child {
+									margin-top: 0;
+								}
+							}
+						}
+					}								
+				}
+
+				&.product-remove {
+					div {
+						position: relative;
+						height: 18px;						
+					}
+					a.remove {
+						position: absolute;
+						left: 0;
+						top: 0;
+						background-image: none !important;
+						display: inline-block;
+						// margin-top: -5px;
+		    			font-size: 0px;				
+						width: 18px;
+						height: 18px;
+						border-radius:50%;
+						border:1px solid #000;
+						background-color: #fff;	
+						@include transition(opacity .3s !important);
+
+						&:before {
+							color: #000;
+							position: absolute;
+							left: calc(50% - 7px);
+							top: calc(50% - 7px);
+							
+							font-size: 14px;
+							@include barberry_icon('\ea2a');
+						}	
+
+						&:hover {
+							background-color: #000 !important;
+							&:before {
+								color: #fff;
+							}
+						}											
+					}
+				}
+
+				&.product-name {
+					a {
+						font-size: 18px;
+						line-height: 1.2;	
+
+						@include breakpoint(500px down) {
+							font-size: 16px;
+						}											
+					}
+				}
+
+				&.product-stock-status {
+					span {
+						font-size: 16px;
+						font-weight: 400;
+					}
+				}
+
+				&.product-price {
+			    	del {
+			    		text-align: right;
+			    		position: relative;
+			    		display: inline;
+			    		width: 100%;
+			    		text-decoration: none;
+
+			    		.amount {
+			    			line-height: 1.4;
+			    		}
+
+			    		span {
+			    			color: #666;
+			    			font-size: 85%;
+			    			font-weight: 300;
+			    		}
+
+			    		sup {
+			    			font-weight: 300;
+			    		}
+				    		
+
+			    		.amount:before {
+			    			width: 100%;
+							position: absolute;
+							content: "";
+							right: 0;
+							top: 50%;
+							height: 0px;
+							border-bottom: 1px solid #f9423a;
+							opacity: 0.7;
+							transform: rotate(-15deg);			    			
+			    		}
+			    	}
+
+			    	ins {
+			    		color: #f9423a;
+			    		text-decoration: none;
+
+			    		line-height: 1;
+
+			    	}			    						
+				}
+
+				&.woocommerce-orders-table__cell-order-actions,
+				&.download-file {
+					a {
+						position: relative;
+						font-size: 18px;
+						line-height: 1.2;
+						font-weight: 400;
+						padding-right: rem-calc(24);
+						margin-left: rem-calc(20);
+						background-image: none !important;
+						transition: opacity .3s !important;
+
+						&:first-child {
+							margin-left: 0;
+						}
+
+						@include breakpoint(small only) {
+							font-size: 16px;
+							padding-right: 0;
+						}
+
+						&.request_warranty {
+							padding-right: 0;
+						}
+
+						&:hover {
+							opacity: 0.6;
+						}
+						
+						&:after {
+							position: absolute;
+							right: 0;
+							top: 0;
+							font-size: 16px;
+
+							@include breakpoint(small only) {
+								display: none;
+							}
+						}
+
+						&.pay {
+							&:after {
+								@include barberry-icon('\ea0f')
+							}							
+						}
+
+						&.view {
+							&:after {
+								@include barberry-icon('\ea15')
+							}							
+						}
+
+						&.invoice {
+							&:after {
+								@include barberry-icon('\ea15')
+							}								
+						}
+
+						&.cancel {
+							padding-right: rem-calc(20);
+							&:after {
+								@include barberry-icon('\ea2a')
+							}							
+						}
+
+						&.woocommerce-MyAccount-downloads-file {
+							&:after {
+								@include barberry-icon('\ea30')
+							}							
+						}
+					}
+				}
+
+				&.product-add-to-cart {
+					a {
+						opacity: 1;
+						color: #000;
+						display: inline-flex !important;
+						border-radius: 0;
+						background-color: #fff;
+						border-width: 1px;
+						padding: 12px 20px 9px;
+						height: auto;
+						font-size: 13px !important;
+						font-weight: 600 !important;
+						text-transform: capitalize;
+						letter-spacing: 0;
+
+						&:before {
+							
+							background-color: #000;
+						}
+
+						&:hover {
+							color: #fff !important;
+						}
+					}
+				}
+
+				@include breakpoint(500px down) {
+					font-size: 16px;
+					line-height: 1.2;
+					&.woocommerce-orders-table__cell-order-number {
+						a {
+							font-size: 16px;
+						}
+					}
+
+					&.woocommerce-orders-table__cell-order-total {
+						font-size: 0;
+					}
+
+					&.woocommerce-orders-table__cell-order-date,
+					&.download-remaining,
+					&.product-thumbnail {
+						display: none;
+					}
+
+					&.waitlist-thumbnail {
+						display: table-cell;
+					}
+				}
+
+				@include breakpoint(375px down) {
+					&.product-stock-status {
+						display: none;
+					}
+				}
+
+			}
+		}
+	}
+
+	tfoot {
+
+		td {
+			// padding-top: 0;
+		}
+
+		color: #000;
+		border: none;
+		background: transparent;
+
+		.yith-wcwl-share {
+			margin-bottom: 0;
+			border-top: 2px solid #000;
+			padding-top: rem-calc(25);
+
+			.yith-wcwl-share-title {
+				font-size: 18px;
+			}
+
+			.social-icons {
+				li {
+					opacity: 1;
+					margin-right: rem-calc(20);
+					a {
+						background-image: none !important;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+table.yith-refund-table {
+	thead {
+		tr {
+			th {
+				&:nth-child(2),&:nth-child(5) {
+					@include breakpoint(375px down) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				b {
+					font-weight: 600;
+				}
+				&:nth-child(2) {
+					a {
+						font-size: 18px;
+					}
+				}
+				&:nth-child(2),&:nth-child(5) {
+					@include breakpoint(375px down) {
+						display: none;
+					}
+				}
+
+				@include breakpoint(375px down) {
+					.button {
+						padding: 12px 15px 10px;
+					}
+				}
+			}			
+		}
+	}
+}
+
+.account-no-orders {
+	table.woocommerce-orders-table {
+		tbody {
+			tr {
+				td {
+					text-align: right;
+					padding: rem-calc(30) 0;
+				}
+			}
+		}
+	}	
+}
+
+table.waitlist-no-products {
+	thead {
+		tr {
+			th {
+				text-align: left !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.dokan-store {
+	.dokan-store-tabs,
+	.widget-area {
+		.dokan-btn {
+			font-size: 12px;
+			line-height: 1.2;
+			font-weight: 400;
+			padding: 7px 10px;
+			@include transition(all .3s ease);
+			&:before {
+				display: none;
+			}
+			i {
+				margin-left: 5px;
+			}
+		}
+	} 
+}
+
+input[type="submit"].dokan-btn {
+	&:hover {
+		color: #fff !important;
+	}
+}
+
+#dokan-seller-listing-wrap,
+.dashboard-sections,
+.dokan-dashboard {
+	.dokan-btn {
+		font-size: 12px;
+		line-height: 1.2;
+		font-weight: 400;
+		// padding: 7px 10px;
+		@include transition(all .3s ease);
+		&:before {
+			display: none;
+		}
+		i {
+			margin-left: 5px;
+		}
+	}	
+}
+
+#dokan-seller-listing-wrap,
+.dokan-dashboard {
+	.dokan-btn {
+		padding: 7px 10px;
+	}	
+}

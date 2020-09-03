@@ -1,0 +1,52 @@
+.barberry-button-container {
+    display: block;
+    max-width: 100%;	
+
+	&.b-button_inline {
+		display: inline-block;
+		vertical-align: top;		
+	}
+
+	&.b-button_left {
+		text-align: left;	
+	}
+
+	&.b-button_center {
+		text-align: center;	
+	}
+
+	&.b-button_right {
+		text-align: right;	
+	}
+
+	.b-button_small {
+		padding: $space-md $space-lg $space-md - 0.1;
+		font-size: $btn-sm;
+	}
+
+	.b-button_large {
+		padding: $space-df $space-xl $space-df - 0.1;
+		font-size: $btn-md;
+	}
+}
+
+
+.barberry_custom_link {
+	font-weight: 700 !important;
+    letter-spacing: 1px;
+	background-color: transparent;
+	text-transform: uppercase;
+	border-bottom: 2px solid;
+	padding: 0 0 6px;
+	font-size: rem-calc(13);
+
+	@include breakpoint(small only) {
+		font-size: rem-calc(12);
+		font-weight: 600;
+	}
+
+
+	&:hover	{
+		border-color: transparent !important;
+	}
+}

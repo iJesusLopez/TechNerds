@@ -1,0 +1,325 @@
+@mixin footer-credit-card-icons {
+
+	text-align: center;
+	
+	@include breakpoint(large) {
+		text-align: right;
+	}
+	
+	img {
+		max-height: 34px;
+		padding-left: 14px;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+	}
+}
+
+
+
+footer#site-footer {
+	position: relative;
+	background-color: #fff;
+	padding:0;
+
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+
+    transition: all .3s ease;
+    overflow: hidden;
+    z-index: 2; 
+
+    .site-footer-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }   
+
+    // &.is-animating {
+    //     background-color: #000 !important;   
+    // }
+
+    .footer__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        // background-color: #333 ;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        // transition-delay:0s;
+        @include transform(translate3d(0,100%,0));
+        transition: transform .9s cubic-bezier(.785,.135,.15,.86); 
+        vertical-align: baseline;
+        
+             
+    }
+
+    &.is-animating {
+        .footer__wrapper {
+            // transition-delay:2s;
+            // transform: translateZ(0);
+            // height: 100vh;
+            @include transform(translateZ(0));
+            transition: transform .9s cubic-bezier(.785,.135,.15,.86);           
+        }
+    }
+	
+
+	body[data-footer-reveal="1"] & {
+		z-index: -2;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	    @include transform(translateZ(0));
+	    
+	    @include breakpoint(medium down) {
+			position: relative;
+	    }
+	}
+
+    .grid-container {
+        width: 100%;
+		padding-top: rem-calc(60);
+		padding-bottom: rem-calc(30); 
+
+    	@include breakpoint(medium) {
+	    	padding-top: rem-calc(80);
+	    	padding-bottom: rem-calc(60);  		
+    	}
+    }
+
+    .widget-area {
+    	// padding-bottom: rem-calc(30);
+        border-bottom: 1px solid #eee;
+
+    	.widget {
+
+    		.widget-title {
+    			margin-bottom: rem-calc(18);
+    		}
+
+    		.mc4wp-form  {
+                p {
+                    margin-bottom: 0;
+                }
+    			p:first-child {
+                    // width: 100%;
+    				font-size: 18px;
+    				opacity: .6;
+    				margin-bottom: rem-calc(15);
+                    // flex: none;
+    			}
+
+                p.mailchimp_intro {
+                    width: 100%;
+                }
+
+    			@include breakpoint(1024px down) {
+					& > div {
+						&>p:first-child {
+						    -webkit-box-flex: 1;
+						    -ms-flex: 1 1 100%;
+						    flex: 1 1 100%;
+						    // max-width: 290px;
+						    width: 100%
+						}						
+					}
+    			}
+
+
+
+    			@include breakpoint(small only) {
+					input[type='email'] {
+						min-width: 210px;
+					}
+    			}
+
+    			@include breakpoint(375px down) {
+                    .mc4wp-form-fields {
+                        display: block;
+                    }
+                    p {
+                        margin-bottom: 15px;
+                    }
+					input[type='email'] {
+                        min-width: 100%;
+                        border-right: 2px solid;
+                        margin-bottom: 0;
+                        width: 100%;
+						// min-width: inherit;
+					}
+                    input[type='submit'] {
+                        // width: 100%;
+                    }
+    			}
+    		}
+    	}
+
+        .large-up-4 {
+            .widget {
+                .mc4wp-form {
+                    input[type='email'] {
+                        border-right-width: 2px;
+                        border-right-style: solid;
+                    }
+                }
+            }
+        }
+    }
+
+    .widget-area,
+    .copyright-section {
+		margin-right: -2.1875rem;
+		margin-left: -2.1875rem; 
+
+    	@include breakpoint(1200px down) {
+			margin-right: -1.25rem;
+			margin-left: -1.25rem;   		
+    	}
+
+    	@include breakpoint(small only) {
+			margin-left: -0.625rem;
+			margin-right: -0.625rem;
+    	}
+
+    	.cell {
+    		aside {
+    			padding-bottom: rem-calc(40);
+
+    			@include breakpoint(medium) {
+					padding-bottom: rem-calc(40);
+    			}
+    		}
+
+    		&.text-center,
+    		&.text-right {
+    			@include breakpoint(medium down) {
+					text-align: left;
+    			}
+    		}
+
+    		&.text-center {
+    			.mc4wp-form  {
+    				& > div {
+    					justify-content: center;
+    					@include breakpoint(medium down) {
+    						justify-content: left;
+    					}
+    				}
+    			}    			
+    		}
+
+    		&.text-right {
+    			.mc4wp-form  {
+    				& > div {
+    					justify-content: flex-end;
+    					@include breakpoint(medium down) {
+    						justify-content: left;
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+
+    .copyright-section {
+    	padding-top: rem-calc(50);
+    	// border-top: 1px solid #eee;
+
+    	.grid-x {
+    		align-items: center;
+
+    		.cell {
+    			padding-bottom: rem-calc(25);
+
+    			@include breakpoint(large) {
+    				padding-bottom: 0;
+    			}
+    		}
+    	}
+
+    	.social-icons {
+    		margin-bottom: 0;
+    		text-align: center;
+
+			@include breakpoint(large) {
+				text-align: left;
+			}
+
+    		li {
+				opacity: 1;
+				margin-top: 5px;
+				margin-bottom: 5px;
+    		}
+    	}
+
+    	.footer_text {
+    		text-align: center;
+    		font-size: 18px;
+
+    		strong {
+    			font-weight: 600;
+    		}
+
+    		a {
+            font-weight: 600;
+            font-size: 18px;
+            color: #000;
+            background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+            background-position: left bottom, left bottom;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 0 1px, 100% 1px;
+            transition: none 300ms ease-in-out;
+            transition-property: background-size, color;
+            word-wrap: break-word;
+
+		      &:hover {
+		        background-size: 100% 1px, 100% 1px;
+		      }     			
+    		}
+    	}
+
+		.footer-credit-card-icons {
+			@include footer-credit-card-icons;
+		}    	
+    }
+}
+
+
+footer#site-footer[data-footer-copy="2"] {
+    .copyright-section {
+        .cell {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .social-icons {
+            li {
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .social-icons,
+        .footer-credit-card-icons {
+            text-align: center;
+        }
+    }
+}
+

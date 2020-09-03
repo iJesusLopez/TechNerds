@@ -1,0 +1,36 @@
+<?php
+
+// [recent_products_mixed]
+function shortcode_recent_products_mixed($atts, $content = null) {
+	extract(shortcode_atts(array(
+		'title' => '',
+		'per_page'  => '12',
+		'columns'  => '4',
+		'layout'  => 'listing',
+		'pagination' => 'yes',
+		'navigation' => 'yes',
+        'orderby' => 'date',
+        'order' => 'desc'
+	), $atts));
+
+
+	ob_start();
+
+    if ($layout == "listing") {
+		if ($title != '') {
+			echo '<h2 class="shortcode_title">' . $title . '</h2>';
+		}
+
+		echo do_shortcode('[recent_products per_page="'.$per_page.'" columns="'.$columns.'" orderby="'.$orderby.'" order="'.$order.'"]');
+		// echo do_shortcode('[recent_products_listing paginate='.$paginate.' per_page="'.$per_page.'" columns="'.$columns.'" orderby="'.$orderby.'" order="'.$order.'"]');
+	} else {
+		echo do_shortcode('[recent_products_slider title="'.$title.'" per_page="'.$per_page.'" navigation='.$navigation.' pagination='.$pagination.' columns="'.$columns.'" orderby="'.$orderby.'" order="'.$order.'"]');
+		// echo do_shortcode('[recent_products_listing paginate='.$paginate.' per_page="'.$per_page.'" columns="'.$columns.'" orderby="'.$orderby.'" order="'.$order.'"]');
+	}
+
+	$content = ob_get_contents();
+	ob_end_clean();
+	return $content;
+}
+
+add_shortcode("recent_products_mixed", "shortcode_recent_products_mixed");

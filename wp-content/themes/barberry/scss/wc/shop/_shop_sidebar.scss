@@ -1,0 +1,183 @@
+body.woocommerce-shop {
+    .sidebar-container {
+        position: relative;
+        will-change: min-height;
+    }
+
+    .woocommerce-sidebar-inside {
+        padding-bottom: rem-calc(30);
+    }
+
+    &.shop-sidebar-left {
+
+        .woocommerce-sidebar-inside {
+            position: relative;
+            transform: translate(0, 0); /* For browsers don't support translate3d. */
+            transform: translate3d(0, 0, 0);
+            will-change: position, transform;
+            padding-right: rem-calc(40);
+
+            @include breakpoint(xlarge down) {
+                padding-right: 20px;
+            }
+
+            @include breakpoint(large down) {
+                padding-right: 0;
+            }
+        }
+    }
+
+    &.shop-sidebar-right {
+
+        .woocommerce-sidebar-inside {
+            position: relative;
+            transform: translate(0, 0); /* For browsers don't support translate3d. */
+            transform: translate3d(0, 0, 0);
+            will-change: position, transform;          
+            padding-left: rem-calc(40);
+
+            @include breakpoint(xlarge down) {
+                padding-left: 20px;
+            }
+
+            @include breakpoint(large down) {
+                padding-left: 0;
+            }
+        }
+    }
+
+    // Sticky Sidebar Button
+
+    .barberry-sticky-sidebar-btn {
+        position: fixed;
+        top: 30%;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        color: #333;
+        text-align: center;
+        z-index: 4;
+        font-size: 0;
+        border: 1px solid;
+        border-color: #e4e4e4;    
+        background-color: rgba(255,255,255,.9);
+        display: none;
+
+        svg {
+            transform: scaleX(-1);
+        }
+
+        @include breakpoint(medium down) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    .shop-sidebar-btn {
+        opacity: 0;
+        pointer-events: none;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .barberry-sidebar-btn-shown {
+        pointer-events: visible;
+        pointer-events: unset;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }    
+}
+
+body.dokan-store {
+
+    .main-shop-container {
+        @include breakpoint(medium down) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .shop-content {
+            @include breakpoint(small only) {
+                width: 100% !important;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+    #content-section {
+        @include breakpoint(medium down) {
+            // -webkit-box-ordinal-group: 1;
+            // -ms-flex-order: 0;
+            // order: 0;
+            // width: 100%;            
+        }
+    }
+
+    .sidebar-container {
+        position: relative;
+        will-change: min-height;
+
+        @include breakpoint(medium down) {
+            -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+            order: 1;
+            // margin-right: 0!important;
+            // margin-left: 0!important;
+            // width: 100%;
+        }
+    }
+
+    .woocommerce-sidebar-inside {
+        position: relative;
+        transform: translate(0, 0); /* For browsers don't support translate3d. */
+        transform: translate3d(0, 0, 0);
+        will-change: position, transform;
+        padding-right: rem-calc(40);
+        padding-bottom: rem-calc(30);
+
+        @include breakpoint(xlarge down) {
+            padding-right: 20px;
+        }
+
+        @include breakpoint(large down) {
+            padding-right: 0;
+        }
+
+        .dokan-store-contact {
+            .seller-form {
+                .dokan-btn {
+                    float: none !important;
+                }
+            }
+        }
+    }    
+}
+
+// Sticky Sidebar
+
+body.shop-sidebar-active {
+    &.shop-sticky-sidebar {
+        .sidebar-container {
+            @include breakpoint(medium down) {
+                display: none;
+            }
+        }
+    }
+}
+

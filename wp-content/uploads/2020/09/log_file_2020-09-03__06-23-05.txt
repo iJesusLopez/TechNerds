@@ -1,0 +1,59 @@
+
+---Downloaded files---
+The import files for: Default were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost:8080/TechNerds
+Data file = C:\wamp64\www\TechNerds/wp-content/themes/barberry/inc/demo/barberry.wordpress.xml
+Widget file = C:\wamp64\www\TechNerds/wp-content/themes/barberry/inc/demo/barberry.widgets.wie
+Customizer file = C:\wamp64\www\TechNerds/wp-content/themes/barberry/inc/demo/barberry.export.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Widget already exists
+Recent Posts - No Title - Widget already exists
+Categories - No Title - Widget already exists
+Archives - No Title - Widget already exists
+Meta - No Title - Widget already exists
+
+Shop Sidebar : 
+
+Product Categories - No Title - Widget already exists
+Filter Products by Price - Filter by price - Widget already exists
+Barberry Attributes Filter - Filter by color - Widget already exists
+Products - Recent Products - Widget already exists
+Product Tag Cloud - Product tags - Widget already exists
+
+Shop Filters : 
+
+Filter Products by Price - Filter by price - Widget already exists
+Barberry Attributes Filter - Filter by size - Widget already exists
+Barberry Attributes Filter - Filter by material - Widget already exists
+Barberry Attributes Filter - Filter by color - Widget already exists
+
+Footer 1 : 
+
+Navigation Menu - No Title - Widget already exists
+
+Footer 2 : 
+
+Navigation Menu - No Title - Widget already exists
+
+Footer 3 : 
+
+Navigation Menu - No Title - Widget already exists
+
+Footer 4 : 
+
+Text - Newsletter Widget - Widget already exists
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+

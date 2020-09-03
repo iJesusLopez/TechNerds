@@ -1,0 +1,13 @@
+@mixin widget_meta() {
+
+	@include widget_links_list;
+
+	li {
+    	// font-size: rem-calc(18);
+    	// line-height: 1.3;		
+
+		abbr {
+			border-bottom: 1px dashed; 
+		}
+	}
+}

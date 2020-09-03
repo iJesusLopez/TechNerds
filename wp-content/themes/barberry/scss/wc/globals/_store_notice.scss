@@ -1,0 +1,52 @@
+.woocommerce-store-notice {
+    padding: rem-calc(20) rem-calc(25); 
+    padding-right: rem-calc(60); 
+    position: fixed;
+    margin-bottom: 0px;
+    z-index: 9999;
+    display: none;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: #333;	
+	color: #fff;
+	font-size: 90%;
+	line-height: 1.4;
+	@include fontSmooth();
+
+	@include breakpoint(medium)	{
+		width: 40%;
+		bottom: rem-calc(40);
+    	left: rem-calc(40);
+	}
+
+	@include breakpoint(large) {
+		width: 30%;
+	}
+
+	@include breakpoint(xlarge up) {
+		width: 20%;
+	}
+
+	.woocommerce-store-notice__dismiss-link {
+    	visibility: hidden;
+    	font-size: 0;
+    	position: absolute;
+	    top: rem-calc(20);
+	    right: rem-calc(20);
+
+	    &:after {
+	    	color: #fff;
+	    	visibility: visible;
+	    	font-size: 24px;
+	    	@include barberry-icon('\ea29');
+	    	@include transition(opacity .3s);
+	    }
+
+	    &:hover {
+	    	&:after {
+				opacity: .6;
+	    	}
+	    }
+	}
+}

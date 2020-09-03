@@ -1,0 +1,100 @@
+// Heading 
+
+h2.vc_custom_heading {
+	margin-bottom: 0; 
+}
+
+.grid-container {
+  @include poly-fluid-sizing('padding-left', (768px:30px, 1920px:130px));
+  @include poly-fluid-sizing('padding-right', (768px:30px, 1920px:130px));
+
+  @include breakpoint(small only) {
+      & {
+          padding-right: 1.5rem;
+          padding-left: 1.5rem;
+      }
+  }    
+}
+
+.default-width-page {
+	.woocommerce {
+		.grid-container:not(.product_related_wrapper) {
+			padding: 0;		
+		}	
+
+
+		.grid-container.checkout-empty {
+			padding-top: rem-calc(60px);
+			padding-bottom: rem-calc(100px);
+			@include poly-fluid-sizing('padding-left', (768px:30px, 1920px:130px));
+			@include poly-fluid-sizing('padding-right', (768px:30px, 1920px:130px));			
+
+			@include breakpoint(medium down) {
+				padding-top: 40px;
+				padding-bottom: 60px;
+			}
+			@include breakpoint(small only) {
+				padding-right: 1.5rem;
+				padding-left: 1.5rem;				
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}	
+
+		}	
+	}
+	
+}
+
+
+
+
+.full-width-page {
+
+	.grid-container {
+		padding: 0;		
+	}
+
+	.woocommerce {
+		.grid-container {
+			padding-top: 0;
+			padding-bottom: 0;
+
+			@include breakpoint(small only) {
+				& {
+					padding-right: 1.5rem;
+					padding-left: 1.5rem;
+				}
+			}
+		}		
+	}
+
+	.boxed-row {
+		overflow: visible;
+		@include poly-fluid-sizing('padding-left', (768px:30px, 1920px:130px));
+		@include poly-fluid-sizing('padding-right', (768px:30px, 1920px:130px));
+
+		@include breakpoint(small only) {
+			& {
+				padding-right: 1.5rem;
+				padding-left: 1.5rem;
+			}
+		}
+
+		.woocommerce {
+			.grid-container {
+				padding: 0;			
+			}
+		}
+
+		.vc_row[data-vc-full-width] {
+		    overflow: visible;
+		}	
+   
+	}
+
+	.grid-container.content-page-wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}

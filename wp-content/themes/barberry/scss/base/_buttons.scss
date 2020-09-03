@@ -1,0 +1,382 @@
+
+
+/* main colors */
+$btn-primary-color: #fff;
+$btn-primary-bg: #000;
+$btn-border-primary-color: #000;
+
+/* spacing values */
+$space-unit: 1em;
+$space-xxxs: 0.25 * $space-unit;
+$space-xxs:  0.375 * $space-unit;
+$space-xs:   0.5 * $space-unit;
+$space-sm:   0.75 * $space-unit;
+$space-md:   1.25 * $space-unit;
+$space-df:   1.8 * $space-unit;
+$space-lg:   2 * $space-unit;
+$space-xl:   3.25 * $space-unit;
+$space-xxl:  5.25 * $space-unit;
+$space-xxxl: 8.5 * $space-unit;
+
+/* components padding */
+$component-padding: $space-sm;
+
+$radius: 0px;
+$btn-font-size: 1em;
+$btn-font-weight:700;
+$btn-leter-spacing:1px;
+$btn-text-transform: uppercase;
+
+$btn-df: $btn-font-size - 0.45;
+$btn-sm: $btn-font-size - 0.50;
+$btn-md: $btn-font-size - 0.2;
+$btn-lg: $btn-font-size + 0.4;
+
+$btn-radius: $radius;
+$btn-border-width: 2px;
+
+
+
+button,
+.button,
+a,
+input,
+div.wpforms-container .wpforms-form button[type=submit] {
+    &[type="submit"],
+    &.submit,
+    &.btn--primary,
+    &.button {
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+
+        // position: relative;
+        white-space: nowrap;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;        
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        text-align: center;
+
+        line-height: 1;
+        padding: $space-df $space-xl $space-df;
+        border-radius: $btn-radius;
+        font-size: $btn-df;
+        font-weight: $btn-font-weight;
+        letter-spacing: $btn-leter-spacing;  
+        text-transform: $btn-text-transform;     
+        text-decoration: none;    
+
+        @include fontSmooth;
+        @include transition(color 1s ease);
+
+        background: transparent;
+        border: 2px solid $btn-border-primary-color;
+
+        background-color: $btn-primary-bg;
+        color: $btn-primary-color; 
+        background-image: none !important;    
+
+
+        &:before {
+            z-index: -1;
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom:0;
+            left: 0;
+            width: 150%;
+            height: 100%; 
+
+            @include transform(rotate3d(0, 0, 1, 10deg) translate3d(-1.2em, 110%, 0));          
+
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+
+            @include transition(transform .5s cubic-bezier(.59,.03,.2,1));   
+
+            body.is-mobile & {
+                display: none;
+            }
+
+        }
+
+        &:after {
+            color: #fff;
+        }
+
+        body:not(.is-mobile) & {
+            &:hover {
+                color: #000;
+
+                &:before {
+                    opacity: 1;
+                    background-color: #fff;
+                    @include transform(rotate3d(0, 0, 1, 0deg)  translate3d(0,0, 0)); 
+
+
+                }   
+                &:after {
+                    color: #000;
+                }                
+            } 
+        }        
+
+
+
+
+        &.btn--secondary {
+            background-color: #fff;
+            color: #000;
+
+            body:not(.is-mobile) {
+                &:before {
+                    background-color: #000;
+                }
+
+                &:after {
+                    color: #000;
+                }
+
+                &:hover {
+                    color: #fff;
+                    &:after {
+                        color: #fff;
+                    }                
+                }    
+            }            
+        } 
+
+        &.btn--border,
+        &.disabled {
+            border-width: 1px;
+            border-color: #e1e1e1;
+            background-color: #fff;
+            color: #000;  
+            @include transition(opacity 0.3s);
+
+            &:before {
+                display: none;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }         
+        } 
+
+        &.disabled {
+            cursor: not-allowed;
+        }
+
+    }
+
+}
+
+input[type="submit"] {
+    @include transition(background-color 1s ease);
+    cursor: pointer;
+    &:before {
+        display: none;
+    }
+    &:hover {
+        color: #000;
+        background-color: #fff;
+    }
+
+    &.dokan-btn,
+    &.dokan-btn-default {
+        // background-color: inherit !important;
+        border: none;
+        border-color: transparent;
+        border-radius: 0 !important;
+    }
+}
+
+// Filter Button for Mobile 
+
+body.is-mobile {
+    .filter_switch {
+        &:active,
+        &:hover {
+            color: #000;
+        }
+        .f-plus {
+            &:before,
+            &:after {
+                background-color: #000 !important;
+            }
+        }
+        &:before {
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+// Close Icon
+
+.close-icon,
+.close-button {
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+
+    width: 1.3rem;
+    height: 1.3rem;
+    opacity: 0;
+    @include transition(opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1));
+
+    @include breakpoint(small only) {
+        width: 1.1rem;
+        height: 1.1rem;
+    }    
+
+
+    .close-icon_top {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        background: #000000;
+        width: 100%;
+        height: 0.16rem;
+        margin-top: -0.09375rem;  
+        @include transform(rotate(-45deg) translateX(-140%)); 
+        @include transition(transform 0.6s cubic-bezier(0.4, 0, 0.2, 1));      
+        @include transition-delay(0.1s); 
+
+        @include breakpoint(small only) {
+           height: 0.12rem;
+        }            
+    }
+
+
+    .close-icon_bottom {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        background: #000000;
+        width: 100%;
+        height: 0.16rem;
+        margin-top: -0.09375rem;   
+        @include transform(rotate(45deg) translateX(-140%));      
+        @include transition(transform 0.6s cubic-bezier(0.4, 0, 0.2, 1));
+        @include transition-delay(0.1s); 
+
+        @include breakpoint(small only) {
+           height: 0.12rem;
+        }         
+    }
+
+    .offcanvas_aside.offcanvas_aside_left & {
+        left: 100px;
+        top: 80px;  
+
+        @include breakpoint(medium down) {
+            left: 50px;
+            top: 40px; 
+        }  
+
+        @include breakpoint(small only) {
+            top: 30px;
+        }    
+    }
+
+    .offcanvas_aside.offcanvas_aside_right & {
+        left:auto;
+        right: 0px;
+        top: 80px;  
+
+        @include breakpoint(medium down) {
+            right: 0px;
+            top: 40px; 
+        }  
+
+        @include breakpoint(small only) {
+            top: 30px;
+        }  
+    }
+
+
+    .offcanvas_aside.offcanvas_aside_top & {
+        left:auto;
+        @include poly-fluid-sizing('right', (768px:30px, 1920px:130px));
+        top: 80px;  
+
+        @include breakpoint(medium down) {
+            // right: 0px;
+            top: 40px; 
+        }  
+
+        @include breakpoint(small only) {
+            top: 30px;
+            
+        }  
+    }
+
+    .offcanvas_left &,
+    .offcanvas_right &,
+    .offcanvas_top &,
+    html.is-reveal-open .reveal-overlay .reveal &,
+    .site-content.open & {
+        opacity: 1;
+        @include transition-delay(0.3s); 
+
+        .close-icon_top {
+            @include transform(rotate(-45deg) translateX(0%));
+            @include transition-delay(0.5s);    
+        }
+        .close-icon_bottom {
+            @include transform(rotate(45deg) translateX(0%));
+            @include transition-delay(0.5s);          
+        }
+    }   
+}
+
+
+// Edit Button
+
+.edit,
+.comment-edit-link {
+  position: relative;
+  padding-right: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  display: inline-block;
+  background-image: none !important;
+  transition: opacity .6s !important;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  &:after {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    font-size: 16px;
+    @include barberry-icon('\ea1f')
+  }
+}
+

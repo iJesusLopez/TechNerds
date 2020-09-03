@@ -1,0 +1,74 @@
+@import "globals/entry-date";
+@import "globals/pagination";
+@import "globals/comments";
+@import "globals/gallery";
+
+
+.wp-caption,
+.wp-caption-text,
+.gallery-caption,
+.bypostauthor {
+	line-height: 1;
+}
+
+.wp-caption {
+	color: inherit;
+}
+
+.wp-caption-text {
+	font-size: 16px;
+	text-align: left;
+	padding: rem-calc(20) 0;
+	line-height: 1.6;
+	color: #666 !important;
+	margin-bottom: 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 10px auto 20px;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 10px 35px 25px 0px;
+	img {
+		width: 100%;
+	}
+    @include breakpoint(medium down) {
+    	margin: 10px 25px 0 0;
+    }	
+    @include breakpoint(380px down) {
+		width: 100% !important;
+		margin: 10px 0 0 0;
+    }
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 10px 0px 25px 35px;
+	img {
+		width: 100%;
+	}	
+    @include breakpoint(medium down) {
+    	margin: 10px 0 0px 25px;
+    }
+    @include breakpoint(380px down) {
+		width: 100% !important;
+		margin: 10px 0 0 0;
+    }
+    .wp-caption-text {
+    	text-align: right;
+    }
+}
+
+
+.gallery-caption {
+	color: inherit;
+}
+
+.bypostauthor {
+	color: inherit;
+}

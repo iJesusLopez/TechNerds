@@ -1,0 +1,64 @@
+.blog-content-area,
+.single_related_posts {
+
+	article {
+
+		.entry-meta {
+			margin-bottom: rem-calc(10);
+			.entry-date {
+				display: inline-block;
+				border-bottom: 1px solid #666;
+				font-size: 12px;
+				line-height: 1;
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				
+				span {
+					color: #333;
+					display: inline-block;
+					padding: 0px 0px 5px 0px;
+				}
+			}
+		}
+
+		&.has-post-thumbnail {
+			.entry-thumbnail {
+				position: relative;
+				.entry-meta {
+					z-index: 1;
+					position: absolute;
+					left: -15px;
+					top: 20px;
+
+					@include breakpoint(small only) {
+						left: 0px;
+					}
+
+					.entry-date {
+						display: inline-block;
+						border: 1px solid #666;
+						font-size: 12px;
+						line-height: 1;
+						font-weight: 400;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						background-color: #fff;
+						span {
+							display: inline-block;
+							padding: 12px 12px 8px 12px;
+						}
+					}					
+				}
+			}
+
+			.entry-content-wrap {
+				.entry-header {
+					.entry-meta {
+						display: none;
+					}
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,172 @@
+.barberry-navigation {
+	position: relative;
+	// background-color: #eee;
+	// height: 34px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+
+		ul {
+			transition: top 0.3s ease 0s, opacity 0.3s;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: auto;
+			min-width: 200px;
+			background-color: #fff;
+			opacity: 0;
+			z-index: -1;
+			padding: 30px 0;
+			transform: scaleX(0);
+			display: block;
+			border-radius: 0;
+			box-shadow: none;
+			box-shadow: 0px 0px 90px -15px rgba(0,0,0,0.2);
+
+
+			&::before {
+			    content: '';
+			    position: absolute;
+			    bottom: 100%;
+			    left: 20%;
+			    right: auto;
+			    -webkit-transform: translateX(-50%);
+			    -ms-transform: translateX(-50%);
+			    transform: translateX(-50%);
+			    height: 0;
+			    width: 0;
+			    border: 8px solid transparent;
+			    border-bottom-color: #fff;
+			    opacity: 1;
+			    -webkit-transition: opacity .3s;
+			    transition: opacity .3s;
+			}			
+
+			ul {
+				transition: left 0.3s ease 0s, opacity 0.3s;
+				left: 110%;
+				top: 0;
+				box-shadow: none;
+				padding: 30px 0;
+				// border-top: 1px solid #ccc;
+				box-shadow: 0px 0px 90px -15px rgba(0,0,0,0.2);
+
+				&::before {
+				    content: '';
+				    position: absolute;
+				    top: 18%;
+				    bottom: auto;
+				    left: -16px;
+				    right: auto;
+				    transform: rotate(-90deg);
+				    height: 0;
+				    width: 0;
+				    border: 8px solid transparent;
+				    border-bottom-color: #fff;
+				    opacity: 1;
+				    -webkit-transition: opacity .3s;
+				    transition: opacity .3s;
+				}				
+			}
+		}
+	}
+
+	li {
+		display: inline-block;
+		padding: 10px 22px;
+		position: relative;
+		text-align: left;
+		margin: 0;
+
+		a {
+			color: #000;
+			font-weight: 400;
+		}
+
+		&:hover > ul {
+			opacity: 1;
+			z-index: 9999;
+			top: 100%;
+			transform: scaleX(1);	
+		}
+
+		li {
+			text-align: left;
+			display: block;
+			padding: 0 40px;
+
+			a {
+				color: #000;
+				font-weight: normal;
+				font-weight: 300;
+				font-size: 18px;
+				padding: 10px 0;
+				text-transform: none;
+				transition: 0.5s;
+				display: inline-block;
+				position: relative;
+				background-color: transparent;
+				white-space: nowrap;
+				line-height: 1;	
+
+				.items-badge {
+					position: absolute;
+					right: 0;
+					top: 8px;
+
+					& > span {
+						position: absolute;
+						left: 0;
+						top: 0;
+						opacity: 0;
+						margin-left: 10px;
+
+						&:last-child {
+							opacity: 1;
+						}
+					}
+				}	
+
+				&:hover {
+					color: #333;
+					background-color: transparent;
+				}									
+			}
+
+			&:hover > ul {
+				top: -28px;
+				left: 80%;
+
+				li {
+					a:hover {
+						&:before {
+							left: -30px;
+						}
+					}
+				}				
+			}
+
+			&:first-child > a {
+				border-top-width: 0;
+			}						
+		}
+
+		& > ul {
+			left: -10px;
+		}
+
+	}
+
+	& > .menu > li {
+		&:first-child {
+			& > ul {
+				left: -30px;
+			}
+		}
+	}
+
+}
+

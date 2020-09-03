@@ -1,0 +1,46 @@
+@mixin widget_text() {
+	.textwidget	{
+
+		a:not(.button) {
+			font-size: rem-calc(18);
+			line-height: 1.6;			
+			font-weight: normal;
+			color: #000;
+			background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+			background-position: left bottom, left bottom;
+			background-repeat: no-repeat, no-repeat;
+			background-size: 0 1px, 100% 1px;
+			transition: none 300ms ease-in-out;
+			transition-property: background-size, color;
+			word-wrap: break-word;
+
+			&:hover {
+				background-size: 100% 1px, 100% 1px;
+			}      
+		}
+
+		p {
+			font-size: rem-calc(18);
+			line-height: 1.6;
+			margin-bottom: 16px;
+			
+			&:last-of-type {
+				margin-bottom: 0;
+			} 
+		}
+
+		ul {
+		    margin-left: 1.25rem;
+		    list-style: inherit; 
+		}
+
+		ul, ol, dl {
+		    margin-bottom: 2rem;
+    		list-style-position: outside;
+    		
+    		li {
+    			margin: 0 0 8px; 
+    		}
+		}
+	}
+}

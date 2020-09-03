@@ -1,0 +1,413 @@
+$avatar-size: 70 !default;
+
+@mixin comments_title {
+	font-size: rem-calc(30);
+	margin-bottom: rem-calc(60);
+	font-weight: 300;
+	// max-width: rem-calc(600);
+
+	// @include breakpoint(small only)	{
+	// 	font-size: rem-calc(17);
+	// }
+
+	b {
+		font-weight: 600;
+	}
+}
+
+@mixin comments_subtitle {
+	color: inherit;
+}
+
+.comments-area {
+	margin-top: rem-calc(80);
+
+	@include breakpoint(small only) {
+		margin-top: rem-calc(40); 
+	}
+
+	.comments-title {
+		@include comments_title;
+
+		&__post-title {
+			@include comments_subtitle;
+		}		
+	}
+
+	.comment-list {
+		list-style: none;
+		margin: 0;
+
+		> .comment {
+			&:last-child {
+				margin-bottom: rem-calc(80);
+			}
+		}	
+
+		li.pingback {
+			font-size: rem-calc(14);
+			padding: 25px 25px 25px 35px;
+			border: 1px solid;
+			text-transform: uppercase;
+			margin-bottom: rem-calc(35);	
+
+			+ .comment {
+				margin-top: rem-calc(60);
+			}
+
+			a.url {
+				font-size: rem-calc(16);
+				text-transform: none;
+				padding: 0px 10px;
+			}
+
+			.edit-link {
+				text-transform: uppercase; 
+				font-size: rem-calc(10);
+				line-height: rem-calc(13); 
+				margin-left: rem-calc(16); 
+				
+				.comment-edit-link {
+					color: inherit;  
+					display: inline-flex;
+					align-items: center;
+					
+					&:before {
+
+					}
+				}
+			}											
+		}	
+
+		.comment {
+			margin: 0;
+			position: relative;
+			min-height: rem-calc($avatar-size);
+			margin-bottom: rem-calc(50); 
+			// padding-left: rem-calc(90);	
+
+			article.comment-body {
+				@include breakpoint(small only)	{
+					// padding-left: rem-calc(72);
+				}	
+
+				header.comment-meta {
+					padding-left: rem-calc(90);
+					margin-bottom: rem-calc(10);
+
+					.comment-author {
+						.avatar {
+							max-width: rem-calc($avatar-size);
+							height: auto;
+							border-radius: 50%;
+							position: absolute;
+							left: 0;
+							top: 0;							
+						}
+
+						h3.comment-author-title, 
+						h3.comment-author-title a {
+							color: #000;
+							font-size: rem-calc(24);  
+							line-height: 1.2;	
+							margin-bottom: 0;	
+							@include breakpoint(small only) {
+								font-size: rem-calc(22); 
+							} 					
+						}
+
+						h3.comment-author-title {
+							a {
+								&:hover {
+									opacity: .6;
+								}
+							}
+						}
+					}
+
+					.comment-metadata {
+						time {
+							display: block;
+							color: #666;
+							font-weight: 300;
+							font-size: rem-calc(16);	
+						}
+						
+					}
+				}
+
+				.comment-content {
+
+					padding-left: rem-calc(90);
+
+					.comment-text {
+						margin-bottom: rem-calc(14); 
+
+						p:last-child {
+							margin-bottom: 0;
+						}						
+
+						a:not(.button) {
+						  font-weight: normal;
+						  color: #000;
+						  background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+						  background-position: left bottom, left bottom;
+						  background-repeat: no-repeat, no-repeat;
+						  background-size: 0 1px, 100% 1px;
+						  transition: none 300ms ease-in-out;
+						  transition-property: background-size, color;
+						  word-wrap: break-word;
+
+						  &:hover {
+						    background-size: 100% 1px, 100% 1px;
+						  }         
+						}
+
+						p, a {
+							// font-size: 90%;
+						}
+					}
+
+					.comment-reply {
+						display: inline-block;
+						margin-right: rem-calc(10);
+						line-height: 1;
+						a {
+							
+							position: relative;
+							padding-left: 23px;
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 1;
+							display: inline-block;
+							background-image: none !important;
+							transition: opacity .6s !important;
+
+							&:hover {
+								opacity: .5;
+							}
+
+							&:before {
+								position: absolute;
+								left: 0;
+								bottom: 1px;
+								font-size: 18px;
+								@include barberry-icon('\ea14')
+							}
+						}
+						
+					}
+				}
+
+				& + .comment-respond {
+					margin-top: rem-calc(50); 
+					margin-bottom: rem-calc(70); 
+
+					.comment-reply-title {
+						color: #000;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						@include breakpoint(small only)	{
+							display: block;
+						}
+
+						small {
+							font-size: rem-calc(10);
+							line-height: rem-calc(13); 
+							text-transform: uppercase;
+
+							@include breakpoint(small only)	{
+								margin-top: rem-calc(5);
+								margin-bottom: rem-calc(20);
+								display: block;
+							}
+							
+							a {
+								position: relative;
+								font-size: rem-calc(11);
+								display: flex;
+								align-items: center;
+								margin-bottom: 0;
+								padding-left: 17px;
+								letter-spacing: 0;
+								
+								&:before	{
+									position: absolute;
+									top: -3px;
+									left: 0;
+									@include barberry-icon('\ea2a');
+									font-size: rem-calc(16); 
+								}
+
+								&:hover {
+									opacity: .6;
+								}
+							}
+						}												
+					}
+				}
+			}	
+
+			.children {
+				margin-top: rem-calc(50); 
+				margin-left: rem-calc(90);
+				list-style-type: none; 
+
+				@include breakpoint(small only)	{
+					margin-left: 0;
+				}								
+			}	
+		}
+	}
+
+	.comments-pagination {
+		margin-bottom: rem-calc(80);
+		 
+		.nav-links	{
+			align-items: center;
+			
+			.page-numbers {
+				margin-right: rem-calc(32); 
+				font-size: rem-calc(16);
+				line-height: rem-calc(24); 
+				display: inline-block;
+
+				&.current,
+				&:hover	{
+					opacity: 1;
+				}
+
+				&.prev,
+				&.next {
+					position: relative;
+					top: -1px; 
+					
+					&:after	{
+						font-size: rem-calc(8); 
+						vertical-align: middle;
+					}
+				}
+
+				&.prev {
+					margin-right: rem-calc(22);
+				
+					
+					@include breakpoint(large) {
+						margin-left: rem-calc(-10); 
+					}
+					 
+					&:after {
+						@include barberry-icon('\ea0e');
+					}
+				}
+
+				&.next {
+					@include breakpoint(large) {
+						margin-left: rem-calc(-10); 
+					}
+					 
+					&:after {
+						@include barberry-icon('\ea0f');
+					}
+				}
+			}
+		}
+	}	
+
+	.comment-respond {
+
+		.comment-reply-title {
+			font-size: rem-calc(30); 
+			margin-bottom: 0; 
+		}
+
+		.comment-form {
+			font-size: 0;
+
+			@include breakpoint(small only) {
+				margin-bottom: rem-calc(40);
+			}
+
+			p {
+				margin-bottom: rem-calc(15);
+			}
+
+			.comment-notes,
+			.logged-in-as > a {
+				font-size: rem-calc(16);
+				opacity: 1;  
+				margin-bottom: rem-calc(20);
+			}
+
+			.comment-notes {
+				opacity: 1;
+			}
+
+			.logged-in-as > a {
+				margin-left: rem-calc(5);
+				font-size: rem-calc(18);
+				color: #666;
+				background-image: linear-gradient(to top, #000 0px, #000 0px), linear-gradient(to top, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 0px);
+				background-position: left bottom, left bottom;
+				background-repeat: no-repeat, no-repeat;
+				background-size: 0 1px, 100% 1px;
+				transition: none 300ms ease-in-out;
+				transition-property: background-size, color;
+				word-wrap: break-word;
+
+				&:hover {
+					color: #000;
+					background-size: 100% 1px, 100% 1px;
+				}
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+			}
+
+			.comment-form-comment {
+				margin-bottom: rem-calc(24); 
+			}
+
+			.comment-form-author,
+			.comment-form-email,
+			.comment-form-url {
+
+				@include breakpoint(medium)	{
+					float: left;
+					width: 32%;
+					margin-right: 2%;
+				}
+
+				input {
+					margin-bottom: 0;
+				} 
+			}
+
+			.comment-form-url {
+				margin-right: 0;
+
+			}	
+							
+			.form-submit {
+				
+				clear: both;
+				float: none;
+				display: block;
+				width: 100%;
+				margin-bottom: 0;
+
+				.submit {
+					margin-top: rem-calc(15);
+				}
+			}	
+		}
+
+
+
+	}
+
+}

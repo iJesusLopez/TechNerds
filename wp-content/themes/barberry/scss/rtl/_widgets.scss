@@ -1,0 +1,547 @@
+// Search widget
+
+@mixin submit_button_position {
+	right: auto;
+	left: 0;
+}
+
+.search-form,
+.woocommerce-product-search,
+.searchform {
+
+	&:after	{
+		@include submit_button_position;
+	}
+
+	input[type='text'],
+	.search-field {
+		padding-left: rem-calc(48);
+		padding-right: rem-calc(0);				
+	}
+
+	[type=submit] {
+		@include submit_button_position;
+	}
+
+}
+
+// Layered nav
+
+
+
+@mixin widget_layered_nav {
+
+	ul {
+
+		li {
+
+			a {
+				padding-left: 0px;
+				padding-right: 23px;
+
+
+				&:before {
+					left: auto;
+					right: 0;
+				}
+
+				&:after {
+					left: auto;	
+					right: 4px;			
+				}
+
+			}
+
+			span.count {
+			    margin-left: 0px;
+			    margin-right: -2px;
+			}			
+
+			&.show-color {
+				margin-right: 0px;
+				margin-left: 15px;
+
+				
+				.swatch-color {
+
+					.swatch-color-bg {
+						left: auto;
+						right: 0;
+
+
+						&:after {
+						    left: auto;
+						    right: 50%;
+					
+						}
+
+						&:before {
+						    left: auto;
+						    right: 50%;					
+						}
+					}
+				}	
+
+			}
+
+			&.chosen {
+				a {
+
+					&:after {
+						left: auto;	
+						right: 0px;					
+					}
+				}
+			}
+		}
+	}
+
+	ul.price-list {
+		li {
+			a {
+				.price {
+			    	.woocommerce-Price-currencySymbol {
+			    		margin-right: 0px;
+			    		margin-left: 3px;
+			    	}	
+			    	sup {
+					    margin-left: 0rem;	
+					    margin-right: 0.05rem;		    		
+			    	}			    					
+				}
+			}
+		}
+	}
+	
+	ul {
+
+		&.add_scroll {
+            padding-left: 0px;
+            padding-right: 2px;
+        }
+
+	}
+}
+
+
+
+
+
+body.woocommerce-shop .site-shop-filters .site-shop-filters-inside .shop-filters-area-content .barberry_attributes_filter ul li.show-color .swatch-color {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+// Price filter
+
+@mixin widget_price_filter {
+
+	.price_slider_amount {
+		text-align: right;
+
+		.price_label {
+			float: right;
+		}
+
+		.button	{
+			float: left;
+		}
+	}
+
+	.ui-slider {
+		text-align: right;
+	}
+
+	.price_slider_wrapper .ui-widget-content {
+
+		&:before {
+			left: 0px;
+			right: -8px;		
+		}
+
+		&:after	{
+			right: 0px;
+			left: -8px;
+		}
+	}
+
+}
+
+@mixin widget_products() {
+
+	li {
+
+		padding: 0 rem-calc(94) 0 0;	
+
+
+		img {
+			float: right;
+			margin-left: 0;	
+			margin-right: rem-calc(-94);					
+		}
+
+    	sup {
+		    margin-left: 0;	
+		    margin-right: 0.1rem;	    		
+    	}
+
+
+    	del {    		
+    		.amount {
+    			display: inline-block;
+    			&:before {
+	 				right: auto;
+					left: 0;   				
+    			}
+		    			
+    		}
+    	}
+
+	}
+}
+
+
+@mixin widget_product_categories {
+
+	.product-categories	{
+
+		li {
+
+			ul.children {
+				margin-top: 8px;
+				margin-left: 0;
+				margin-right: 10px;
+
+				li {
+				    padding-left: 0px;
+				    padding-right: 20px;
+
+				    span.count {
+					    margin-left: 0;	
+					    margin-right: -4px;			    	
+				    }
+
+					&:before,
+					&:after {
+						border-left: none;
+						border-right: 1px solid #d6d6d6;
+					    left: auto;
+					    right: 2px;
+					}	
+				    					
+				}
+
+			}
+
+		}
+	}
+}
+
+
+
+@mixin widget_product_categories_with_icon {
+
+	.product-categories-with-icon {
+
+		> li {
+
+			> a {							
+
+				img {
+					margin-right: 0;
+					margin-left: rem-calc(15);
+				}							
+			}
+
+			.count {
+			    margin-left: 0;
+			    margin-right: 5px;
+			}			
+
+			> ul {
+
+				&.children {
+					margin: rem-calc(8) rem-calc(40) rem-calc(8) rem-calc(8);
+					width: 100%; 
+
+					li {
+					    padding-left: 0px;
+					    padding-right: 20px;
+	
+
+					    span.count {
+						    margin-left: 0;	
+						    margin-right: -2px;			    	
+					    }					    
+
+
+						&:before,
+						&:after {
+						    border-left: none;
+						    border-right: 1px solid #d6d6d6;
+						    left: auto;
+						    right: 2px;
+						}	
+						
+					}					
+				}
+
+			}					
+		}
+
+		> .cat-parent {
+
+			.dropdown_icon {
+				text-align: left;				
+			}
+
+			> .children	{
+				display: none;
+				
+				li {
+					ul.children	{
+						margin: rem-calc(8) rem-calc(20) 0 rem-calc(8)
+					}
+				}
+			}			
+		}
+
+	}
+
+}
+
+
+@mixin widget_layered_nav_filters {
+
+	ul {
+
+		li {
+
+			a {
+				
+				&:before {
+					margin-right: 0;
+					margin-left: rem-calc(8); 
+				}
+			}			
+		}
+	}
+}
+
+
+$links_list_item_margin_vertical: rem-calc(4) !default;
+
+@mixin widget() {
+
+	ul
+	{
+		ul
+		{
+			margin: $links_list_item_margin_vertical rem-calc(16) $links_list_item_margin_vertical 0;
+
+			ul
+			{
+				margin: $links_list_item_margin_vertical rem-calc(16) $links_list_item_margin_vertical 0;
+
+				ul
+				{
+					margin: $links_list_item_margin_vertical rem-calc(16) $links_list_item_margin_vertical 0;
+				}
+			}
+		}
+	}
+}
+
+@mixin widget_recent_entries() {
+	li	{
+		padding-left: 0;
+		padding-right: rem-calc(26);
+
+
+		&:before {
+			left: auto;
+			right: 0;
+		}
+
+	}
+}
+
+@mixin widget_recent_comments() {
+	.recentcomments	{
+		padding-left: 0;
+		padding-right: rem-calc(26);
+
+		&:before {
+			@include transform(scaleX(-1));
+			filter: FlipH; /* IE 6/7/8 */
+			left: auto;
+			right: 0;
+		}
+
+	}
+
+}
+
+@mixin widget_tags() {
+	.tagcloud {
+		
+		.tag-cloud-link {		
+			padding: rem-calc(6) 0 rem-calc(6) rem-calc(10);
+		}
+	}
+}
+
+@mixin widget_tags_equal() {
+	.tagcloud {
+		.tag-cloud-link {
+			padding: rem-calc(8) rem-calc(10) rem-calc(6) rem-calc(12);
+			margin: 0 0 rem-calc(10) rem-calc(10);
+
+			&:before {
+			    margin-right: 0;		
+			    margin-left: 0.5rem;	
+			}						
+		}
+	}
+}
+
+@mixin widget_nav_menu() {
+
+	ul {
+		li {
+			text-align: right;
+
+		}
+	}
+}
+
+@mixin widget_text() {
+	.textwidget	{
+		a:not(.button) {
+			background-position: right bottom, right bottom;
+		}
+	}
+}
+
+
+.widget {
+	.widget-title {
+		text-align: right;
+	}
+	@include widget();
+
+	&_nav_menu {
+		@include widget_nav_menu();
+	}	
+
+	//==============================================================================
+	// widget_recent_entries
+	//==============================================================================
+
+	&_recent_entries {
+		@include widget_recent_entries();
+	}	
+
+	//==============================================================================
+	// widget_recent_comments
+	//==============================================================================
+
+	&_recent_comments {
+		@include widget_recent_comments();
+	}	
+
+	//==============================================================================
+	// widget_tag_cloud
+	//==============================================================================
+
+	&_tag_cloud	{
+		@include widget_tags();
+	}	
+}
+
+body {
+	&.tag-cloud-equal {
+		.widget {
+			&_tag_cloud	{
+				@include widget_tags_equal();
+			}
+		}		
+		.widget.woocommerce {
+			&.widget_product_tag_cloud	{
+				@include widget_tags_equal();
+			}
+		}
+	}
+}
+
+
+.widget.woocommerce {
+
+	//==============================================================================
+	// widget_product_categories
+	//==============================================================================
+
+	&.widget_product_categories	{
+		@include widget_product_categories();
+	}
+
+
+	//==============================================================================
+	// widget_product_categories_with_icon
+	//==============================================================================
+
+	&.widget_product_categories_with_icon {
+		@include widget_product_categories_with_icon();
+	}
+
+	//==============================================================================
+	// widget_layered_nav
+	//==============================================================================
+
+	&.widget_layered_nav,
+	&.woocommerce-widget-layered-nav,
+	&.barberry-price-filter-list {
+		@include widget_layered_nav;
+	}
+
+	//==============================================================================
+	// widget_layered_nav_filters
+	//==============================================================================
+
+	&.widget_layered_nav_filters {
+		@include widget_layered_nav_filters;
+	}
+
+	//==============================================================================
+	// widget_product_tag_cloud
+	//==============================================================================
+
+	&.widget_product_tag_cloud {
+		@include widget_tags;
+	}
+
+	//==============================================================================
+	// widget_price_filter
+	//==============================================================================
+
+	&.widget_price_filter {
+		@include widget_price_filter;
+	}
+
+	//==============================================================================
+	// widget_products
+	//==============================================================================
+
+	&.widget_products {
+		@include widget_products;
+	}
+}
+
+
+.widget.woocommerce.widget_layered_nav ul li.show-color, .widget.woocommerce.widget_layered_nav ul li.show-image, .widget.woocommerce.woocommerce-widget-layered-nav ul li.show-color, .widget.woocommerce.woocommerce-widget-layered-nav ul li.show-image, .widget.woocommerce.barberry-price-filter-list ul li.show-color, .widget.woocommerce.barberry-price-filter-list ul li.show-image {
+	margin-right: 0;
+	margin-left: 15px;
+}
+
+
+

@@ -1,0 +1,226 @@
+.dokan-dashboard {
+
+	input[type="submit"].dokan-btn-default, a.dokan-btn-default, .dokan-btn-default {
+	    color: #333;
+	    background-color: #fff;
+	    border-color: #ccc;
+	}
+
+	
+	.dokan-dashboard-content {
+		@include breakpoint(small only) {
+			margin-top: rem-calc(30);
+		}
+
+		hr {
+		    border-bottom-color: #e1e1e1;
+		}
+
+		.dokan-form-container {
+			.product-edit-container {
+			    label {
+			    	a {
+			    		font-size: inherit;
+			    		text-decoration: underline;
+			    	}
+			    }
+
+			    .dokan-form-control {
+			    	border-width: 2px;
+			    }
+
+			    .select2-container--default .select2-selection--single {
+    				border: none;
+    				padding: 10px 30px 10px 20px;
+    				background-color: transparent;
+				}
+
+				.select2-container--default .select2-selection--multiple {
+				    border: none;
+				}
+
+			}			
+		}
+
+		header.dokan-dashboard-header {
+			h1 {
+				padding: 0;
+				font-size: rem-calc(40);
+				margin-bottom: rem-calc(20);
+
+				@include breakpoint(1280px down) {
+					font-size: rem-calc(36);
+					margin-bottom: rem-calc(10);
+				}				
+			}
+		}
+
+		ul.dokan-listing-filter {
+			li {
+				a {
+					font-size: 18px;
+				}
+			}
+		}
+
+		.dokan-table {
+			thead, tbody, tfoot {
+				> tr {
+					> th, > td {
+						font-size: 18px;
+						> p {
+							> a {
+								font-size: 18px;
+							}
+						}
+						.row-actions {
+							font-size: 14px;
+							span, span a {
+								font-size: 14px;
+							}
+							span.edit {
+								padding-right: 17px;
+								&:after {
+									font-size: 12px;
+									bottom: 7px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			thead {
+				background:transparent;
+			}
+
+			tbody {
+				background-color: transparent;
+			}
+		}
+
+	}
+
+	.media-modal {
+
+		.media-frame select,
+		.wp-admin .media-frame select {
+		    line-height: 28px;
+		    height: 28px;
+		    margin-top: 11px;
+		}
+
+
+
+		
+
+		.media-frame-title h1 {
+		    padding: 0 16px;
+		    font-size: 22px;
+		    line-height: 50px;
+		    margin: 0;
+		}	
+		.image-details h2, .image-details h3, .media-sidebar h2, .media-sidebar h3 {
+		    position: relative;
+		    font-weight: 600;
+		    text-transform: uppercase;
+		    font-size: 12px;
+		    color: #666;
+		    margin: 24px 0 8px;
+		}
+
+		.uploader-inline h2, .uploader-inline h3 {
+		    font-size: 20px;
+		    line-height: 28px;
+		    font-weight: 400;
+		    margin: 0;
+		}
+
+		.wp-core-ui .button-group.button-hero .button,
+		.wp-core-ui .button.button-hero {
+			font-family: inherit;
+		    font-weight: inherit;
+		    letter-spacing: inherit;
+		    text-transform: inherit;
+		    border: 1px solid #ccc;
+		    background-color: inherit;
+
+			color: #555;
+			border-color: #ccc;
+			background: #f7f7f7;
+			box-shadow: 0 1px 0 #ccc;		    
+		}
+
+		.wp-core-ui .attachment .thumbnail {
+		    max-width: 100%;
+		    margin-bottom: 0;
+		    border: none;
+		    box-shadow: none;
+		    line-height: 1.6;
+		}
+
+		.media-frame a {
+		    font-size: inherit;
+		}
+
+		[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea, select {
+			height: inherit;
+			line-height: inherit;
+		}	
+
+		p.media-types {
+		    font-size: 13px;
+		    line-height: 1.5;
+		    margin: 1em 0;
+		}	
+		.compat-item {
+			table {
+				tbody {
+					border: inherit;
+					background-color: inherit;
+				}
+
+				tr {
+				    border-bottom: inherit;
+				    border-bottom-color: inherit;
+				}	
+
+				.label {
+					background:transparent;
+				}			
+			}
+
+		}
+
+		button.button {
+			border-width: 1px;
+			&:hover {
+				color: #fff !important;
+			}
+		}
+
+		.media-toolbar {
+			.search-form {
+				border-bottom: none;
+				&:before, &:after {
+					display: none;
+				}
+
+				input.search {
+					height: auto;
+
+				}
+			}
+		}
+
+		.media-frame-toolbar {
+			.search-form {
+				border: none;
+				&:before, &:after {
+					display: none;
+				}
+			}
+		}	
+	}
+
+}

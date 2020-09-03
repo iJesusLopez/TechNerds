@@ -1,0 +1,5707 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Barberry\n"
+"POT-Creation-Date: 2020-08-15 14:58+0200\n"
+"PO-Revision-Date: 2020-08-15 14:58+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:20
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:27
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:22
+#, php-format
+msgctxt "comments title"
+msgid "One Reply to %s"
+msgstr ""
+
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to %2$s"
+msgid_plural "%1$s Replies to %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:54 woocommerce/myaccount/my-subscriptions.php:61
+#: woocommerce/myaccount/orders.php:91
+msgid "Previous"
+msgstr ""
+
+#: comments.php:55 woocommerce/myaccount/my-subscriptions.php:65
+#: woocommerce/myaccount/orders.php:95
+msgid "Next"
+msgstr ""
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr ""
+
+#: dokan/global/update-account.php:34
+msgid "Update account to Vendor"
+msgstr ""
+
+#: dokan/global/update-account.php:41
+msgid "First Name"
+msgstr ""
+
+#: dokan/global/update-account.php:46
+msgid "Last Name"
+msgstr ""
+
+#: dokan/global/update-account.php:52
+msgid "Shop Name"
+msgstr ""
+
+#: dokan/global/update-account.php:57
+msgid "Shop URL"
+msgstr ""
+
+#: dokan/global/update-account.php:64
+msgid "Address"
+msgstr ""
+
+#: dokan/global/update-account.php:69
+msgid "Phone Number"
+msgstr ""
+
+#: dokan/global/update-account.php:93
+#, php-format
+msgid ""
+"I have read and agree to the <a target=\"_blank\" href=\"%s\">Terms &amp; "
+"Conditions</a>."
+msgstr ""
+
+#: dokan/global/update-account.php:101
+msgid "Become a Vendor"
+msgstr ""
+
+#: dokan/products/new-product-single.php:11
+msgid "Access Denied, No product found"
+msgstr ""
+
+#: dokan/products/new-product-single.php:35
+msgid "Access Denied"
+msgstr ""
+
+#: dokan/products/new-product-single.php:118
+msgid "Edit Product"
+msgstr ""
+
+#: dokan/products/new-product-single.php:125
+msgid "View Product"
+msgstr ""
+
+#: dokan/products/new-product-single.php:130
+msgid "Hidden"
+msgstr ""
+
+#: dokan/products/new-product-single.php:141
+msgid "Error!"
+msgstr ""
+
+#: dokan/products/new-product-single.php:149
+msgid "Success!"
+msgstr ""
+
+#: dokan/products/new-product-single.php:149
+msgid "The product has been saved successfully."
+msgstr ""
+
+#: dokan/products/new-product-single.php:152
+msgid "View Product &rarr;"
+msgstr ""
+
+#: dokan/products/new-product-single.php:175 functions/theme-options.php:1248
+msgid "Title"
+msgstr ""
+
+#: dokan/products/new-product-single.php:176
+msgid "Product name.."
+msgstr ""
+
+#: dokan/products/new-product-single.php:178
+msgid "Please enter product title!"
+msgstr ""
+
+#: dokan/products/new-product-single.php:190
+msgid "Product Type"
+msgstr ""
+
+#: dokan/products/new-product-single.php:190
+msgid ""
+"Choose Variable if your product has multiple attributes - like sizes, "
+"colors, quality etc"
+msgstr ""
+
+#: dokan/products/new-product-single.php:206
+msgid "Price"
+msgstr ""
+
+#: dokan/products/new-product-single.php:207
+msgid " You Earn : "
+msgstr ""
+
+#: dokan/products/new-product-single.php:211
+#: dokan/products/new-product-single.php:224
+msgid "0.00"
+msgstr ""
+
+#: dokan/products/new-product-single.php:217
+msgid "Discounted Price"
+msgstr ""
+
+#: dokan/products/new-product-single.php:218
+msgid "Schedule"
+msgstr ""
+
+#: dokan/products/new-product-single.php:219
+#: inc/mega-menu/class-menu-edit.php:169
+#: woocommerce/wishlist-view-header.php:52
+msgid "Cancel"
+msgstr ""
+
+#: dokan/products/new-product-single.php:231
+msgid "Product price can't be less than the vendor fee!"
+msgstr ""
+
+#: dokan/products/new-product-single.php:238
+msgid "From"
+msgstr ""
+
+#: dokan/products/new-product-single.php:239
+#: dokan/products/new-product-single.php:246
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: dokan/products/new-product-single.php:245
+msgid "To"
+msgstr ""
+
+#: dokan/products/new-product-single.php:254
+#: dokan/products/new-product-single.php:287 functions/theme-options.php:1258
+msgid "Category"
+msgstr ""
+
+#: dokan/products/new-product-single.php:266
+msgid "- Select a category -"
+msgstr ""
+
+#: dokan/products/new-product-single.php:282
+msgid "Please choose a category!"
+msgstr ""
+
+#: dokan/products/new-product-single.php:307
+msgid "Select product category"
+msgstr ""
+
+#: dokan/products/new-product-single.php:313
+msgid "Tags"
+msgstr ""
+
+#: dokan/products/new-product-single.php:333
+msgid "Select product tags"
+msgstr ""
+
+#: dokan/products/new-product-single.php:360
+msgid "Upload a product cover image"
+msgstr ""
+
+#: dokan/products/new-product-single.php:392
+msgid "Delete image"
+msgstr ""
+
+#: dokan/products/new-product-single.php:398
+msgid "Add gallery image"
+msgstr ""
+
+#: dokan/products/new-product-single.php:412
+msgid "Short Description"
+msgstr ""
+
+#: dokan/products/new-product-single.php:417 functions/theme-options.php:1250
+#: inc/vendor/kirki/example.php:131 inc/vendor/kirki/example.php:149
+#: inc/vendor/kirki/example.php:425 inc/vendor/kirki/example.php:435
+#: inc/vendor/kirki/example.php:770 inc/vendor/kirki/example.php:780
+msgid "Description"
+msgstr ""
+
+#: dokan/products/new-product-single.php:433
+#: dokan/products/new-product-single.php:434
+msgid "Save Product"
+msgstr ""
+
+#: dokan/store-reviews.php:45 dokan/store-toc.php:44 dokan/store.php:49
+msgid "Store Product Category"
+msgstr ""
+
+#: dokan/store-reviews.php:48 dokan/store-toc.php:47 dokan/store.php:52
+msgid "Store Location"
+msgstr ""
+
+#: dokan/store-reviews.php:52 dokan/store-toc.php:51 dokan/store.php:56
+msgid "Store Time"
+msgstr ""
+
+#: dokan/store-reviews.php:56 dokan/store-toc.php:55 dokan/store.php:60
+msgid "Contact Vendor"
+msgstr ""
+
+#: dokan/store-reviews.php:109
+msgid "Vendor Review"
+msgstr ""
+
+#: dokan/store-toc.php:92
+msgid "Terms And Conditions"
+msgstr ""
+
+#: dokan/store.php:114
+msgid "No products were found of this vendor!"
+msgstr ""
+
+#: functions.php:279
+msgid "Dokan Store Sidebar"
+msgstr ""
+
+#: functions.php:291
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:300 inc/customizer/backend/shop/catalog.php:9
+msgid "Shop Sidebar"
+msgstr ""
+
+#: functions.php:309
+msgid "Shop Filters"
+msgstr ""
+
+#: functions.php:319 inc/customizer/backend/shop/product.php:67
+msgid "Product Page Sidebar"
+msgstr ""
+
+#: functions.php:328
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:337
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:346
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:355
+msgid "Footer 4"
+msgstr ""
+
+#: functions.php:364
+msgid "Footer 5"
+msgstr ""
+
+#: functions.php:437
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:438
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:632 functions/theme-options.php:1322
+msgid "Choose an option"
+msgstr ""
+
+#: functions.php:640 inc/customizer/backend/blog/archives.php:92
+#: inc/customizer/backend/shop/catalog.php:155
+msgid "Load More"
+msgstr ""
+
+#: functions.php:662 functions/theme-options.php:1337
+msgid "Days"
+msgstr ""
+
+#: functions.php:663 functions/theme-options.php:1338
+msgid "Hours"
+msgstr ""
+
+#: functions.php:664 functions/theme-options.php:1339
+msgid "Min"
+msgstr ""
+
+#: functions.php:665 functions/theme-options.php:1340
+msgid "Sec"
+msgstr ""
+
+#: functions.php:668 inc/search/class-search.php:79
+msgid "Start typing..."
+msgstr ""
+
+#: functions.php:669 functions/theme-options.php:1342
+#: inc/search/class-search.php:215
+msgid "No products found"
+msgstr ""
+
+#: functions.php:670 functions/theme-options.php:1343
+msgid "Unable to find any products that match the currenty query"
+msgstr ""
+
+#: functions.php:671 functions/theme-options.php:1341
+msgid "View all results"
+msgstr ""
+
+#: functions/custom-wc-ajax.php:73 functions/custom-wc-ajax.php:123
+#: functions/custom-wc-ajax.php:167
+msgid "Error !"
+msgstr ""
+
+#: functions/custom-wc-ajax.php:98
+msgid "Product added to compare !"
+msgstr ""
+
+#: functions/custom-wc-ajax.php:108
+msgid "Product already exists in Compare list !"
+msgstr ""
+
+#: functions/custom-wc-ajax.php:142
+msgid "Removed product from compare !"
+msgstr ""
+
+#: functions/custom-wc-ajax.php:152
+msgid "Product not already exists in Compare list !"
+msgstr ""
+
+#: functions/custom-wc-ajax.php:181
+msgid "Removed all products from compare !"
+msgstr ""
+
+#: functions/custom-wc-ajax.php:187
+msgid "Compare products were empty !"
+msgstr ""
+
+#: functions/product-meta-box-data.php:53
+#: functions/product-meta-box-data.php:110
+#: inc/customizer/backend/shop/catalog.php:310
+msgid "Product Attribute"
+msgstr ""
+
+#: functions/product-meta-box-data.php:97
+msgid "You need to add attributes on the Attributes tab."
+msgstr ""
+
+#: functions/product-meta-box-data.php:102
+#: inc/customizer/backend/header/layout.php:16
+#: inc/customizer/backend/header/style.php:52
+#: inc/customizer/backend/header/title.php:26
+#: inc/customizer/backend/header/title.php:91
+#: inc/customizer/backend/header/title.php:114
+#: inc/customizer/backend/shop/catalog.php:107
+#: inc/customizer/backend/shop/product.php:15
+#: inc/customizer/backend/style/index.php:158
+#: inc/metaboxes/custom_metaboxes.php:97 inc/metaboxes/custom_metaboxes.php:214
+#: inc/metaboxes/custom_metaboxes.php:493
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Control/Image.php:87
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Field/Image.php:113
+msgid "Default"
+msgstr ""
+
+#: functions/product-meta-box-data.php:103 inc/customizer/backend/index.php:58
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:374
+msgid "None"
+msgstr ""
+
+#: functions/product-meta-box-data.php:111
+msgid "Show product attribute for each item listed under the item name."
+msgstr ""
+
+#: functions/template-tags.php:13
+msgid ""
+"This content is password protected. To view it please enter your password "
+"below:"
+msgstr ""
+
+#: functions/template-tags.php:14
+msgid "Password:"
+msgstr ""
+
+#: functions/template-tags.php:14
+msgid "Enter"
+msgstr ""
+
+#: functions/template-tags.php:29
+msgid "Pingback:"
+msgstr ""
+
+#: functions/template-tags.php:29 functions/template-tags.php:73
+#: woocommerce/checkout/form-checkout.php:80 woocommerce/klarna-checkout.php:56
+#: woocommerce/myaccount/my-address.php:59
+msgid "Edit"
+msgstr ""
+
+#: functions/template-tags.php:41 template-parts/footer/footer-content.php:141
+#: template-parts/footer/footer-content.php:143
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: functions/template-tags.php:47
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions/template-tags.php:56
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions/template-tags.php:200
+msgid "Posted by"
+msgstr ""
+
+#: functions/template-tags.php:202
+msgid "By"
+msgstr ""
+
+#: functions/template-tags.php:215
+#: inc/vendor/kirki/packages/kirki-framework/control-checkbox/src/Control/Checkbox_Switch.php:90
+msgid "On"
+msgstr ""
+
+#: functions/template-tags.php:221
+msgid "In "
+msgstr ""
+
+#: functions/template-tags.php:352
+msgid "Related Posts"
+msgstr ""
+
+#: functions/template-tags.php:409 functions/template-tags.php:416
+msgid "All Articles"
+msgstr ""
+
+#: functions/template-tags.php:660 inc/customizer/backend/blog/index.php:8
+msgid "Blog"
+msgstr ""
+
+#: functions/template-tags.php:664
+msgid "Tag Archives: "
+msgstr ""
+
+#: functions/template-tags.php:675
+msgid "Daily Archives: "
+msgstr ""
+
+#: functions/template-tags.php:677
+msgid "Monthly Archives: "
+msgstr ""
+
+#: functions/template-tags.php:677
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: functions/template-tags.php:679
+msgid "Yearly Archives: "
+msgstr ""
+
+#: functions/template-tags.php:679
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: functions/template-tags.php:681
+msgid "Archives"
+msgstr ""
+
+#: functions/template-tags.php:696
+msgid "Posts by "
+msgstr ""
+
+#: functions/template-tags.php:708
+msgid "Search Results for: "
+msgstr ""
+
+#: functions/template-tags.php:875 functions/template-tags.php:888
+msgid "Home"
+msgstr ""
+
+#: functions/template-tags.php:889
+#, php-format
+msgid "Archive by Category \"%s\""
+msgstr ""
+
+#: functions/template-tags.php:890
+#, php-format
+msgid "Search Results for \"%s\" Query"
+msgstr ""
+
+#: functions/template-tags.php:891
+#, php-format
+msgid "Posts Tagged \"%s\""
+msgstr ""
+
+#: functions/template-tags.php:892
+#, php-format
+msgid "Articles Posted by %s"
+msgstr ""
+
+#: functions/template-tags.php:893
+msgid "Error 404"
+msgstr ""
+
+#: functions/template-tags.php:1038
+msgid "Page"
+msgstr ""
+
+#: functions/template-tags.php:1178 functions/template-tags.php:1381
+#: functions/woocommerce.php:1534 inc/customizer/backend/header/elements.php:31
+msgid "Compare"
+msgstr ""
+
+#: functions/template-tags.php:1256 functions/woocommerce.php:499
+msgid "Cart"
+msgstr ""
+
+#: functions/template-tags.php:1347 template-parts/offcanvas-left.php:15
+msgid "Back"
+msgstr ""
+
+#: functions/template-tags.php:1423 functions/template-tags.php:1438
+#: functions/template-tags.php:1509 functions/template-tags.php:1524
+#: woocommerce/checkout/thankyou.php:38
+#: woocommerce/myaccount/form-lost-password.php:39
+#: woocommerce/myaccount/form-reset-password.php:36
+#: woocommerce/myaccount/lost-password-confirmation.php:36
+msgid "My account"
+msgstr ""
+
+#: functions/template-tags.php:1432 functions/template-tags.php:1518
+#, php-format
+msgid "Hello, %s"
+msgstr ""
+
+#: functions/template-tags.php:1466 functions/template-tags.php:1835
+#: functions/woocommerce.php:1473 woocommerce/checkout/form-login.php:27
+#: woocommerce/myaccount/form-login.php:44
+#: woocommerce/myaccount/form-login.php:102
+msgid "Log in"
+msgstr ""
+
+#: functions/template-tags.php:1472 woocommerce/myaccount/form-login.php:51
+#: woocommerce/myaccount/form-login.php:100
+msgid "Or"
+msgstr ""
+
+#: functions/template-tags.php:1473 woocommerce/myaccount/form-login.php:52
+msgid "Create an Account"
+msgstr ""
+
+#: functions/template-tags.php:1576 functions/template-tags.php:1617
+#: functions/woocommerce.php:1112 woocommerce/myaccount/my-account.php:57
+msgid "Logout"
+msgstr ""
+
+#: functions/template-tags.php:1609
+msgid "Your Waitlists"
+msgstr ""
+
+#: functions/template-tags.php:1613
+msgid "Vendor dashboard"
+msgstr ""
+
+#: functions/template-tags.php:1693
+msgid "Back to Top"
+msgstr ""
+
+#: functions/template-tags.php:1736
+msgid "Close (Esc)"
+msgstr ""
+
+#: functions/template-tags.php:1737 functions/theme-options.php:847
+#: functions/theme-options.php:849 functions/theme-options.php:869
+#: functions/theme-options.php:871
+msgid "Share"
+msgstr ""
+
+#: functions/template-tags.php:1738
+msgid "Toggle fullscreen"
+msgstr ""
+
+#: functions/template-tags.php:1739
+msgid "Zoom in/out"
+msgstr ""
+
+#: functions/template-tags.php:1754
+msgid "Previous (arrow left)"
+msgstr ""
+
+#: functions/template-tags.php:1756
+msgid "Next (arrow right)"
+msgstr ""
+
+#: functions/template-tags.php:1783
+msgid "Or login with"
+msgstr ""
+
+#: functions/template-tags.php:1811 woocommerce/global/form-login.php:34
+#: woocommerce/myaccount/form-lost-password.php:48
+msgid "Username or email"
+msgstr ""
+
+#: functions/template-tags.php:1815 woocommerce/global/form-login.php:38
+#: woocommerce/myaccount/form-login.php:85
+msgid "Password"
+msgstr ""
+
+#: functions/template-tags.php:1825 woocommerce/global/form-login.php:47
+msgid "Remember me"
+msgstr ""
+
+#: functions/template-tags.php:1829 woocommerce/global/form-login.php:51
+msgid "Lost your password?"
+msgstr ""
+
+#: functions/theme-options.php:961 functions/theme-options.php:1115
+msgid "I speak"
+msgstr ""
+
+#: functions/theme-options.php:1051 functions/theme-options.php:1203
+msgid "and my currency is"
+msgstr ""
+
+#: functions/theme-options.php:1249
+msgid "Subtitle"
+msgstr ""
+
+#: functions/theme-options.php:1251
+msgid "Number of Products"
+msgstr ""
+
+#: functions/theme-options.php:1252
+msgid "Columns"
+msgstr ""
+
+#: functions/theme-options.php:1253
+msgid "Layout Style"
+msgstr ""
+
+#: functions/theme-options.php:1254
+msgid "Blog Posts"
+msgstr ""
+
+#: functions/theme-options.php:1255
+msgid "Display the latest posts in the blog"
+msgstr ""
+
+#: functions/theme-options.php:1256
+msgid "Number of Posts"
+msgstr ""
+
+#: functions/theme-options.php:1257
+msgid "Number of posts to be displayed in the slider."
+msgstr ""
+
+#: functions/theme-options.php:1259
+msgid "Collections Slider"
+msgstr ""
+
+#: functions/theme-options.php:1260
+msgid "Display Collections Slider"
+msgstr ""
+
+#: functions/theme-options.php:1261
+msgid "Custom Desktop Height"
+msgstr ""
+
+#: functions/theme-options.php:1262
+msgid "Custom Tablet Height"
+msgstr ""
+
+#: functions/theme-options.php:1263
+msgid "Custom Mobile Height"
+msgstr ""
+
+#: functions/theme-options.php:1264
+msgid "Slider AutoPlay"
+msgstr ""
+
+#: functions/theme-options.php:1265
+msgid "AutoPlay Speed (milliseconds)"
+msgstr ""
+
+#: functions/theme-options.php:1266 functions/theme-options.php:1319
+msgid "Color Slide Navigation"
+msgstr ""
+
+#: functions/theme-options.php:1267
+msgid "Slides"
+msgstr ""
+
+#: functions/theme-options.php:1268
+msgid "Title Text Color"
+msgstr ""
+
+#: functions/theme-options.php:1269
+msgid "Subtitle Text Color"
+msgstr ""
+
+#: functions/theme-options.php:1270
+msgid "Button URL"
+msgstr ""
+
+#: functions/theme-options.php:1271
+msgid "Slide Background Color"
+msgstr ""
+
+#: functions/theme-options.php:1272 inc/mega-menu/tmpl/background.php:4
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:96
+msgid "Background Image"
+msgstr ""
+
+#: functions/theme-options.php:1273
+msgid "Extra class name"
+msgstr ""
+
+#: functions/theme-options.php:1274
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr ""
+
+#: functions/theme-options.php:1275
+msgid "Barberry Button"
+msgstr ""
+
+#: functions/theme-options.php:1276
+msgid "Display Barberry button"
+msgstr ""
+
+#: functions/theme-options.php:1277
+msgid "URL"
+msgstr ""
+
+#: functions/theme-options.php:1278
+msgid "Open in new window"
+msgstr ""
+
+#: functions/theme-options.php:1279
+msgid "Background color"
+msgstr ""
+
+#: functions/theme-options.php:1280
+msgid "Button Size"
+msgstr ""
+
+#: functions/theme-options.php:1281
+msgid "Alignment"
+msgstr ""
+
+#: functions/theme-options.php:1282
+msgid "Simple Link"
+msgstr ""
+
+#: functions/theme-options.php:1283
+msgid "Display Simple Link"
+msgstr ""
+
+#: functions/theme-options.php:1284 inc/vendor/kirki/example.php:51
+#: inc/vendor/kirki/example.php:526
+msgid "Color"
+msgstr ""
+
+#: functions/theme-options.php:1285
+msgid "Google Map"
+msgstr ""
+
+#: functions/theme-options.php:1286
+msgid "Display Google Map"
+msgstr ""
+
+#: functions/theme-options.php:1287
+msgid "Map height"
+msgstr ""
+
+#: functions/theme-options.php:1288
+msgid ""
+"Enter map height in pixels. Example: 200. <span>As of June 2016, a Google "
+"map API key is needed to allow this element to display. Please enter key "
+"here <strong>Appearance > Customize > Global > Google map API key</strong>.</"
+"span>"
+msgstr ""
+
+#: functions/theme-options.php:1289
+msgid "Latitude"
+msgstr ""
+
+#: functions/theme-options.php:1290
+msgid ""
+"Please enter the latitude for the maps center point. You can use <a href="
+"\"http://universimmedia.pagesperso-orange.fr/geo/loc.htm\" target=\"_blank"
+"\">this service</a> to get coordinates of your location"
+msgstr ""
+
+#: functions/theme-options.php:1291
+msgid "Longitude"
+msgstr ""
+
+#: functions/theme-options.php:1292
+msgid "Please enter the longitude for the maps center point."
+msgstr ""
+
+#: functions/theme-options.php:1293
+msgid "Map Zoom"
+msgstr ""
+
+#: functions/theme-options.php:1294
+msgid "Zoom level when focus the marker. 1-20"
+msgstr ""
+
+#: functions/theme-options.php:1295
+msgid "Enable Zoom In/Out"
+msgstr ""
+
+#: functions/theme-options.php:1296
+msgid "Do you want users to be able to zoom in/out on the map?"
+msgstr ""
+
+#: functions/theme-options.php:1297
+msgid "Marker Style"
+msgstr ""
+
+#: functions/theme-options.php:1298
+msgid ""
+"Please select the marker style you would like <br/> <b>Default Google Style</"
+"b> <i> - Will display the Google standard map marker and also allow you to "
+"optionally override it with an image</i> <br/> <b>Marker Animated</b> <i>- "
+"Will use a custom CSS based marker (the modern option).</i>"
+msgstr ""
+
+#: functions/theme-options.php:1299
+msgid "Marker Color"
+msgstr ""
+
+#: functions/theme-options.php:1300
+msgid "Please select the color for your marker."
+msgstr ""
+
+#: functions/theme-options.php:1301
+msgid "Marker Image"
+msgstr ""
+
+#: functions/theme-options.php:1302
+msgid "Select image from media library."
+msgstr ""
+
+#: functions/theme-options.php:1303
+msgid "Marker Animation"
+msgstr ""
+
+#: functions/theme-options.php:1304
+msgid "This will cause your markers to do a quick bounce as they load in."
+msgstr ""
+
+#: functions/theme-options.php:1305
+msgid "Greyscale Color"
+msgstr ""
+
+#: functions/theme-options.php:1306
+msgid ""
+"Toggle a greyscale color scheme (will also unlock further custom options)"
+msgstr ""
+
+#: functions/theme-options.php:1307
+msgid "Map Extra Color"
+msgstr ""
+
+#: functions/theme-options.php:1308
+msgid ""
+"Use this to define a main color that will be used in combination with the "
+"greyscale option for your map"
+msgstr ""
+
+#: functions/theme-options.php:1309
+msgid "Ultra Flat Map"
+msgstr ""
+
+#: functions/theme-options.php:1310
+msgid "This removes street/landmark text & some extra details for a clean look"
+msgstr ""
+
+#: functions/theme-options.php:1311
+msgid "Dark Color Scheme"
+msgstr ""
+
+#: functions/theme-options.php:1312
+msgid ""
+"Enable this option for a dark colored map (This will override the extra "
+"color choice)"
+msgstr ""
+
+#: functions/theme-options.php:1313
+msgid "Map Marker Locations"
+msgstr ""
+
+#: functions/theme-options.php:1314
+msgid ""
+"Please enter the the list of locations you would like with a latitude|"
+"longitude|description format. <br/> Divide values with linebreaks (Enter). "
+"Example: <br/> 40.692784|-73.978763|Our Location <br/> 39.946814|-75.143038|"
+"Our Location #2"
+msgstr ""
+
+#: functions/theme-options.php:1315 inc/vendor/kirki/example.php:73
+msgid "Slider"
+msgstr ""
+
+#: functions/theme-options.php:1316
+msgid "Display Slider"
+msgstr ""
+
+#: functions/theme-options.php:1317
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:74
+msgid "Height"
+msgstr ""
+
+#: functions/theme-options.php:1318
+msgid "Slider Navigation"
+msgstr ""
+
+#: functions/theme-options.php:1320
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:393
+msgid "Text Align"
+msgstr ""
+
+#: functions/theme-options.php:1321
+msgid "Link on whole slide?"
+msgstr ""
+
+#: functions/theme-options.php:1323 inc/search/class-search.php:85
+msgid "Clear"
+msgstr ""
+
+#: functions/theme-options.php:1324 inc/size-guide/size-guide.php:208
+msgid "Size Guide"
+msgstr ""
+
+#: functions/theme-options.php:1325
+msgid "Size Guides"
+msgstr ""
+
+#: functions/theme-options.php:1326
+msgid "Add new"
+msgstr ""
+
+#: functions/theme-options.php:1327
+msgid "Add new size guide"
+msgstr ""
+
+#: functions/theme-options.php:1328
+msgid "New size guide"
+msgstr ""
+
+#: functions/theme-options.php:1329
+msgid "Edit size guide"
+msgstr ""
+
+#: functions/theme-options.php:1330
+msgid "View size guide"
+msgstr ""
+
+#: functions/theme-options.php:1331
+msgid "All size guides"
+msgstr ""
+
+#: functions/theme-options.php:1332
+msgid "Search size guides"
+msgstr ""
+
+#: functions/theme-options.php:1333
+msgid "No size guides found."
+msgstr ""
+
+#: functions/theme-options.php:1334
+msgid "No size guides found in trash."
+msgstr ""
+
+#: functions/theme-options.php:1335
+msgid "barberry_size_guide"
+msgstr ""
+
+#: functions/theme-options.php:1336
+msgid "Size guide to place in your products"
+msgstr ""
+
+#: functions/woocommerce.php:251
+#, php-format
+msgid "We've got %s product for you"
+msgid_plural "We've got %s products for you"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/woocommerce.php:271
+msgid "Filters"
+msgstr ""
+
+#: functions/woocommerce.php:271 inc/mega-menu/class-menu-edit.php:153
+msgid "Close"
+msgstr ""
+
+#: functions/woocommerce.php:436
+#: woocommerce/single-product/product-image-default.php:76
+#: woocommerce/single-product/product-image-style-3.php:73
+msgid "Awaiting product image"
+msgstr ""
+
+#: functions/woocommerce.php:1021
+#, php-format
+msgid ""
+"Spend %s more to reach <strong>Free Shipping!</strong> <a class=\"hide-in-"
+"cart-sidebar backtoshoplink\" href=\"%s\" title=\"Continue Shopping"
+"\">Continue Shopping</a> <span class=\"hide-in-cart-sidebar\">to add more "
+"products to your cart and receive free shipping for order %s.</span>"
+msgstr ""
+
+#: functions/woocommerce.php:1037
+#, php-format
+msgid "Congratulations! You get free shipping with your order greater %s."
+msgstr ""
+
+#: functions/woocommerce.php:1099 woocommerce/myaccount/my-account.php:42
+msgid "Hi"
+msgstr ""
+
+#: functions/woocommerce.php:1197
+msgid "Clear filters"
+msgstr ""
+
+#: functions/woocommerce.php:1278 inc/customizer/backend/shop/catalog.php:276
+msgid "Quick View"
+msgstr ""
+
+#: functions/woocommerce.php:1289
+msgid "Go to product page"
+msgstr ""
+
+#: functions/woocommerce.php:1340
+msgid "Buy it now"
+msgstr ""
+
+#: functions/woocommerce.php:1411
+#, php-format
+msgid "%s in stock"
+msgstr ""
+
+#: functions/woocommerce.php:1413
+#, php-format
+msgid "Hurry, only %s left in stock!"
+msgstr ""
+
+#: functions/woocommerce.php:1436 functions/woocommerce.php:1443
+#: woocommerce/cart/cart.php:183
+msgid "Coupon code"
+msgstr ""
+
+#: functions/woocommerce.php:1440
+msgid "If you have a coupon code, please apply it below."
+msgstr ""
+
+#: functions/woocommerce.php:1444 woocommerce/cart/cart.php:183
+msgid "Apply coupon"
+msgstr ""
+
+#: functions/woocommerce.php:1479
+msgid ""
+"If you have shopped with us before, please enter your details below. If you "
+"are a new customer, please proceed to the Billing section."
+msgstr ""
+
+#: functions/woocommerce.php:1636 woocommerce/loop/sale-flash.php:25
+msgid "Sale"
+msgstr ""
+
+#: functions/woocommerce.php:1641
+msgid "Sold out"
+msgstr ""
+
+#: functions/woocommerce.php:1645 inc/mega-menu/class-mega-menu-walker.php:334
+#: inc/mega-menu/class-menu-walker.php:166 inc/mega-menu/tmpl/general.php:17
+msgid "Hot"
+msgstr ""
+
+#: functions/woocommerce.php:1649 inc/mega-menu/class-mega-menu-walker.php:337
+#: inc/mega-menu/class-menu-walker.php:169 inc/mega-menu/tmpl/general.php:24
+msgid "New"
+msgstr ""
+
+#: functions/woocommerce.php:1812
+msgid "Reviews"
+msgstr ""
+
+#: functions/woocommerce.php:2047
+msgid "Play Video"
+msgstr ""
+
+#: functions/woocommerce.php:2126 functions/woocommerce.php:2148
+msgid "Prev product"
+msgstr ""
+
+#: functions/woocommerce.php:2171 functions/woocommerce.php:2175
+msgid "Next product"
+msgstr ""
+
+#: functions/woocommerce.php:2340
+msgid "All Categories"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:31
+#: inc/admin/wizard/class-install-wizard.php:32
+msgid "Theme Setup"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:52
+msgid "Introduction"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:57
+msgid "Plugins"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:62
+msgid "Demo Import"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:67
+msgid "Ready!"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:211
+msgid "Return to the WordPress Dashboard"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:234
+msgid "'s"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:234
+msgid "Theme Setup Wizard"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:235
+msgid "The quickest way to setup the theme"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:235
+msgid "and start working on your site."
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:236
+msgid "Let's go!"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:250
+msgid "Plugin Installation"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:251
+msgid "Install the required plugins before importing the demo content."
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:261
+#: inc/tgm/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:296
+msgid "Install Now"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:297
+msgid "Update Now"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:298
+#: inc/tgm/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:303
+#: inc/tgm/class-tgm-plugin-activation.php:2406
+#: inc/vendor/kirki/example.php:528
+msgid "Active"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:316
+#: inc/admin/wizard/class-install-wizard.php:349
+msgid "Skip"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:317
+#: inc/admin/wizard/class-install-wizard.php:351
+#: inc/tgm/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:335
+msgid "Demo Content Import"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:336
+msgid "Start with pre-built page layouts, dummy product pages,"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:336
+msgid "blog posts and widgets."
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:344
+msgid ""
+"Please make sure Visual Composer and WooCommerce are installed and activated "
+"before importing the demo content."
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:353
+msgid "Go back"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:358
+msgid "Importing, please wait!"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:378
+msgid "Setup has completed successfully!"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:379
+msgid "You should be able to start working on your site now."
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:380
+msgid "Best of luck with your project!"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:385
+msgid "What now?"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:386
+msgid "View Site"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:389
+msgid "What's next?"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:391
+msgid "Customize the theme"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:403
+msgid "Activate Theme Updates"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:406
+msgid "WooCommerce Setup Wizard"
+msgstr ""
+
+#: inc/admin/wizard/class-install-wizard.php:407
+msgid "Theme User Guide &amp; Support"
+msgstr ""
+
+#: inc/compare/barberry-mini-compare.php:8
+msgid "Compare Products"
+msgstr ""
+
+#: inc/compare/barberry-mini-compare.php:8
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:112
+msgid "Products"
+msgstr ""
+
+#: inc/compare/barberry-mini-compare.php:55
+msgid "Compare Product"
+msgstr ""
+
+#: inc/compare/barberry-mini-compare.php:66
+msgid "Clear All"
+msgstr ""
+
+#: inc/compare/barberry-mini-compare.php:67
+msgid "Let's Compare !"
+msgstr ""
+
+#: inc/compare/barberry-mini-compare.php:67
+msgid "Let's Compare"
+msgstr ""
+
+#: inc/compare/barberry-view-compare.php:86
+#: inc/customizer/backend/header/search.php:40 woocommerce/cart/cart.php:112
+#: woocommerce/checkout/form-pay.php:27
+#: woocommerce/checkout/review-order.php:23
+#: woocommerce/myaccount/my-refund-requests.php:14
+#: woocommerce/order/order-details.php:57
+msgid "Product"
+msgstr ""
+
+#: inc/compare/barberry-view-compare.php:168
+#: inc/mega-menu/tmpl/background.php:11
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Control/Image.php:85
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Field/Image.php:114
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:426
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:458
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:483
+#: woocommerce/wishlist-view.php:241
+msgid "Remove"
+msgstr ""
+
+#: inc/compare/barberry-view-compare.php:181
+msgid "No product added to compare!"
+msgstr ""
+
+#: inc/compare/barberry-view-compare.php:182 woocommerce/cart/cart-empty.php:71
+#: woocommerce/cart/mini-cart.php:132 woocommerce/myaccount/downloads.php:54
+#: woocommerce/myaccount/orders.php:114 woocommerce/wishlist-view.php:258
+msgid "Return to shop"
+msgstr ""
+
+#: inc/customizer/backend/blog/archives.php:9
+msgid "Show Blog Breadcrumbs"
+msgstr ""
+
+#: inc/customizer/backend/blog/archives.php:10
+#: inc/customizer/backend/header/title.php:10
+msgid "Displays a full chain of links to the current page."
+msgstr ""
+
+#: inc/customizer/backend/blog/archives.php:27
+msgid "Blog Categories"
+msgstr ""
+
+#: inc/customizer/backend/blog/archives.php:45
+msgid "Enable Parallax for post images"
+msgstr ""
+
+#: inc/customizer/backend/blog/archives.php:61
+#: inc/customizer/backend/blog/single.php:27
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/customizer/backend/blog/archives.php:86
+#: inc/customizer/backend/shop/catalog.php:149
+msgid "Pagination"
+msgstr ""
+
+#: inc/customizer/backend/blog/archives.php:91
+#: inc/customizer/backend/shop/catalog.php:154
+msgid "Classic"
+msgstr ""
+
+#: inc/customizer/backend/blog/archives.php:93
+#: inc/customizer/backend/shop/catalog.php:156
+msgid "Infinite"
+msgstr ""
+
+#: inc/customizer/backend/blog/index.php:18
+msgid "Blog Archives"
+msgstr ""
+
+#: inc/customizer/backend/blog/index.php:25
+msgid "Single Post"
+msgstr ""
+
+#: inc/customizer/backend/blog/single.php:9
+msgid "Show Blog post Breadcrumbs"
+msgstr ""
+
+#: inc/customizer/backend/blog/single.php:10
+msgid "Displays a full chain of links to the current post."
+msgstr ""
+
+#: inc/customizer/backend/blog/single.php:52
+msgid "Blog Post Share"
+msgstr ""
+
+#: inc/customizer/backend/blog/single.php:69
+msgid "Display Featured Image"
+msgstr ""
+
+#: inc/customizer/backend/blog/single.php:86
+msgid "Display Related Posts"
+msgstr ""
+
+#: inc/customizer/backend/custom/index.php:15
+msgid "Custom Code"
+msgstr ""
+
+#: inc/customizer/backend/custom/index.php:31
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer/backend/custom/index.php:53
+msgid "Footer JavaScript Code"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:15
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:31
+msgid "Footer Reveal Effect"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:32
+msgid ""
+"This to cause the footer to appear as though it's being reveal by the main "
+"content area when scrolling down to it"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:41
+msgid "Change footer background when footer is visible"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:66
+msgid "Footer Background Color"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:76
+msgid "Footer Font Color"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:85
+msgid "Footer Hover Background Color"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:107
+msgid "Footer Hover Font Color"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:136
+msgid "Footer Layout"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:143
+#: inc/customizer/backend/footer/index.php:319
+msgid "Layout Off"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:148
+#: inc/customizer/backend/footer/index.php:329
+msgid "Footer 1 column"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:153
+msgid "Footer 2 column"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:158
+#: inc/customizer/backend/footer/index.php:324
+msgid "Footer 3 column"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:163
+msgid "Footer 4 column"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:168
+msgid "Footer 5 column"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:173
+msgid "Footer 1-1-1-2 columns"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:178
+msgid "Footer 1-1-2 columns"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:183
+msgid "Footer 1-2-1 columns"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:188
+msgid "Footer 2-1-1 columns"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:197
+msgid "Footer 1 Sidebar Content Align"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:202
+#: inc/customizer/backend/footer/index.php:223
+#: inc/customizer/backend/footer/index.php:244
+#: inc/customizer/backend/footer/index.php:265
+#: inc/customizer/backend/footer/index.php:286
+#: inc/customizer/backend/header/layout.php:26
+#: inc/customizer/backend/shop/catalog.php:24
+#: inc/customizer/backend/shop/product.php:42
+#: inc/customizer/backend/shop/product.php:90
+#: inc/mega-menu/tmpl/background.php:36 inc/metaboxes/custom_metaboxes.php:232
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:68
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:400
+msgid "Left"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:203
+#: inc/customizer/backend/footer/index.php:224
+#: inc/customizer/backend/footer/index.php:245
+#: inc/customizer/backend/footer/index.php:266
+#: inc/customizer/backend/footer/index.php:287
+#: inc/mega-menu/tmpl/background.php:37
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:70
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:401
+msgid "Center"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:204
+#: inc/customizer/backend/footer/index.php:225
+#: inc/customizer/backend/footer/index.php:246
+#: inc/customizer/backend/footer/index.php:267
+#: inc/customizer/backend/footer/index.php:288
+#: inc/customizer/backend/shop/catalog.php:25
+#: inc/customizer/backend/shop/product.php:46
+#: inc/customizer/backend/shop/product.php:91
+#: inc/mega-menu/tmpl/background.php:38 inc/metaboxes/custom_metaboxes.php:233
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:69
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:402
+msgid "Right"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:218
+msgid "Footer 2 Sidebar Content Align"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:239
+msgid "Footer 3 Sidebar Content Align"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:260
+msgid "Footer 4 Sidebar Content Align"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:281
+msgid "Footer 5 Sidebar Content Align"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:312
+msgid "Footnote / Copyright section Layout"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:338
+msgid "Footnote / Copyright Text"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:340
+msgid "© 2020 <strong>Barberry</strong>. All rights reserved"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:356
+msgid "Show Social Icons in footer"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:373
+msgid "Show Payment Icons in footer"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:390
+msgid "Payment Options"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:395
+msgid "Payment Option"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:398
+msgid "Add New Payment Option"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:402 inc/customizer/options.php:250
+msgid "Visa"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:406 inc/customizer/options.php:254
+msgid "MasterCard"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:410 inc/customizer/options.php:258
+msgid "Amex"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:414 inc/customizer/options.php:262
+msgid "PayPal"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:418 inc/customizer/options.php:266
+msgid "Amazon"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:437
+msgid "Name"
+msgstr ""
+
+#: inc/customizer/backend/footer/index.php:442
+msgid "Icon"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:15
+msgid "Global"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:32
+msgid "Navigation Mobile Breakpoint"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:33
+msgid ""
+"Define at what window size (in px) the header navigation menu will collapse "
+"into the mobile menu style - larger values are useful when you have "
+"navigations with many items which wouldn't fit on one line when viewed on "
+"small desktops/laptops."
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:58
+msgid "Page Loader"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:75
+msgid "Enable Lazy Load (Beta)"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:92
+msgid "Enable Back to Top button"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:101
+msgid "Hide Back to Top button on mobile"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:125
+msgid "Google map API key"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:126
+msgid ""
+"Obrain API key <a href=\"https://developers.google.com/maps/documentation/"
+"javascript/get-api-key\" target=\"_blank\">here</a> to use our Google Map VC "
+"element."
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:148
+msgid "Hide ACF Menu"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:149
+msgid "Hide Advanced Custom Fields plugin Menu"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:166
+msgid "Combine JS files"
+msgstr ""
+
+#: inc/customizer/backend/global/index.php:167
+msgid ""
+"Combine all third party libraries and theme functions into one JS file "
+"(barberry-plugins-ext.js)"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:10
+#: inc/customizer/backend/header/index.php:66 inc/search/class-search.php:92
+#: searchform.php:4
+msgid "Search"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:11
+msgid "Search settings you will find in Customize -> Header -> Search section"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:22
+msgid "Wishlist"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:40
+msgid "My Account"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:49
+msgid "Icon instead \"My Account\" text"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:67
+msgid "Show Login form"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:68
+msgid "Display login form modal window on click when user is not logged in."
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:84
+msgid "With username"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:85
+msgid "Display username when user is logged in."
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:103
+msgid "Header Cart Icon instead \"Cart\" text"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:112
+msgid "Header Cart"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:113
+msgid ""
+"Choose between showing cart sidebar or redirect to cart page when you click "
+"on header cart"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:118
+msgid "Show Hidden Off-Canvas Sidebar"
+msgstr ""
+
+#: inc/customizer/backend/header/elements.php:119
+msgid "Without"
+msgstr ""
+
+#: inc/customizer/backend/header/index.php:8
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/backend/header/index.php:17
+#: inc/customizer/backend/header/layout.php:9
+msgid "Header Layout"
+msgstr ""
+
+#: inc/customizer/backend/header/index.php:24
+msgid "Style & Color"
+msgstr ""
+
+#: inc/customizer/backend/header/index.php:31
+#: inc/customizer/backend/header/logo.php:9
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer/backend/header/index.php:38
+#: inc/customizer/backend/header/sticky.php:10
+msgid "Sticky Header"
+msgstr ""
+
+#: inc/customizer/backend/header/index.php:45
+#: inc/customizer/backend/header/topbar.php:9
+msgid "Top Bar"
+msgstr ""
+
+#: inc/customizer/backend/header/index.php:52
+msgid "Header Elements"
+msgstr ""
+
+#: inc/customizer/backend/header/index.php:59
+msgid "Page Heading"
+msgstr ""
+
+#: inc/customizer/backend/header/layout.php:21
+#: inc/customizer/backend/offcanvas/index.php:15
+msgid "Offcanvas"
+msgstr ""
+
+#: inc/customizer/backend/header/layout.php:36
+msgid "Center navigation"
+msgstr ""
+
+#: inc/customizer/backend/header/layout.php:60
+msgid "Header Paddings (Top/Bottom)"
+msgstr ""
+
+#: inc/customizer/backend/header/layout.php:82
+msgid "Header Paddings (Top/Bottom) on mobile"
+msgstr ""
+
+#: inc/customizer/backend/header/logo.php:27
+msgid "Logo Light"
+msgstr ""
+
+#: inc/customizer/backend/header/logo.php:28
+msgid "Logo for a Tansparent Background"
+msgstr ""
+
+#: inc/customizer/backend/header/logo.php:45
+msgid "Max Logo Height"
+msgstr ""
+
+#: inc/customizer/backend/header/logo.php:67
+msgid "Sticky Logo"
+msgstr ""
+
+#: inc/customizer/backend/header/logo.php:85
+msgid "Max Sticky Logo Height"
+msgstr ""
+
+#: inc/customizer/backend/header/logo.php:108
+msgid "Max Mobile Logo Height"
+msgstr ""
+
+#: inc/customizer/backend/header/search.php:10
+msgid "Ajax Search"
+msgstr ""
+
+#: inc/customizer/backend/header/search.php:19
+msgid "Max Number of products in results"
+msgstr ""
+
+#: inc/customizer/backend/header/search.php:35
+msgid "Post type"
+msgstr ""
+
+#: inc/customizer/backend/header/search.php:41
+msgid "Post"
+msgstr ""
+
+#: inc/customizer/backend/header/search.php:49
+msgid "Search by product SKU"
+msgstr ""
+
+#: inc/customizer/backend/header/search.php:59
+msgid "Typewriter Effect"
+msgstr ""
+
+#: inc/customizer/backend/header/search.php:68
+msgid "Typewriter Text"
+msgstr ""
+
+#: inc/customizer/backend/header/sticky.php:21
+msgid "Sticky Header on Tablet/Mobile devices"
+msgstr ""
+
+#: inc/customizer/backend/header/sticky.php:38
+msgid "Sticky Header Paddings (Top/Bottom)"
+msgstr ""
+
+#: inc/customizer/backend/header/style.php:9
+#: inc/metaboxes/custom_metaboxes.php:49 inc/metaboxes/custom_metaboxes.php:381
+msgid "Header Above the Content"
+msgstr ""
+
+#: inc/customizer/backend/header/style.php:10
+msgid "Overlap page content with this header (header is transparent)."
+msgstr ""
+
+#: inc/customizer/backend/header/style.php:27
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/customizer/backend/header/style.php:46
+#: inc/metaboxes/custom_metaboxes.php:59 inc/metaboxes/custom_metaboxes.php:444
+msgid "Header Elements Color Scheme"
+msgstr ""
+
+#: inc/customizer/backend/header/style.php:47
+#: inc/customizer/backend/header/title.php:86
+#: inc/metaboxes/custom_metaboxes.php:62 inc/metaboxes/custom_metaboxes.php:79
+#: inc/metaboxes/custom_metaboxes.php:447
+#: inc/metaboxes/custom_metaboxes.php:464
+msgid ""
+"You can set different colors depending on it's background. May be light or "
+"dark"
+msgstr ""
+
+#: inc/customizer/backend/header/style.php:53
+#: inc/customizer/backend/header/title.php:92
+#: inc/metaboxes/custom_metaboxes.php:65 inc/metaboxes/custom_metaboxes.php:82
+#: inc/metaboxes/custom_metaboxes.php:450
+#: inc/metaboxes/custom_metaboxes.php:467
+msgid "Light"
+msgstr ""
+
+#: inc/customizer/backend/header/style.php:54
+#: inc/customizer/backend/header/title.php:93
+#: inc/metaboxes/custom_metaboxes.php:66 inc/metaboxes/custom_metaboxes.php:83
+#: inc/metaboxes/custom_metaboxes.php:451
+#: inc/metaboxes/custom_metaboxes.php:468
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:9
+#: inc/customizer/backend/shop/catalog.php:82
+#: inc/customizer/backend/shop/product.php:186
+msgid "Show Breadcrumbs"
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:19
+msgid "Page Title"
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:20
+msgid "Select page title section or disable it completely on all pages."
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:30
+#: inc/customizer/backend/shop/catalog.php:111
+msgid "Disable"
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:47
+msgid "Pages Heading Background"
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:48
+msgid ""
+"Set background image or color, that will be used as a default for all page "
+"titles, shop page and blog."
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:85
+#: inc/metaboxes/custom_metaboxes.php:76 inc/metaboxes/custom_metaboxes.php:461
+msgid "Page Title Color Scheme"
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:108
+#: inc/metaboxes/custom_metaboxes.php:92 inc/metaboxes/custom_metaboxes.php:488
+msgid "Page Title Section Size"
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:109
+#: inc/metaboxes/custom_metaboxes.php:95 inc/metaboxes/custom_metaboxes.php:491
+msgid "You can set different sizes for your pages title section"
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:115
+#: inc/metaboxes/custom_metaboxes.php:98 inc/metaboxes/custom_metaboxes.php:494
+msgid "Small"
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:116
+#: inc/metaboxes/custom_metaboxes.php:99 inc/metaboxes/custom_metaboxes.php:495
+msgid "Large"
+msgstr ""
+
+#: inc/customizer/backend/header/title.php:117
+#: inc/metaboxes/custom_metaboxes.php:100
+#: inc/metaboxes/custom_metaboxes.php:496
+msgid "XLarge"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:18
+msgid "Show Top Bar on mobile"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:34
+msgid "Left Side of Top Bar"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:35
+msgid "Select what you want to show in the left side of Header Top Bar"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:40
+#: inc/customizer/backend/header/topbar.php:87
+#: inc/customizer/backend/offcanvas/index.php:38
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:41
+#: inc/customizer/backend/header/topbar.php:55
+#: inc/customizer/backend/offcanvas/index.php:39
+#: inc/customizer/backend/offcanvas/index.php:47
+msgid "Contact Info"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:57
+msgid ""
+"<a href=\"tel:+12 (0) 12-345-678\"><strong>Call</strong> +12 (0) 12-345-678</"
+"a>"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:80
+msgid "Right Side of Top Bar"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:81
+msgid "Select what you want to show in the right side of Header Top Bar"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:86
+#: inc/customizer/backend/offcanvas/index.php:40
+msgid "WPML/Polylang language/currency switchers"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:102
+#: inc/customizer/backend/offcanvas/index.php:65
+msgid "WPML/Polylang Language Switcher"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:103
+msgid ""
+"Check this option to enable WPML/Polylang Language Switcher in Secondary "
+"Header."
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:125
+#: inc/customizer/backend/offcanvas/index.php:84
+msgid "WPML/Polylang Languages Intro text"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:126
+#: inc/customizer/backend/offcanvas/index.php:85
+msgid "Show/Hide language/currency switcher intro text: \"I speak\""
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:152
+#: inc/customizer/backend/offcanvas/index.php:106
+msgid "WPML/Polylang Language Switcher Native Names"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:153
+#: inc/customizer/backend/offcanvas/index.php:107
+msgid "Check this option to display native language names inside switcher."
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:179
+#: inc/customizer/backend/offcanvas/index.php:128
+msgid "WPML/Polylang Language Switcher Flags"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:180
+#: inc/customizer/backend/offcanvas/index.php:129
+msgid "Check this option to display national flags in switcher."
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:208
+#: inc/customizer/backend/offcanvas/index.php:152
+msgid "WPML/WooCommerce Multi Currency plugins Currency Switcher"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:209
+#: inc/customizer/backend/offcanvas/index.php:153
+msgid "Check this option to enable WPML Currency Switcher in Secondary Header."
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:230
+#: inc/customizer/backend/offcanvas/index.php:169
+msgid "WPML/WooCommerce Multi Currency Intro text"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:231
+#: inc/customizer/backend/offcanvas/index.php:170
+msgid "Show/Hide language/currency switcher intro text: \"and my currency is\""
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:257
+#: inc/customizer/backend/offcanvas/index.php:191
+msgid "Switch Into Currency Code Format"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:258
+#: inc/customizer/backend/offcanvas/index.php:192
+msgid ""
+"Check this option to change WPML Currency Switcher format into currency "
+"code, in example \"($) USD\""
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:285
+#: inc/mega-menu/tmpl/background.php:18
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:80
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer/backend/header/topbar.php:302
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer/backend/login/index.php:15
+msgid "Login / Register"
+msgstr ""
+
+#: inc/customizer/backend/login/index.php:30
+msgid "Wishlist on my account page"
+msgstr ""
+
+#: inc/customizer/backend/login/index.php:31
+msgid "Add wishlist item to default WooCommerce account navigation."
+msgstr ""
+
+#: inc/customizer/backend/offcanvas/index.php:32
+msgid "Off-canvas Bottom Section"
+msgstr ""
+
+#: inc/customizer/backend/offcanvas/index.php:33
+msgid "Select what you want to show in the bottom of off-canvas menu"
+msgstr ""
+
+#: inc/customizer/backend/offcanvas/index.php:49
+msgid ""
+"<a href=\"mailto:info@yourwebsite.com\">info@yourwebsite.com</a><br>\n"
+"<a href=\"tel:+12 (0) 12-345-678\">+12 (0) 12-345-678</a><br>"
+msgstr ""
+
+#: inc/customizer/backend/offcanvas/index.php:66
+msgid "Check this option to enable WPML Language Switcher in Secondary Header."
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:19
+#: inc/customizer/backend/shop/product.php:85
+msgid "Sidebar Position"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:39
+msgid "Sticky Sidebar"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:56
+msgid "Sticky off-canvas sidebar button"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:57
+#: inc/customizer/backend/shop/product.php:111
+msgid ""
+"Display the sidebar button fixed on the screen for mobile and tablet devices."
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:83
+msgid "Show breadcrumbs for shop page, product categories or tags"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:100
+msgid "Shop Title"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:101
+msgid "Show title section for shop page, product categories or tags"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:128
+msgid "Categories in page heading"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:129
+msgid ""
+"This categories menu is generated automatically based on all categories in "
+"the shop. You are not able to manage this menu as other WordPress menus"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:164
+msgid "Product Numbers Per Page"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:168
+msgid "Specify how many products you want to show on catalog page"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:182
+msgid "Product Columns Per Page"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:187
+msgid "2 Columns"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:188
+msgid "3 Columns"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:189
+msgid "4 Columns"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:190
+msgid "5 Columns"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:194
+msgid "Specify how many product columns you want to show on catalog page"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:210
+msgid "Category Grid Layout"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:216
+#: inc/customizer/backend/shop/catalog.php:235
+msgid "Layout 1"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:220
+#: inc/customizer/backend/shop/catalog.php:239
+msgid "Layout 2"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:229
+msgid "Product Grid Layout"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:258
+msgid "Disable Second Image on Hover"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:259
+msgid ""
+"Check this option to disable secondary product thumbnail when hover over the "
+"main product image"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:277
+msgid "Check this option to enable the quick view in every product"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:286
+msgid "Hide Quick View for mobile"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:315
+msgid "Show product attribute for each item listed under the item name"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:329
+msgid "Leave \"Add to Cart\" button after adding to the cart"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:346
+#: inc/customizer/backend/shop/product.php:388
+msgid "Countdown timer"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:347
+#: inc/customizer/backend/shop/product.php:389
+msgid "Show timer for products that have scheduled date for the sale price"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:364
+msgid "Product labels"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:370
+msgid "Bordered"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:374
+msgid "Solid"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:383
+msgid "Shop sale label in percentage"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:384
+msgid "Works with Simple, Variable and External products only."
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:393
+msgid "\"New\" label on products"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:394
+msgid ""
+"This label is displayed for products if you enabled this option for "
+"particular items."
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:403
+msgid "\"Hot\" label on products"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog.php:404
+msgid ""
+"Your products marked as \"Featured\" will have a badge with \"Hot\" label."
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog_mode.php:9
+#: inc/customizer/backend/shop/index.php:39
+msgid "Catalog Mode"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog_mode.php:20
+msgid "Hide Add to Cart Button"
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog_mode.php:36
+msgid "Hide variable selections on variable products."
+msgstr ""
+
+#: inc/customizer/backend/shop/catalog_mode.php:53
+msgid "Hide Product Price"
+msgstr ""
+
+#: inc/customizer/backend/shop/compare.php:9
+msgid "Extends Yith Compare Plugin"
+msgstr ""
+
+#: inc/customizer/backend/shop/compare.php:19
+msgid "Page view compare products"
+msgstr ""
+
+#: inc/customizer/backend/shop/compare.php:36
+msgid "Max products for compare"
+msgstr ""
+
+#: inc/customizer/backend/shop/compare.php:64
+msgid "Select page view compare"
+msgstr ""
+
+#: inc/customizer/backend/shop/index.php:8
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/customizer/backend/shop/index.php:17
+msgid "Shop Settings"
+msgstr ""
+
+#: inc/customizer/backend/shop/index.php:25
+msgid "Shop Catalog"
+msgstr ""
+
+#: inc/customizer/backend/shop/index.php:32
+msgid "Product Page"
+msgstr ""
+
+#: inc/customizer/backend/shop/index.php:46
+msgid "Shop Notifications"
+msgstr ""
+
+#: inc/customizer/backend/shop/index.php:54
+msgid "Compare Settings"
+msgstr ""
+
+#: inc/customizer/backend/shop/notifications.php:9
+msgid "Close woocommerce notices by click"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:9
+msgid "Product Page Layout"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:19
+#: inc/metaboxes/custom_metaboxes.php:215
+msgid "Style 2"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:23
+#: inc/metaboxes/custom_metaboxes.php:216
+msgid "Style 3"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:32
+msgid "Product Thumbnail Position"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:38
+#: inc/mega-menu/tmpl/background.php:53 inc/metaboxes/custom_metaboxes.php:231
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:67
+msgid "Bottom"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:110
+msgid "Sticky off canvas sidebar button"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:134
+#: inc/metaboxes/custom_metaboxes.php:150
+msgid "Header Above the Content on desktop"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:139
+#: inc/customizer/backend/shop/product.php:169
+msgid "Overlap"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:140
+#: inc/customizer/backend/shop/product.php:170
+msgid "No Overlap"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:164
+#: inc/metaboxes/custom_metaboxes.php:182
+msgid "Header Above the Content on mobile"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:187
+msgid "Show breadcrumbs for product page"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:206
+msgid "AJAX add to cart button"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:207
+msgid ""
+"Check this option to enable AJAX add to cart button in the product page."
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:224
+msgid "Sticky Add To Cart"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:233
+msgid "Sticky Add To Cart In Mobile"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:257
+msgid "Buy It Now Button"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:274
+msgid "Product Page Share"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:291
+msgid "Size guides"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:292
+msgid ""
+"Turn on the size guide feature on the website. Read more information about "
+"this function in <a href=\"https://temashdesign.ticksy.com/article/14193/\" "
+"target=\"_blank\">our documentation</a>."
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:314
+msgid "Product Zoom"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:315
+msgid "Check this option to show a bigger size product image on mouseover"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:332
+msgid "Product Images Gallery"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:333
+msgid "Check this option to open product gallery images in a lightbox"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:342
+msgid "Product Gallery Lightbox Dominant Background"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:343
+msgid "Enable / Disable dominant background color on Product Gallery Lightbox."
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:352
+msgid "Additional variations images"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:353
+msgid ""
+"Add an ability to upload additional images for each variation in variable "
+"products."
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:370
+msgid "Product Navigation"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:371
+msgid "Check this option to show Prev/Next product Navigation"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:398
+msgid "Countdown for variable products"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:399
+msgid "Sale end date will be based on the first variation date of the product."
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:416
+msgid "Stock Progress Bar"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:417
+msgid ""
+"Show the woocommerce product stock quantity in a horizontal progress bar"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:429
+msgid "Related/Upsells Products"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:436
+msgid "Upsells Products"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:445
+msgid "Upsells Products Columns"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:468
+msgid "Upsells Products Numbers"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:500
+msgid "Related Products"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:509
+msgid "Related Products Columns"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:532
+msgid "Related Products Numbers"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:556
+msgid "Related/Upsells carousel continuous scroll"
+msgstr ""
+
+#: inc/customizer/backend/shop/product.php:565
+msgid "Carousel continuous scroll speed"
+msgstr ""
+
+#: inc/customizer/backend/shop/settings.php:9
+msgid "Shop filters"
+msgstr ""
+
+#: inc/customizer/backend/shop/settings.php:10
+msgid "Enable shop filters widget's area above the products"
+msgstr ""
+
+#: inc/customizer/backend/shop/settings.php:21
+msgid "Stop close filter or sidebar after click"
+msgstr ""
+
+#: inc/customizer/backend/shop/settings.php:45
+msgid "AJAX shop"
+msgstr ""
+
+#: inc/customizer/backend/shop/settings.php:46
+msgid "Enable AJAX functionality for filters widgets on shop"
+msgstr ""
+
+#: inc/customizer/backend/shop/settings.php:63
+msgid "Action after add to cart"
+msgstr ""
+
+#: inc/customizer/backend/shop/settings.php:69
+msgid "Show Off-Canvas Sidebar"
+msgstr ""
+
+#: inc/customizer/backend/shop/settings.php:70
+msgid "No Action"
+msgstr ""
+
+#: inc/customizer/backend/shop/settings.php:85
+msgid "Make small price decimals"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:15
+msgid "Social Media"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:31
+msgid "Social Networks profiles"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:40
+#: inc/customizer/backend/social/index.php:298 woocommerce/share.php:45
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:49
+#: inc/customizer/backend/social/index.php:299 woocommerce/share.php:57
+msgid "Twitter"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:58
+#: inc/customizer/backend/social/index.php:301 woocommerce/share.php:67
+msgid "Pinterest"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:67
+#: inc/customizer/backend/social/index.php:300
+msgid "Google+"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:76
+#: inc/customizer/backend/social/index.php:304
+msgid "Telegram"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:85
+msgid "VKontakte"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:94
+#: inc/customizer/backend/social/index.php:307
+msgid "Blogger"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:103
+#: inc/customizer/backend/social/index.php:302
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:113
+msgid "RSS"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:122
+msgid "Tumblr"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:131
+msgid "Instagram"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:140
+msgid "Youtube"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:149
+msgid "Vimeo"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:158
+msgid "Behance"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:167
+msgid "Dribbble"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:176
+msgid "Flickr"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:185
+msgid "Git"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:194
+msgid "Skype"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:203
+msgid "Weibo"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:212
+msgid "Envato"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:221
+msgid "Apple"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:230
+msgid "Soundcloud"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:239
+#: inc/customizer/backend/social/index.php:305 woocommerce/share.php:90
+msgid "WhatsApp"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:248
+#: inc/customizer/backend/social/index.php:306
+msgid "Viber"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:257
+msgid "Spotify"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:266
+msgid "Discord"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:284
+msgid "Social Network for Sharing"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:293
+msgid "Select Social Networks for Share"
+msgstr ""
+
+#: inc/customizer/backend/social/index.php:303
+msgid "Vkontakte"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:15
+msgid "Style"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:32
+msgid "Content Background"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:41
+msgid "Base Color"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:50
+msgid "Accent Color"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:59
+msgid "Body Font Color"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:68
+msgid "Button Color"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:86
+msgid "Cart Totals Background Color"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:95
+msgid "Checkout Total Background Color"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:104
+msgid "My Account Left Navigation Background Color"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:123
+msgid "Loading Transition Animation"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:132
+msgid "Diagonal Navigation Animation"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:151
+msgid "Tag Cloud widget layout"
+msgstr ""
+
+#: inc/customizer/backend/style/index.php:163
+msgid "Equal"
+msgstr ""
+
+#: inc/customizer/backend/typography/body.php:24
+msgid "Body Font"
+msgstr ""
+
+#: inc/customizer/backend/typography/body.php:49
+msgid "Body Font Mobile"
+msgstr ""
+
+#: inc/customizer/backend/typography/body.php:66
+msgid "Force Load All Selected Fonts Variations"
+msgstr ""
+
+#: inc/customizer/backend/typography/body.php:67
+msgid ""
+"Please also note that this may significantly decrease site loading speed if "
+"your font contains a lot of weights & styles."
+msgstr ""
+
+#: inc/customizer/backend/typography/elements.php:11
+msgid "Button Style"
+msgstr ""
+
+#: inc/customizer/backend/typography/heading.php:14
+msgid "Heading Font"
+msgstr ""
+
+#: inc/customizer/backend/typography/heading.php:29
+msgid "Page Header Font"
+msgstr ""
+
+#: inc/customizer/backend/typography/heading.php:45
+msgid "Product Title Font on catalog page"
+msgstr ""
+
+#: inc/customizer/backend/typography/heading.php:46
+msgid "Select font for product title on shop (archive) page"
+msgstr ""
+
+#: inc/customizer/backend/typography/heading.php:60
+msgid "Product Title Font on product page"
+msgstr ""
+
+#: inc/customizer/backend/typography/heading.php:61
+msgid "Select font for product title on product page"
+msgstr ""
+
+#: inc/customizer/backend/typography/heading.php:77
+msgid "Cart page Title Font size"
+msgstr ""
+
+#: inc/customizer/backend/typography/heading.php:78
+msgid "Select font size for Cart page title"
+msgstr ""
+
+#: inc/customizer/backend/typography/heading.php:91
+msgid "My Account Title Font size"
+msgstr ""
+
+#: inc/customizer/backend/typography/heading.php:92
+msgid "Select font size for my account title"
+msgstr ""
+
+#: inc/customizer/backend/typography/index.php:8
+#: inc/vendor/kirki/example.php:76
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer/backend/typography/index.php:18
+msgid "Body"
+msgstr ""
+
+#: inc/customizer/backend/typography/index.php:25
+msgid "Heading"
+msgstr ""
+
+#: inc/customizer/backend/typography/index.php:32
+msgid "Navigation"
+msgstr ""
+
+#: inc/customizer/backend/typography/index.php:39
+msgid "Elements"
+msgstr ""
+
+#: inc/customizer/backend/typography/navigation.php:13
+msgid "Header Navigation Font"
+msgstr ""
+
+#: inc/customizer/backend/typography/navigation.php:28
+msgid "Header Navigation Submenu Font"
+msgstr ""
+
+#: inc/customizer/backend/typography/navigation.php:43
+msgid "Header Navigation Font for tablet/mobile (Off-canvas)"
+msgstr ""
+
+#: inc/demo/ocdi-setup.php:117
+msgid "One Click Demo Import"
+msgstr ""
+
+#: inc/demo/ocdi-setup.php:118
+msgid "Import Demo Data"
+msgstr ""
+
+#: inc/fonts/class-tdl-add-custom-fonts.php:224
+#: inc/metaboxes/custom_metaboxes.php:648
+msgid "Custom Fonts"
+msgstr ""
+
+#: inc/mega-menu/class-mega-menu-walker.php:340
+#: inc/mega-menu/class-menu-walker.php:172 inc/mega-menu/tmpl/general.php:31
+msgid "Trending"
+msgstr ""
+
+#: inc/mega-menu/class-menu-edit.php:100
+msgid "Settings"
+msgstr ""
+
+#: inc/mega-menu/class-menu-edit.php:168 inc/metaboxes/custom_metaboxes.php:840
+msgid "Save Changes"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:12
+msgid "Select Image"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:23
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:112
+msgid "Background Repeat"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:25
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:116
+msgid "No Repeat"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:26
+msgid "Tile"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:27
+msgid "Tile Horizontally"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:28
+msgid "Tile Vertically"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:33
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:145
+msgid "Background Position"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:39 inc/mega-menu/tmpl/background.php:54
+#: inc/vendor/kirki/example.php:53
+msgid "Custom"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:51
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:66
+msgid "Top"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:52
+msgid "Middle"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:64
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:215
+msgid "Background Attachment"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:66
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:220
+msgid "Scroll"
+msgstr ""
+
+#: inc/mega-menu/tmpl/background.php:67
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:221
+msgid "Fixed"
+msgstr ""
+
+#: inc/mega-menu/tmpl/content.php:9
+msgid "Allow HTML and Shortcodes"
+msgstr ""
+
+#: inc/mega-menu/tmpl/general.php:9
+msgid "Hide Text"
+msgstr ""
+
+#: inc/mega-menu/tmpl/mega.php:5 inc/mega-menu/tmpl/menus.php:2
+msgid "Mega Menu"
+msgstr ""
+
+#: inc/mega-menu/tmpl/mega.php:11
+msgid "Mega Width"
+msgstr ""
+
+#: inc/mega-menu/tmpl/menus.php:2
+msgid "Mega Menu Content"
+msgstr ""
+
+#: inc/mega-menu/tmpl/menus.php:3
+msgid "Mega Menu Background"
+msgstr ""
+
+#: inc/mega-menu/tmpl/menus.php:3 inc/vendor/kirki/example.php:48
+msgid "Background"
+msgstr ""
+
+#: inc/mega-menu/tmpl/menus.php:6
+msgid "Menu Content"
+msgstr ""
+
+#: inc/mega-menu/tmpl/menus.php:7 inc/mega-menu/tmpl/menus.php:9
+msgid "Menu General"
+msgstr ""
+
+#: inc/mega-menu/tmpl/menus.php:7 inc/mega-menu/tmpl/menus.php:9
+msgid "General"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:18
+msgid "Image for category heading"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:21
+msgid ""
+"Specify the image you want to display at the top of current category page."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:29
+msgid "Image (icon) for categories navigation on the shop page"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:39
+msgid ""
+"Image (icon) for categories navigation on the shop page (Light Page Title "
+"Color Scheme)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:52 inc/metaboxes/custom_metaboxes.php:384
+msgid "Overlap page content with this header (header is transparent)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:53 inc/metaboxes/custom_metaboxes.php:385
+msgid "Header above the content"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:64 inc/metaboxes/custom_metaboxes.php:81
+#: inc/metaboxes/custom_metaboxes.php:155
+#: inc/metaboxes/custom_metaboxes.php:187
+#: inc/metaboxes/custom_metaboxes.php:213
+#: inc/metaboxes/custom_metaboxes.php:230
+#: inc/metaboxes/custom_metaboxes.php:449
+#: inc/metaboxes/custom_metaboxes.php:466
+msgid "Inherit"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:145
+msgid "Product Settings"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:153
+msgid ""
+"Overlap page content with this header (header is transparent) on desktop. "
+"Only for Style 2 & Style 3 product layouts."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:156
+#: inc/metaboxes/custom_metaboxes.php:188
+msgid "Overlap Header"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:157
+#: inc/metaboxes/custom_metaboxes.php:189
+#: inc/metaboxes/custom_metaboxes.php:255
+msgid "No Overlap Header"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:185
+msgid ""
+"Overlap page content with this header (header is transparent) on mobile."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:198
+#: inc/metaboxes/custom_metaboxes.php:202
+msgid "Add \"New\" label"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:201
+msgid "You can add \"New\" label to this product"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:208
+msgid "Product layout"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:211
+msgid "Select product page layout."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:225
+msgid "Product Thumbnails Position"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:228
+msgid "Select product thumbnail position."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:282
+msgid "Fullscreen Description"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:288
+msgid "Video Embed Code"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:291
+msgid "Enter the direct URL to a YouTube video page."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:326
+#: inc/metaboxes/custom_metaboxes.php:330
+msgid "Hide Page Title"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:329
+msgid "Check this if you want to show/hide page title area."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:336
+#: inc/metaboxes/custom_metaboxes.php:340
+msgid "Header Top Padding"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:339
+msgid ""
+"Check this if you want to add header top padding when title section is "
+"disabled."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:361
+msgid "Check this if you want to disable bottom padding in Page Title."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:362
+msgid "Disable Page Title Bottom Padding"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:391
+msgid "Page SubTitle"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:394
+msgid "Enter page subtitle."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:412
+msgid "Check this if you want to disable top padding of page content."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:413
+msgid "Disable Page Content Top Padding"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:421
+msgid "Check this if you want to disable content bottom padding "
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:422
+msgid "Disable Content Bottom Padding"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:430
+msgid "Hide Header Top Bar"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:438
+msgid "Hide Page Footer"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:516
+msgid "Background Image for Page Title Section"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:667
+msgid "Add Custom Font"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:671
+msgid "Font Family Name"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:690
+msgid "Font Display"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:695
+msgid "More information"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:696
+msgid "related to \"font-display\" descriptor."
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:724
+msgid "Font Files"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:739
+msgid "Add Font File"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:746
+msgid "Upload .woff or .woff2 font file"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:762
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:61
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:205
+msgid "Font Weight"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:765
+msgid "Select a font weight of the uploaded font file"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:774
+msgid "100 (Thin)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:775
+msgid "100i (Thin Italic)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:776
+msgid " 200 (Ultra Light)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:777
+msgid "200i (Ultra Light Italic)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:778
+msgid " 300 (Light)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:779
+msgid "300i (Light Italic)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:780
+msgid "400 (Regular)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:781
+msgid "400i (Regular Italic)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:782
+msgid "500 (Medium)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:783
+msgid "500i (Medium Italic)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:784
+msgid "600 (Semi Bold)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:785
+msgid "600i (Semi Bold Italic)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:786
+msgid "700 (Bold)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:787
+msgid "700i (Bold Italic)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:788
+msgid "800 (Extra Bold)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:789
+msgid "800i (Extra Bold Italic)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:790
+msgid "900 (Black)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:791
+msgid "900i (Black Italic)"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:843
+msgid "Fonts are saved and ready to use from"
+msgstr ""
+
+#: inc/metaboxes/custom_metaboxes.php:845
+msgid "WordPress Customizer."
+msgstr ""
+
+#: inc/search/class-search.php:49
+msgctxt "submit button"
+msgid "Search for products"
+msgstr ""
+
+#: inc/search/class-search.php:50
+msgid "Start typing to see products you are looking for."
+msgstr ""
+
+#: inc/search/class-search.php:54
+msgctxt "submit button"
+msgid "Search for projects"
+msgstr ""
+
+#: inc/search/class-search.php:55
+msgid "Start typing to see projects you are looking for."
+msgstr ""
+
+#: inc/search/class-search.php:59
+msgctxt "submit button"
+msgid "Search for posts"
+msgstr ""
+
+#: inc/search/class-search.php:60
+msgid "Start typing to see posts you are looking for."
+msgstr ""
+
+#: inc/search/class-search.php:215
+msgid "No posts found"
+msgstr ""
+
+#: inc/size-guide/size-guide.php:11
+msgid "Create/modify size guide table"
+msgstr ""
+
+#: inc/size-guide/size-guide.php:13
+msgid "Choose size guide"
+msgstr ""
+
+#: inc/size-guide/size-guide.php:15
+msgid "Choose product categories"
+msgstr ""
+
+#: inc/size-guide/size-guide.php:17 inc/size-guide/size-guide.php:319
+msgid "Hide size guide table"
+msgstr ""
+
+#: inc/size-guide/size-guide.php:127
+msgid "Hide size guide from this product"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/tgm/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:393
+#: inc/tgm/class-tgm-plugin-activation.php:912
+#: inc/tgm/class-tgm-plugin-activation.php:2618
+#: inc/tgm/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:394
+#: inc/tgm/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:395
+#: inc/tgm/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: inc/tgm/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:1019
+#: inc/tgm/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:1206
+#: inc/tgm/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/tgm/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: inc/tgm/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/tgm/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2639
+#: woocommerce/myaccount/my-refund-requests.php:16
+#: woocommerce/myaccount/my-subscriptions.php:22
+#: woocommerce/myaccount/my-subscriptions.php:37
+#: woocommerce/myaccount/related-orders.php:24
+#: woocommerce/myaccount/related-orders.php:50
+#: woocommerce/myaccount/related-subscriptions.php:22
+#: woocommerce/myaccount/related-subscriptions.php:36
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2808
+#: woocommerce/cart/shipping-calculator.php:88
+#: woocommerce/wishlist-view-footer.php:78
+msgid "Update"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/tgm/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3594
+#: inc/tgm/class-tgm-plugin-activation.php:3602
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3594
+#: inc/tgm/class-tgm-plugin-activation.php:3602
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/tgm/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/variable-images/variable-images.php:27
+msgid "Variation Image Gallery"
+msgstr ""
+
+#: inc/variable-images/variable-images.php:49
+msgid "Add Gallery Images"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:34
+msgid "Kirki Demo Panel"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:35
+msgid "Contains sections for all kirki controls."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:49
+msgid "Code"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:50 inc/vendor/kirki/example.php:678
+msgid "Checkbox"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:52
+msgid "Color Palette"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:54
+msgid "Dashicons"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:55 woocommerce/myaccount/related-orders.php:23
+#: woocommerce/myaccount/related-orders.php:47
+msgid "Date"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:56
+msgid "Dimension"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:57
+msgid "Dimensions"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:58
+msgid "Dropdown Pages"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:59
+msgid "Editor"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:60
+msgid "Font-Awesome"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:61
+msgid "Generic"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:62
+msgid "Image"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:63
+msgid "Multicheck"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:64
+msgid "Multicolor"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:65
+msgid "Number"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:66
+msgid "Palette"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:67
+msgid "Preset"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:68
+msgid "Radio"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:68
+msgid "A plain Radio control."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:69
+msgid "Radio Buttonset"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:69
+msgid ""
+"Radio-Buttonset controls are essentially radio controls with some fancy "
+"styling to make them look cooler."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:70
+msgid "Radio Image"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:70
+msgid ""
+"Radio-Image controls are essentially radio controls with some fancy styles "
+"to use images"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:71
+msgid "Repeater"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:72
+msgid "Select"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:74
+msgid "Sortable"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:75
+msgid "Switch"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:93
+msgid "Test Link Section"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:95
+msgid "Pro"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:108
+msgid "Background Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:109
+msgid "Background conrols are pretty complex! (but useful if properly used)"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:130
+msgid "Code Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:148
+msgid "Checkbox Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:163
+msgid "Color Control (hex-only)"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:164
+msgid "This is a color control - without alpha channel."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:173
+msgid "Color Control (with alpha channel)"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:174
+msgid "This is a color control - with alpha channel."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:186
+msgid "Color Control - hue only."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:187
+msgid "This is a color control - hue only."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:200
+msgid "Date Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:201
+msgid "This is a date control."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:213
+msgid "First Editor Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:214
+msgid "This is an editor control."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:223
+msgid "Second Editor Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:224
+msgid ""
+"This is a 2nd editor control just to check that we do not have issues with "
+"multiple instances."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:226
+msgid "Default Text"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:238 inc/vendor/kirki/example.php:252
+#: inc/vendor/kirki/example.php:266 inc/vendor/kirki/example.php:280
+#: inc/vendor/kirki/example.php:294
+msgid "Color-Palette"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:239
+msgid "This is a color-palette control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:253
+msgid "Material Design Colors - all"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:267
+msgid "Material Design Colors - primary"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:281
+msgid "Material Design Colors - red"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:295
+msgid "Material Design Colors - A100"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:314
+msgid "Dashicons Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:315
+msgid "Using a custom array of dashicons"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:333
+msgid "All Dashicons"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:334
+msgid "Showing all dashicons"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:346 inc/vendor/kirki/example.php:362
+#: inc/vendor/kirki/example.php:375
+msgid "Dimension Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:347 inc/vendor/kirki/example.php:363
+#: inc/vendor/kirki/example.php:376 inc/vendor/kirki/example.php:391
+#: inc/vendor/kirki/example.php:409 inc/vendor/kirki/example.php:464
+#: inc/vendor/kirki/example.php:474 inc/vendor/kirki/example.php:487
+msgid "Description Here."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:390
+msgid "Spacing Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:408
+msgid "Dropdown Pages Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:424
+msgid "Text Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:434
+msgid "Textarea Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:444
+msgid "Custom input Control."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:445
+msgid ""
+"The \"generic\" control allows you to add any input type you want. In this "
+"case we use type=\"password\" and define custom styles."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:463
+msgid "Image Control (URL)"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:473
+msgid "Image Control (ID)"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:486
+msgid "Image Control (array)"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:502
+msgid "Multickeck Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:507 inc/vendor/kirki/example.php:585
+#: inc/vendor/kirki/example.php:605 inc/vendor/kirki/example.php:697
+#: inc/vendor/kirki/example.php:715 inc/vendor/kirki/example.php:753
+msgid "Option 1"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:508 inc/vendor/kirki/example.php:586
+#: inc/vendor/kirki/example.php:606 inc/vendor/kirki/example.php:698
+#: inc/vendor/kirki/example.php:716 inc/vendor/kirki/example.php:754
+msgid "Option 2"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:509 inc/vendor/kirki/example.php:587
+#: inc/vendor/kirki/example.php:607 inc/vendor/kirki/example.php:699
+#: inc/vendor/kirki/example.php:717 inc/vendor/kirki/example.php:755
+msgid "Option 3"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:510 inc/vendor/kirki/example.php:588
+#: inc/vendor/kirki/example.php:700 inc/vendor/kirki/example.php:718
+#: inc/vendor/kirki/example.php:756
+msgid "Option 4"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:511 inc/vendor/kirki/example.php:589
+#: inc/vendor/kirki/example.php:701 inc/vendor/kirki/example.php:719
+#: inc/vendor/kirki/example.php:757
+msgid "Option 5"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:522
+msgid "Multicolor Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:527
+msgid "Hover"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:545
+msgid "Number Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:562
+msgid "Palette Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:580
+msgid "Radio Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:581 inc/vendor/kirki/example.php:601
+#: inc/vendor/kirki/example.php:619 inc/vendor/kirki/example.php:637
+#: inc/vendor/kirki/example.php:692 inc/vendor/kirki/example.php:710
+#: inc/vendor/kirki/example.php:731
+msgid "The description here."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:600
+msgid "Radio-Buttonset Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:618
+msgid "Radio-Image Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:636
+msgid "Repeater Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:641
+msgid "Kirki Site"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:647
+msgid "Kirki Repository"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:656
+msgid "Link Text"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:657
+msgid "This will be the label for your link"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:662
+msgid "Link URL"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:663
+msgid "This will be the link URL"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:668
+msgid "Link Target"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:669
+msgid "This will be the link target"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:672
+msgid "New Window"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:673
+msgid "Same Frame"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:691 inc/vendor/kirki/example.php:709
+msgid "Select Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:695
+msgid "Select an option"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:730
+msgid "Slider Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:749
+msgid "This is a sortable control."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:758
+msgid "Option 6"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:769
+msgid "Switch Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:779
+msgid "Switch Control with custom labels"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:784
+msgid "Enabled"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:785
+msgid "Disabled"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:803 inc/vendor/kirki/example.php:857
+msgid "Typography Control"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:804
+msgid "The full set of options."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:858
+msgid "Just the font-family and font-weight."
+msgstr ""
+
+#: inc/vendor/kirki/example.php:893
+msgid "Sidebars Select"
+msgstr ""
+
+#: inc/vendor/kirki/example.php:894
+msgid "An example of how to implement sidebars selection."
+msgstr ""
+
+#. translators: %s represents the field ID where the error occurs.
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/Field.php:259
+#, php-format
+msgid "Typo found in field %s - setting instead of settings."
+msgstr ""
+
+#. translators: %1$s represents the field ID where the error occurs. %2$s is the URL in the documentation site.
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/Field.php:269
+#, php-format
+msgid ""
+"Config not defined for field %1$s - See %2$s for details on how to properly "
+"add fields."
+msgstr ""
+
+#. translators: %1$s represents the field ID where the error occurs.
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/Field.php:380
+#, php-format
+msgid "\"partial_refresh\" invalid entry in field %s"
+msgstr ""
+
+#. translators: The field ID where the error occurs.
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/Field.php:503
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/Field.php:514
+#: inc/vendor/kirki/packages/kirki-framework/module-css/src/CSS.php:96
+#: inc/vendor/kirki/packages/kirki-framework/module-css/src/CSS.php:107
+#, php-format
+msgid ""
+"\"output\" invalid format in field %s. The \"output\" argument should be "
+"defined as an array of arrays."
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/Init.php:206
+msgid ""
+"We detected you're using Kirki\\Compatibility\\Init::get_variables(). Please "
+"use \\Kirki\\Util\\Util::get_variables() instead."
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/Init.php:255
+msgid ""
+"Your theme uses a Font Awesome field for icons. To avoid issues with missing "
+"icons on your frontend we recommend you install the official Font Awesome "
+"plugin."
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/Init.php:258
+msgid "Install Plugin"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/Init.php:259
+msgid "Don't show this again"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/Kirki.php:167
+msgid ""
+"Kirki fields should not be added on customize_register. Please add them "
+"directly, or on init."
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/compatibility/src/deprecated/functions.php:20
+#, php-format
+msgid "%1$s or %2$s"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-checkbox/src/Control/Checkbox_Switch.php:94
+msgid "Off"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:102
+msgid "Admin Menu"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:103
+msgid "Welcome Screen"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:104
+msgid "Post Formats"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:105
+msgid "Media"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:106
+msgid "Image Editing"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:108
+msgid "Posts"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:109
+msgid "Sorting"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:110
+msgid "Social"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:113
+msgid "Taxonomies"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:114
+msgid "Widgets"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:115
+msgid "Notifications"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dashicons/src/Control/Dashicons.php:116
+msgid "Miscelaneous"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-dimension/src/Control/Dimension.php:67
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:75
+msgid "Invalid Value"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Control/Image.php:82
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Field/Image.php:115
+msgid "No image selected"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Control/Image.php:89
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Field/Image.php:111
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Field/Image.php:116
+msgid "Select image"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Field/Image.php:112
+msgid "Change image"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-image/src/Field/Image.php:117
+msgid "Choose image"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-react-select/src/Control/ReactSelect.php:162
+msgid "Select..."
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:96
+msgid "row"
+msgstr ""
+
+#. translators: %s represents the label of the row.
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:105
+#, php-format
+msgid "Add new %s"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:140
+msgid "Select a Page"
+msgstr ""
+
+#. translators: %s represents the number of rows we're limiting the repeater to allow.
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:267
+#, php-format
+msgid "Limit: %s rows"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:416
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:421
+msgid "No Image Selected"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:427
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:431
+msgid "Add Image"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:427
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:429
+msgid "Change Image"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:448
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:453
+msgid "No File Selected"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:459
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:463
+msgid "Add File"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:459
+#: inc/vendor/kirki/packages/kirki-framework/control-repeater/src/Control/Repeater.php:461
+msgid "Change File"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:117
+msgid "Repeat All"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:118
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:119
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:149
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:51
+msgid "Left Top"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:150
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:52
+msgid "Left Center"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:151
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:53
+msgid "Left Bottom"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:152
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:57
+msgid "Center Top"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:153
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:58
+msgid "Center Center"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:154
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:59
+msgid "Center Bottom"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:155
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:54
+msgid "Right Top"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:156
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:55
+msgid "Right Center"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:157
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:56
+msgid "Right Bottom"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:183
+msgid "Background Size"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:187
+msgid "Cover"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:188
+msgid "Contain"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-background/src/Background.php:189
+msgid "Auto"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:60
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:289
+msgid "Font Size"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:62
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:311
+msgid "Line Height"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:63
+msgid "Font Style"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:64
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:330
+msgid "Letter Spacing"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:65
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:349
+msgid "Word Spacing"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:71
+msgid "Size"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:72
+msgid "Spacing"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-dimensions/src/Dimensions.php:73
+msgid "Width"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:157
+msgid "Standard Fonts"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:161
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:180
+msgid "Font Family"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:211
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:575
+msgid "100 - Thin"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:212
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:576
+msgid "200 - Extra Light, Ultra Light"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:213
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:577
+msgid "300 - Light"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:214
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:578
+msgid "400 - Normal, Book, Regular"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:215
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:579
+msgid "500 - Medium"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:216
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:580
+msgid "600 - Semi Bold, Demi Bold"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:217
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:581
+msgid "700 - Bold"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:218
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:582
+msgid "800 - Extra Bold, Ultra Bold"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:219
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:583
+msgid "900 - Black, Heavy"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:239
+msgid "Italics"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:245
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:269
+msgid "No"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:246
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:270
+msgid "Yes"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:263
+msgid "Underline"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:368
+msgid "Text Transform"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:375
+msgid "Capitalize"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:376
+msgid "Uppercase"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:377
+msgid "Lowercase"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:399
+msgid "Initial"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:403
+msgid "Justify"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:419
+msgid "Top Margin"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/field-typography/src/Field/Typography.php:438
+msgid "Bottom Margin"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-sections/src/Section_Types/Nested.php:62
+msgid "Customizing"
+msgstr ""
+
+#. translators: The title.
+#: inc/vendor/kirki/packages/kirki-framework/module-sections/src/Section_Types/Nested.php:65
+#, php-format
+msgid "Customizing &#9656; %s"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:161
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:162
+msgid "Ultra-Light 100"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:163
+msgid "Ultra-Light 100 Italic"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:164
+msgid "Light 200"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:165
+msgid "Light 200 Italic"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:166
+msgid "Book 300"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:167
+msgid "Book 300 Italic"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:168
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:169
+msgid "Normal 400"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:170
+msgid "Normal 400 Italic"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:171
+msgid "Medium 500"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:172
+msgid "Medium 500 Italic"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:173
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:174
+msgid "Semi-Bold 600"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:175
+msgid "Semi-Bold 600 Italic"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:176
+msgid "Bold 700"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:177
+msgid "Bold 700 Italic"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:178
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:179
+msgid "Extra-Bold 800"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:180
+msgid "Extra-Bold 800 Italic"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:181
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:182
+msgid "Ultra-Bold 900"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/module-webfonts/src/Webfonts/Fonts.php:183
+msgid "Ultra-Bold 900 Italic"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:134
+msgid "Help us improve Kirki."
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:135
+msgid ""
+"Sharing anonymous data helps improve both the theme you are using and the "
+"Kirki framework. <strong>The data is completely anonymous and we will never "
+"collect any identifiable information about you or your website.</strong>"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:139
+msgid "Data that will be sent"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:144
+msgid "PHP Version"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:148
+msgid "Theme Name"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:152
+msgid "Theme Author"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:156
+msgid "Theme URI"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:160
+msgid "Field Types Used"
+msgstr ""
+
+#. translators: %1$s: URL to the server plugin code. %2$s: URL to the stats page.
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:170
+#, php-format
+msgid ""
+"We believe in complete transparency. You can see the code used on our server "
+"<a href=\"%1$s\" rel=\"nofollow\">here</a>, and the results of the "
+"statistics we're gathering on <a href=\"%2$s\" rel=\"nofollow\">this page</"
+"a>."
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:181
+msgid "I agree"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:182
+msgid "No thanks"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:183
+msgid "Show me the data"
+msgstr ""
+
+#: inc/vendor/kirki/packages/kirki-framework/util/src/Telemetry.php:184
+msgid "Collapse data"
+msgstr ""
+
+#: inc/vendor/kirki/upgrade-notifications.php:30
+msgid "Important Upgrade Notice:"
+msgstr ""
+
+#: searchform.php:2
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search &hellip;"
+msgstr ""
+
+#: single.php:87
+msgid "Previous Reading"
+msgstr ""
+
+#: single.php:93
+msgid "Next Reading"
+msgstr ""
+
+#: template-parts/content-highlight.php:45 template-parts/content.php:54
+#: template-parts/search/content.php:51
+msgid "Read More"
+msgstr ""
+
+#: template-parts/content-none.php:4
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:11
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:19
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:6
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/content-page.php:7
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:37
+msgid "<span class=\"pages\">Pages:</span>"
+msgstr ""
+
+#: template-parts/headers/header-default.php:21
+#: template-parts/headers/header-left.php:19
+#: template-parts/headers/header-left.php:84
+#: template-parts/headers/header-offcanvas.php:20
+msgid "Menu"
+msgstr ""
+
+#: template-parts/offcanvas-top.php:14
+msgid "What are you looking for?"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:45 woocommerce/cart/cart.php:43
+msgid "Continue shopping"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:66 woocommerce/cart/cart-empty.php:96
+msgid "Your cart is currently empty."
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:91 woocommerce/cart/cart-totals.php:29
+msgid "Cart totals"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:102 woocommerce/cart/cart-empty.php:103
+#: woocommerce/cart/cart-totals.php:92 woocommerce/cart/cart-totals.php:93
+#: woocommerce/checkout/review-order.php:117
+#: woocommerce/order/order-details.php:58
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:53
+#, php-format
+msgid "Shipping to %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:54
+msgid "Change address"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:56
+msgid "Shipping options will be updated during checkout."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:63
+msgid "Enter your address to view shipping options."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:65
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:68
+#, php-format
+msgid "No shipping options were found for %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:69
+msgid "Enter a different address"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:34 woocommerce/cart/cart-totals.php:35
+#: woocommerce/cart/cart.php:158 woocommerce/checkout/review-order.php:24
+#: woocommerce/checkout/review-order.php:70
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:71
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/cart.php:86 woocommerce/cart/mini-cart.php:57
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:127
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:132 woocommerce/cart/mini-cart.php:85
+#: woocommerce/global/quantity-input.php:29 woocommerce/wishlist-view.php:89
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:183
+msgid "Coupon:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:188
+msgid "Update cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:223
+msgid "Continue Shopping"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:32
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:128
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:169
+msgid "View cart"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:169 woocommerce/klarna-checkout.php:40
+msgid "Checkout"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:26
+msgid "Calculate shipping"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:33
+msgid "Select a country / region&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:52
+#: woocommerce/cart/shipping-calculator.php:57
+#: woocommerce/cart/shipping-calculator.php:69
+msgid "State / County"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:58
+msgid "Select a state&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:78
+msgid "City"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:84
+msgid "Postcode / ZIP"
+msgstr ""
+
+#: woocommerce/checkout/cart-errors.php:29
+msgid ""
+"There are some issues with the items in your cart. Please go back to the "
+"cart page and resolve these issues before checking out."
+msgstr ""
+
+#: woocommerce/checkout/cart-errors.php:33
+msgid "Return to cart"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:26 woocommerce/klarna-checkout.php:13
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:46 woocommerce/klarna-checkout.php:29
+msgid "Back to Cart"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:79 woocommerce/klarna-checkout.php:55
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:27
+msgid "Have a coupon?"
+msgstr ""
+
+#: woocommerce/checkout/form-gift-cards.php:26
+msgid "Have a gift card?"
+msgstr ""
+
+#: woocommerce/checkout/form-gift-cards.php:38
+msgid "Apply gift card"
+msgstr ""
+
+#: woocommerce/checkout/form-gift-cards.php:49
+msgctxt "Apply gift card"
+msgid ""
+"In order to apply the gift card, the total amount in the cart has to be at "
+"least"
+msgstr ""
+
+#: woocommerce/checkout/form-gift-cards.php:60
+msgctxt "Apply gift card"
+msgid "If you have a gift card code, please apply it below."
+msgstr ""
+
+#: woocommerce/checkout/form-gift-cards.php:64
+msgctxt "Apply gift card"
+msgid "Gift card code"
+msgstr ""
+
+#: woocommerce/checkout/form-gift-cards.php:68
+msgctxt "Apply gift card"
+msgid "Apply gift card"
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:28
+msgid "Totals"
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:79
+msgid ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:33
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:33
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#. translators: $1 and $2 opening and closing emphasis tags respectively
+#: woocommerce/checkout/payment.php:42
+#, php-format
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:44
+msgid "Update totals"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:33
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:36
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:51 woocommerce/checkout/thankyou.php:106
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:56
+msgid "Order number:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:61
+msgid "Date:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:67
+msgid "Email:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:73
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:79
+msgid "Payment method:"
+msgstr ""
+
+#: woocommerce/content-product_cat.php:45
+#, php-format
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/global/form-login.php:58
+msgid "Login"
+msgstr ""
+
+#. translators: %s: Quantity.
+#: woocommerce/global/quantity-input.php:29
+#, php-format
+msgid "%s quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:48
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:33
+#, php-format
+msgid ""
+"From your account dashboard you can view your <a href=\"%1$s\">recent "
+"orders</a>, manage your <a href=\"%2$s\">shipping and billing addresses</a>, "
+"and <a href=\"%3$s\">edit your password and account details</a>."
+msgstr ""
+
+#: woocommerce/myaccount/downloads.php:30
+#: woocommerce/order/order-downloads.php:25
+msgid "Downloads"
+msgstr ""
+
+#: woocommerce/myaccount/downloads.php:54
+msgid "No downloads available yet."
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:22
+msgid "Edit account"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:29
+msgid "First name"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:33
+msgid "Last name"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:39
+msgid "Display name"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:40
+msgid ""
+"This will be how your name will be displayed in the account section and in "
+"reviews"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:45
+#: woocommerce/myaccount/form-login.php:78
+msgid "Email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:50
+msgid "Password change"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:53
+msgid "Current password (leave blank to leave unchanged)"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:57
+msgid "New password (leave blank to leave unchanged)"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:61
+msgid "Confirm new password"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:71
+msgid "Save changes"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:62
+#: woocommerce/myaccount/form-login.php:97
+msgid "Register"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:71
+msgid "Username"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:89
+msgid "A password will be sent to your email address."
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:45
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:58
+msgid "Reset password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:44
+msgid "Enter a new password below."
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:47
+msgid "New password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:51
+msgid "Re-enter new password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:64
+#: woocommerce/wishlist-view-header.php:49
+msgid "Save"
+msgstr ""
+
+#: woocommerce/myaccount/lost-password-confirmation.php:40
+msgid "Password reset email has been sent."
+msgstr ""
+
+#: woocommerce/myaccount/lost-password-confirmation.php:44
+msgid ""
+"A password reset email has been sent to the email address on file for your "
+"account, but may take several minutes to show up in your inbox. Please wait "
+"at least 10 minutes before attempting another reset."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:27
+#: woocommerce/myaccount/my-address.php:32
+#: woocommerce/order/order-details-customer.php:32
+msgid "Billing address"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:28
+#: woocommerce/order/order-details-customer.php:51
+msgid "Shipping address"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:38
+msgid "Addresses"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:41
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:57
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: woocommerce/myaccount/my-refund-requests.php:12
+#: woocommerce/myaccount/my-subscriptions.php:33
+#: woocommerce/myaccount/related-subscriptions.php:31
+msgid "ID"
+msgstr ""
+
+#: woocommerce/myaccount/my-refund-requests.php:13
+#: woocommerce/myaccount/related-orders.php:22
+msgid "Order"
+msgstr ""
+
+#: woocommerce/myaccount/my-refund-requests.php:15
+msgid "Requested amount"
+msgstr ""
+
+#: woocommerce/myaccount/my-refund-requests.php:23
+msgid ""
+"There are currently no refund requests, if you would like to request a "
+"refund, then please navigate to orders page and select which order or "
+"product you want to request a refund for."
+msgstr ""
+
+#: woocommerce/myaccount/my-refund-requests.php:48
+msgid "Whole Order"
+msgstr ""
+
+#: woocommerce/myaccount/my-refund-requests.php:56
+msgid "View"
+msgstr ""
+
+#: woocommerce/myaccount/my-refund-requests.php:63
+msgid "Submitted"
+msgstr ""
+
+#: woocommerce/myaccount/my-subscriptions.php:21
+#: woocommerce/myaccount/related-subscriptions.php:21
+msgid "Subscription"
+msgstr ""
+
+#: woocommerce/myaccount/my-subscriptions.php:23
+#: woocommerce/myaccount/related-subscriptions.php:23
+#: woocommerce/myaccount/related-subscriptions.php:39
+msgctxt "table heading"
+msgid "Next payment"
+msgstr ""
+
+#: woocommerce/myaccount/my-subscriptions.php:24
+#: woocommerce/myaccount/related-orders.php:25
+#: woocommerce/myaccount/related-subscriptions.php:24
+msgctxt "table heading"
+msgid "Total"
+msgstr ""
+
+#: woocommerce/myaccount/my-subscriptions.php:34
+#: woocommerce/myaccount/related-orders.php:44
+#: woocommerce/myaccount/related-subscriptions.php:33
+#, php-format
+msgctxt "hash before order number"
+msgid "#%s"
+msgstr ""
+
+#: woocommerce/myaccount/my-subscriptions.php:40
+msgctxt "table heading"
+msgid "Next Payment"
+msgstr ""
+
+#: woocommerce/myaccount/my-subscriptions.php:46
+#: woocommerce/myaccount/related-orders.php:53
+#: woocommerce/myaccount/related-subscriptions.php:42
+msgctxt "Used in data attribute. Escaped"
+msgid "Total"
+msgstr ""
+
+#: woocommerce/myaccount/my-subscriptions.php:50
+#: woocommerce/myaccount/related-orders.php:84
+#: woocommerce/myaccount/related-subscriptions.php:46
+msgctxt "view a subscription"
+msgid "View"
+msgstr ""
+
+#: woocommerce/myaccount/my-subscriptions.php:72
+#, php-format
+msgid "You have reached the end of subscriptions. Go to the %sfirst page%s."
+msgstr ""
+
+#: woocommerce/myaccount/my-subscriptions.php:74
+msgid "You have no active subscriptions."
+msgstr ""
+
+#: woocommerce/myaccount/my-subscriptions.php:77
+msgid "Browse products"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:24
+msgid "Recent orders"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:51
+msgctxt "hash before order number"
+msgid "#"
+msgstr ""
+
+#. translators: 1: formatted order total 2: total order items
+#: woocommerce/myaccount/orders.php:63
+#, php-format
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/myaccount/orders.php:114
+msgid "No order has been made yet."
+msgstr ""
+
+#: woocommerce/myaccount/related-orders.php:15
+msgid "Related orders"
+msgstr ""
+
+#: woocommerce/myaccount/related-orders.php:42
+msgid "Order Number"
+msgstr ""
+
+#. translators: $1: formatted order total for the order, $2: number of items bought
+#: woocommerce/myaccount/related-orders.php:56
+#, php-format
+msgid "%1$s for %2$d item"
+msgid_plural "%1$s for %2$d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/myaccount/related-orders.php:65
+msgctxt "pay for a subscription"
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/myaccount/related-orders.php:78
+msgctxt "an action on a subscription"
+msgid "Cancel"
+msgstr ""
+
+#: woocommerce/myaccount/related-subscriptions.php:15
+msgid "Related subscriptions"
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:33
+msgid ""
+"To track your order please enter your Order ID in the box below and press "
+"the \"Track\" button. This was given to you on your receipt and in the "
+"confirmation email you should have received."
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:37
+msgid "Order ID"
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:37
+msgid "Found in your order confirmation email."
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:38
+msgid "Billing email"
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:38
+msgid "Email you used during checkout."
+msgstr ""
+
+#: woocommerce/order/form-tracking.php:41
+msgid "Track"
+msgstr ""
+
+#: woocommerce/order/order-details-customer.php:35
+#: woocommerce/order/order-details-customer.php:53
+#: woocommerce/single-product/meta.php:38
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/order/order-details.php:51
+msgid "Order details"
+msgstr ""
+
+#: woocommerce/order/order-details.php:102
+msgid "Note:"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:57
+msgid "&infin;"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:63
+msgid "Never"
+msgstr ""
+
+#: woocommerce/share.php:79
+msgid "Email"
+msgstr ""
+
+#: woocommerce/share.php:102
+msgid "(Now"
+msgstr ""
+
+#: woocommerce/share.php:102
+msgid "copy"
+msgstr ""
+
+#: woocommerce/share.php:102
+msgid "this wishlist link and share it anywhere)"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/subscription.php:30
+msgid "Resubscribe"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/subscription.php:32
+msgid "You have an active subscription to this product already."
+msgstr ""
+
+#: woocommerce/single-product/meta.php:38
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:42
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:44
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/related.php:29
+msgid "Related products"
+msgstr ""
+
+#: woocommerce/single-product/sale-flash.php:25
+msgid "Sale!"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:29
+msgid "You may also like&hellip;"
+msgstr ""
+
+#: woocommerce/waitlist-user-waitlist.php:17
+msgid "You are currently on the waitlist for the following products."
+msgstr ""
+
+#: woocommerce/waitlist-user-waitlist.php:24
+#: woocommerce/waitlist-user-waitlist.php:58
+msgid "Product Name"
+msgstr ""
+
+#: woocommerce/waitlist-user-waitlist.php:45
+msgid "Remove me from this waitlist"
+msgstr ""
+
+#: woocommerce/waitlist-user-waitlist.php:66
+msgid "You have not yet joined the waitlist for any products."
+msgstr ""
+
+#: woocommerce/waitlist-user-waitlist.php:67
+#, php-format
+msgid "%sVisit shop now!%s"
+msgstr ""
+
+#: woocommerce/waitlist-user-waitlist.php:83
+msgid ""
+"Your email address is also stored on an archived waitlist for the following "
+"products:"
+msgstr ""
+
+#: woocommerce/waitlist-user-waitlist.php:92
+msgid "Remove my email from all waitlist archives"
+msgstr ""
+
+#: woocommerce/wishlist-view-footer.php:48
+msgid "Apply this action to all the selected items:"
+msgstr ""
+
+#: woocommerce/wishlist-view-footer.php:50
+msgid "Add to cart"
+msgstr ""
+
+#: woocommerce/wishlist-view-footer.php:53
+msgid "Remove from wishlist"
+msgstr ""
+
+#: woocommerce/wishlist-view-footer.php:65
+#, php-format
+msgid "Move to %s"
+msgstr ""
+
+#: woocommerce/wishlist-view-footer.php:70
+msgid "Apply"
+msgstr ""
+
+#: woocommerce/wishlist-view-footer.php:94
+msgid "Ask for an estimate"
+msgstr ""
+
+#: woocommerce/wishlist-view-footer.php:100
+msgid "Add all to cart"
+msgstr ""
+
+#: woocommerce/wishlist-view-header.php:42
+msgid "Edit title"
+msgstr ""
+
+#: woocommerce/wishlist-view-mobile.php:76 woocommerce/wishlist-view.php:141
+#: woocommerce/wishlist-view.php:241
+msgid "Remove this product"
+msgstr ""
+
+#: woocommerce/wishlist-view-mobile.php:132
+msgid "Added on:"
+msgstr ""
+
+#: woocommerce/wishlist-view-mobile.php:143
+msgid "Price:"
+msgstr ""
+
+#: woocommerce/wishlist-view-mobile.php:168
+msgid "Quantity:"
+msgstr ""
+
+#: woocommerce/wishlist-view-mobile.php:183
+msgid "Stock:"
+msgstr ""
+
+#: woocommerce/wishlist-view-mobile.php:186 woocommerce/wishlist-view.php:193
+msgid "Out of stock"
+msgstr ""
+
+#: woocommerce/wishlist-view-mobile.php:186 woocommerce/wishlist-view.php:193
+msgid "In Stock"
+msgstr ""
+
+#: woocommerce/wishlist-view-mobile.php:205 woocommerce/wishlist-view.php:215
+msgid "Move"
+msgstr ""
+
+#: woocommerce/wishlist-view-mobile.php:224 woocommerce/wishlist-view.php:234
+msgid "Move to another list &rsaquo;"
+msgstr ""
+
+#: woocommerce/wishlist-view-mobile.php:247 woocommerce/wishlist-view.php:258
+msgid "No products added to the wishlist"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:74
+msgid "Product name"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:81
+msgid "Unit price"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:97
+msgid "Stock status"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:109
+msgid "Arrange"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:202
+#, php-format
+msgid "Added on: %s"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Barberry"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://barberry.temashdesign.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Barberry is premium WordPress and WooCommerce theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "TemashDesign"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://temashdesign.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Page with Right Sidebar"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Barberry View Compare"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Boxed Layout"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Page with Left Sidebar"
+msgstr ""

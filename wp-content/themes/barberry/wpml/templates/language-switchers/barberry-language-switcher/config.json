@@ -1,0 +1,5 @@
+{
+  "name": "Barberry Language Switcher",
+  "version": "1.0.0",
+  "for": ["sidebars", "footer", "shortcode_actions"],
+}

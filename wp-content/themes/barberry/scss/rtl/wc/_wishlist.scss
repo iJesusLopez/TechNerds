@@ -1,0 +1,150 @@
+body.woocommerce-wishlist {
+
+	@media print, screen and (min-width: 64.0625em) {
+		.large-offset-2 {
+			margin-left: 0;
+		    margin-right: 16.6666666667%;
+		}		
+	}
+
+
+	.wishlist_table {
+
+		tr {
+
+			td {
+				text-align: right;
+			}
+			th {
+				padding-right: rem-calc(15);
+			}
+		}
+
+		thead {
+
+			tr {
+
+				th {
+
+					&:last-child {
+						padding-left: 0;
+						text-align: left;
+					}
+
+
+				}
+			}
+
+
+		}
+
+		tbody {
+
+			tr {
+
+				td {
+					padding-left: rem-calc(15);
+
+					&:last-child {
+						padding-left: 0;
+						text-align: left;				
+					}
+
+					&.wishlist-empty {
+						text-align: center;
+					}
+
+					&.product-remove {
+
+						a.remove {
+							left: auto;
+							right: 0;
+
+							&:before {
+								left: auto;
+								right: calc(50% - 7px);
+							}											
+						}
+					}
+
+					&.product-price {
+				    	del {
+				    		text-align: left;
+
+					    	@include breakpoint(medium down) {
+					    		text-align: right;
+					    	}				    		
+				    	}			    						
+					}
+
+				}
+			}
+		}
+
+		&.mobile {
+			margin-right: 0;
+			li {
+				.item-wrapper {
+					.product-thumbnail {
+						margin-right: 0;
+						margin-left: rem-calc(20);
+						@include breakpoint(375px down) {
+							max-width: 100px;
+							margin-right: 0;
+							margin-left: rem-calc(15);
+						}
+
+						.product-thumbnail-inner {
+							.product-remove {
+								a {
+									left: auto;
+									right: 0;
+								}
+							}
+						}						
+					}
+					.item-details {
+						.product-name {
+							text-align: right;
+						}
+						.item-details-table,
+						.additional-info-wrapper {
+							tbody {
+								tr {
+									td {
+										&.label {
+											text-align: right;
+										}
+										&.value {
+											text-align: left;
+										}
+									}
+								}
+							}
+						}
+
+						.additional-info-wrapper {
+							.product-add-to-cart {
+								float: right;
+							}
+						}					
+					}
+				}
+			}
+		}
+
+	}
+
+	#yith-wcwl-form {
+		.yith_wcwl_wishlist_footer {
+			.yith-wcwl-share {
+				.social-icons {
+					li {
+						margin-right: 0;
+						margin-left: rem-calc(20);
+					}
+				}
+			}
+		}
+	}
+}

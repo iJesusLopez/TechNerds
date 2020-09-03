@@ -1,0 +1,43 @@
+@mixin widget_rss() {
+
+	// @include widget_links_list;
+
+	.rsswidget {
+		color: inherit; 
+	}
+
+	li {
+		line-height: 1.2;
+		margin-bottom: rem-calc(20);
+
+		a {
+			font-size: rem-calc(18);
+			line-height: 1.2;
+			font-weight: 400;
+			color: #000;
+
+			&:hover {
+				opacity: .6;
+			}
+		}
+
+		.rss-date {
+			color: #666;
+			font-size: rem-calc(14);
+			display: block;
+			margin-top: rem-calc(4);
+		}
+
+		.rssSummary	{
+			font-size: rem-calc(16);
+			line-height: 1.6;
+			margin: rem-calc(12) 0 rem-calc(28) 0;
+		}
+
+		cite {
+			font-size: inherit;
+			text-transform: none;
+			padding: 0;
+		}
+	}
+}

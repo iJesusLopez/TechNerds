@@ -1,0 +1,158 @@
+#payment {
+
+	ul.payment_methods {
+		background-color: #fff;
+		list-style: none;
+		margin: 0;
+		padding: 20px 35px;
+
+
+		li {
+			padding: 12px 0;
+			margin-bottom: 0;
+			border-bottom: 1px solid rgba(0,0,0,0.05);
+			
+
+			&.payment_method_stripe {
+				label[for=payment_method_stripe] {
+					img {
+						max-width: 30px !important;
+					}
+				}
+
+				.stripe-source-errors {
+					margin-top: rem-calc(10);
+					.wc-stripe-error {
+						width: 100%;
+					}
+				}
+			}	
+
+			&.woocommerce-notice {
+				padding-left: 5rem;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-right: 20px;
+				@include breakpoint(small only) {
+					margin: 0;
+				}				
+			}
+
+			img {
+				margin: -2px 10px 0 6px;
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+
+			input.input-radio,
+			ul li input.woocommerce-SavedPaymentMethods-tokenInput {
+				display: none;
+			}
+
+			label {
+				font-size: 16px;
+				font-weight: 400;
+				width: 100%;
+				margin-left: 0;
+				.amount {
+					float: right;
+				}
+				&:before {
+					// bottom:-2px;
+				}
+			}
+			.payment_box {
+				p {
+					font-size: 14px;
+					color: #666;
+					margin: 0;
+					padding: 8px 5px 8px 25px;
+					a {
+						font-size: 14px;
+					}
+				}
+
+				fieldset {
+					padding-left: 25px;
+					label {
+						line-height: 1;
+						padding-bottom: 0;
+					}
+
+					.form-row-first, .form-row-last {
+					    width: 100%;
+					}					
+
+					.wc-stripe-elements-field,
+					.wc-stripe-iban-element-field {
+					    border: 1px solid #ddd;
+					    margin: 0 0 5px 0;
+					    padding: 5px;
+					    background-color: #fff;
+					    outline: 0;
+					}					
+				}
+			}
+
+			&.payment_method_paypal {
+				img {
+				    max-height: 30px !important;
+				    margin-top: -5px;
+				}				
+				.about_paypal {
+				    line-height: inherit;
+				    font-size: 14px;
+				    font-weight: 300;
+				    float: right;				
+				}
+			}
+
+
+		}	
+
+	}
+
+	.place-order {
+		margin-top: 40px;
+		button {
+			width: 100%;
+		}
+
+		.woocommerce-privacy-policy-text,
+		.woocommerce-terms-and-conditions-checkbox-text {
+		  a, p {
+		    font-size: 16px;
+		    margin: 0 0 30px;      
+		  }
+
+		  a {
+		    font-weight: 400;
+		  }
+		}	
+
+		.woocommerce-terms-and-conditions-checkbox-text {
+			display: inline;
+			position: relative;
+			padding-left: rem-calc(30);
+		}	
+
+		.validate-required {
+			label {
+				input {
+					position: absolute;
+					display: inline-block;
+				}
+			}
+		}
+
+		.woocommerce-form__label-for-checkbox {
+			margin-bottom: rem-calc(20);
+		}
+
+		.required {
+			display: inline;
+		}		
+	}
+}
+

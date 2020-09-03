@@ -1,0 +1,72 @@
+body.load-transition {
+	header.site-header .header-wrapper .header-sections,
+	.topbar,
+	.page-header .page-header-bg-wrapper,
+	.page-header .title-section .title-section-wrapper .title-wrapper .page-title-wrapper .page-title,
+	.page-header .title-section .title-section-wrapper .title-wrapper .term-description,
+	.breadcrumbs-wrapper .breadcrumbs,
+	.page-header .title-section .title-section-wrapper .shop-categories-wrapper .shop-categories,
+	.page-header .title-section .title-section-wrapper .blog-categories-wrapper .blog-categories,
+	.page-header .title-section .title-section-wrapper .title-wrapper .page-title-wrapper .back-btn svg,
+	.content-area,
+	.blog-content-area,
+	.post-content-area,
+	.woocommerce-pagination,
+	.products_ajax_button,
+	footer#site-footer,
+	.page-title-delimiter,
+	.product-images-wrapper .product-labels {
+		opacity: 0;	
+	}
+
+	&.single-product {
+		.product_layout .product-info-cell .product_summary_top .page-title-wrapper h1,
+		.product_layout.product_layout_style_3 .product-title-section-wrapper .product-title-section-wrapper-inner .title-wrapper h1,
+		.product-images-wrapper .product-labels,
+		.product_layout_default .sidebar-container,
+		.product_layout.product_layout_default .product-info-cell .product_summary_middle,
+		.product_layout.product_layout_style_2 .product-info-cell .product_summary_middle,
+		.product_layout.product_layout_style_3 .product-info-cell,
+		.product_layout.product_layout_style_3 .product-title-section-wrapper .product-title-section-wrapper-inner .product_summary_middle,
+		.product_layout.product_layout_default .product-info-cell .product_summary_bottom,
+		.product_layout.product_layout_style_2 .product-info-cell .product_summary_bottom,
+		.single-bottom-inview,
+		.product_layout .product-thumbnails,
+		.product_layout .product-vr-thumbnails,
+		.product_layout #product-images,
+		.product_layout .product-images-inner .product_tool_buttons_placeholder,
+		.product_layout.product_layout_style_3 .product-title-section-wrapper .product-title-section-right,	
+		.products-nav,
+		.box-share-master-container	 {
+			opacity: 0;
+		}
+	}
+
+	&.single {
+		.page-header .barberry-entry-meta ul.entry-meta-list {
+			opacity: 0;
+		}
+	}
+
+	&.woocommerce-account {
+		.account-nav-top .title-wrapper .page-title-wrapper h1 {
+			opacity: 0;
+		}
+	}
+
+	.blog-listing .blog-articles article {
+		visibility: hidden;
+	}	
+}
+
+body.is-mobile {
+	&.single-product {
+		.products-nav,
+		.single-bottom-inview {
+			opacity: 1;
+		}		
+	}
+}
+
+
+

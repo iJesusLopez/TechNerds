@@ -1,0 +1,21 @@
+<nav class="navigation-foundation barberry-switcher {{ css_classes }}">
+	<ul class="dropdown menu" data-close-on-click="false" data-close-on-click-inside="false" data-click-open="true" data-dropdown-menu data-hover-delay="0" data-closing-time="0">
+		<li tabindex="0"  {% if( currency == selected_currency) %} class="wcml-cs-active-currency" {% endif %}>
+			{% for currency in currencies %}
+				{% if( currency == selected_currency) %}
+					<a rel="{{ currency }}"><span>{{ get_formatted_price( currency, format )|raw }}</span></a>
+				{% endif %}
+			{% endfor %}
+			<ul class="menu">
+		        {% for currency in currencies %}
+		        	{% if currency != selected_currency %}
+			            <li {% if( currency == selected_currency) %} class="wcml-cs-active-currency" {% endif %} >
+			                <a rel="{{ currency }}">{{ get_formatted_price( currency, format )|raw }}</a>
+			            </li>
+		            {% endif %}
+		        {% endfor %}				
+			</ul>
+		</li>
+	</ul>
+
+</nav>

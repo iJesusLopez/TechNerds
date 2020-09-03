@@ -1,0 +1,141 @@
+.woocommerce-pagination {
+	text-align: center;
+	font-size: rem-calc(20);
+
+	body.shop-pagination-load_more_button &,
+	body.shop-pagination-infinite_scroll & {
+		display: none;
+	}
+
+	> ul {
+		list-style: none;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	li {
+		display: flex;
+		align-items: center;
+		margin-bottom: 0;
+
+		.page-numbers {
+			opacity: 0.5;
+			color: inherit; 
+			font-size: rem-calc(20);
+			font-weight: 400;
+			line-height: 1rem; 
+			margin-right: rem-calc(32); 
+			display: flex;
+			align-items: center;
+
+			&.current {
+				opacity: 1;
+			}
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		.prev,
+		.next {
+			font-size: 0;
+			display: flex;
+
+			&:before {
+				font-size: rem-calc(16);
+			    margin-bottom: 5px;				
+			}
+		}
+
+		.next {
+			margin-right: 0;
+		}
+
+		.prev:before {
+			@include barberry-icon('\ea0e');	
+		}
+
+		.next:before {
+			@include barberry-icon('\ea0f');
+		}						
+	}
+}
+
+.products_ajax_button,
+.posts_ajax_button {
+	cursor: pointer;
+	text-align: center;
+
+	.loadmore {
+		display: inline-block;
+		text-align: center;
+
+		span {
+			font-size: 20px;
+			line-height: 1;
+			font-weight: 400;
+			display: block;
+			width: 100%;
+
+			@include breakpoint(small only) {
+				font-size: 18px;
+			}
+
+			body.shop-pagination-infinite_scroll &,
+			body.blog-pagination-infinite_scroll & {
+				display: none;
+			}			
+		}
+
+		.container {
+			display: inline-block;
+		}
+
+		.dot {
+		  width: 8px;
+		  height: 8px;
+		  border: 1px solid #000;
+		  border-radius: 50%;
+		  float: left;
+		  margin: 0 4px;
+		}
+
+
+	}
+
+	&.loading {
+		.loadmore {
+			.dot {
+			  -webkit-transform: scale(0);
+			          transform: scale(0);
+			  -webkit-animation: fx 1000ms ease infinite 0ms;
+			          animation: fx 1000ms ease infinite 0ms;				
+			}
+
+			.dot:nth-child(2) {
+			  -webkit-animation: fx 1000ms ease infinite 300ms;
+			          animation: fx 1000ms ease infinite 300ms;
+			}
+			.dot:nth-child(3) {
+			  -webkit-animation: fx 1000ms ease infinite 600ms;
+			          animation: fx 1000ms ease infinite 600ms;
+			}			
+		}
+	}
+
+	&.disabled {
+		cursor: unset;
+		.loadmore {
+			span {
+				display: none;
+			}
+			.dot {
+				border: 1px solid #dbdbdb;
+			}
+		}
+	}
+}
+
+

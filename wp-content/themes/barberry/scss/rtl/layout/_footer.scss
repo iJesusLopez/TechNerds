@@ -1,0 +1,125 @@
+@mixin footer-credit-card-icons {
+
+	
+	@include breakpoint(large) {
+		text-align: left;
+	}
+	
+	img {
+		padding-left: 0;
+		padding-right: 14px;
+
+		&:first-child {
+			padding-right: 0;
+		}
+
+	}
+}
+
+
+footer#site-footer {
+
+    .widget-area {
+
+    	.widget {
+
+			@include breakpoint(1024px down) {
+				.widget-title {
+					text-align: right;
+				}
+			}
+
+    		.mc4wp-form  {
+				& > div {
+					justify-content: flex-end;
+				}
+    			
+
+    			@include breakpoint(1024px down) {
+
+					& > div {
+						justify-content: flex-start;
+
+						&>p:first-child {
+							text-align: right;
+							align-self:flex-start;
+						    width: 100%
+						}	
+
+					}
+    			}    			
+
+    			@include breakpoint(375px down) {
+
+					input[type='email'] {
+                        border-left: 2px solid;
+					}
+
+    			}
+    		}
+    	}
+    }
+
+    .widget-area,
+    .copyright-section {
+
+			.footer_text {
+				a {
+					background-position: right bottom, right bottom;
+				}
+			}
+
+    	.cell {
+
+    		&.text-center,
+    		&.text-right {
+    			@include breakpoint(medium down) {
+					text-align: right;
+    			}
+    		}
+
+    		&.text-center {
+    			.mc4wp-form  {
+    				& > div {
+    					justify-content: center;
+    					@include breakpoint(medium down) {
+    						justify-content: flex-end;
+    					}
+    				}
+    			}    			
+    		}
+
+    		&.text-right {
+    			.mc4wp-form  {
+    				& > div {
+    					justify-content: flex-start;
+    					@include breakpoint(medium down) {
+    						justify-content: flex-start;
+    					}
+							@include breakpoint(small only) {
+									input[type='submit'] {
+											float: left;
+									}
+							}
+    				}
+    			}
+    		}
+    	}
+    }
+
+    .copyright-section {
+
+    	.social-icons {
+
+			@include breakpoint(large) {
+				text-align: right;
+			}
+
+    	}
+
+        .footer-credit-card-icons {
+            @include footer-credit-card-icons;
+        }         
+   	
+    }
+}

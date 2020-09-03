@@ -1,0 +1,279 @@
+.woocommerce {
+
+	.tax_label,
+	.woocommerce-price-suffix {
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 300;
+
+		.amount {
+			font-size: 14px !important;
+			font-weight: 300 !important;
+		}
+		sup {
+			font-weight: 300;
+		}
+	}
+
+	.amount {
+    color: #000;
+		font-size: 18px;
+		line-height: 1.1;
+		font-weight: 600;
+
+		.woocommerce-Price-currencySymbol {
+			font-size: 70%;
+			margin-right: 3px;
+		}
+
+    	sup {
+		    font-size: 60%;
+		    // font-weight: 300;
+		    line-height: 1.5;
+		    margin-left: 0.1rem;			    		
+    	}			
+	}
+
+  ins {
+    .amount {
+      color: #f9423a;
+    }
+  }
+
+}
+
+/* Form: Radio - Custom input */
+
+.woocommerce ul#shipping_method li > label,
+.woocommerce ul.wc_payment_methods li > label,
+body.woocommerce-checkout #payment ul.payment_methods li.payment_method_stripe label[for=payment_method_stripe] {
+  position: relative;
+  vertical-align: middle;
+  padding-left: 25px;
+}
+
+.woocommerce ul#shipping_method li:only-child > label,
+.woocommerce ul.wc_payment_methods li:only-child > label,
+body.woocommerce-checkout #payment ul.payment_methods li.payment_method_stripe:only-child > label[for=payment_method_stripe] {
+  padding-left: 0px;
+
+}
+
+ul.wc_payment_methods.payment_methods.methods li.wc_payment_method:only-child > label:before,
+ul.wc-saved-payment-methods li:only-child > label:before {
+  display: none;
+}
+
+body.woocommerce-checkout #payment ul.payment_methods li:only-child .payment_box p,
+body.woocommerce-checkout #payment ul.payment_methods li:only-child .payment_box fieldset {
+  padding-left: 0;
+}
+
+
+ul.wc_payment_methods.payment_methods.methods li.wc_payment_method > label:before,
+ul.wc-saved-payment-methods li > label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: calc(50% - 10px);
+  background-image: url("../images/radio.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 16px 40px;
+  background-position: 0 0;
+  border-radius: 16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  overflow: hidden; }
+
+.woocommerce ul#shipping_method li > label:before,
+.woocommerce ul.wc_payment_methods li > label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: calc(50% - 10px);
+  background-image: url("../images/radio.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 16px 40px;
+  background-position: 0 0;
+  border-radius: 16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  overflow: hidden;
+}
+
+.woocommerce ul#shipping_method li:only-child > label:before,
+.woocommerce ul.wc_payment_methods li:only-child > label:before {
+  display: none;
+}
+
+ul.wc_payment_methods.payment_methods.methods li input:checked + label:before,
+.woocommerce ul#shipping_method li input:checked + label:before,
+.wc-terms-and-conditions input:checked + label:before {
+  background-position: 0px -24px; }
+
+.woocommerce ul#shipping_method li ul,
+.woocommerce ul.wc_payment_methods li ul {
+  list-style: none;
+}
+
+body.woocommerce-checkout #payment ul.payment_methods li ul {
+
+}
+
+
+
+/* Form: Checkbox - Custom input */
+// .wpcf7-checkbox .wpcf7-list-item,
+.mailchimp-newsletter,
+.mc4wp-checkbox-woocommerce,
+.woocommerce-form__label-for-checkbox,
+.woocommerce-SavedPaymentMethods-saveNew {
+    position: relative;
+}
+
+
+.mailchimp-newsletter input,
+.mc4wp-checkbox-woocommerce input,
+.woocommerce-form__label-for-checkbox input,
+.woocommerce-SavedPaymentMethods-saveNew input {
+    visibility: hidden;
+}
+
+.wpcf7-checkbox .wpcf7-list-item input {
+  // opacity: 0;
+}
+.woocommerce-form__label-for-checkbox span {
+    display: inline-block;
+}
+
+.woocommerce-SavedPaymentMethods-saveNew label {
+    display: inline-block !important;
+    margin-left: 0;
+}
+
+
+// .wpcf7-checkbox .wpcf7-list-item input + span:before,
+.mc4wp-checkbox-woocommerce input + span:before,
+.woocommerce-form__label-for-checkbox input + span:before,
+.woocommerce-SavedPaymentMethods-saveNew input + label:before{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: " ";
+  width: 19px;
+  height: 19px;
+  border: 2px solid #e1e1e1;
+  cursor: pointer;
+}
+
+.mailchimp-newsletter {
+  margin-bottom: 0;
+  input {
+    vertical-align: top;
+  }
+  label {
+    position: absolute !important;
+    
+    left: 0;
+    margin-left: 0;
+    &:before {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      display: block;
+      content: " ";
+      width: 19px;
+      height: 19px;
+      border: 2px solid #e1e1e1;
+      cursor: pointer;      
+    }
+
+    span {
+      margin-left: 25px;
+      line-height: 1;
+    }
+  }
+}
+
+h3#ship-to-different-address {
+  letter-spacing: 0 !important;
+}
+
+.woocommerce-SavedPaymentMethods-saveNew {
+  #wc-stripe-new-payment-method {
+    position: absolute;
+    display: inline-block;
+  }
+}
+
+
+.woocommerce-SavedPaymentMethods-saveNew input + label{
+  padding-left: 30px;
+}
+
+// .wpcf7-checkbox .wpcf7-list-item  input:checked + span:before,
+.mailchimp-newsletter  input:checked + label:before,
+.mc4wp-checkbox-woocommerce input:checked + span:before,
+.woocommerce-form__label-for-checkbox input:checked + span:before,
+.woocommerce-SavedPaymentMethods-saveNew  input:checked + label:before {
+  position: absolute;
+  @include barberry-icon('\ea36');
+  font-size: 10px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+}
+
+
+
+
+#yith-wcwl-popup-message {
+  display: none !important;
+}
+
+// Filter Button for Mobile 
+
+body.is-mobile {
+
+
+    ul.products li.product .product-inner .product-image .footer-section .footer-section-inner .barberry_product_quick_view_button:hover,
+    ul.products li.product .product-inner .product-image .footer-section .footer-section-inner .barberry_product_wishlist_button:hover,
+    ul.products li.product .product-inner .product-image .footer-section .footer-section-inner .barberry_product_compare_button:hover {
+        background-color: #fff !important;
+    }
+
+    ul.products li.product .product-inner .product-image .footer-section .footer-section-inner .button:hover:after {
+        color: #000 !important;
+    }
+}
+
+.order-info {
+  text-align: center;
+
+  font-size: rem-calc(26);
+  line-height: 1.6;
+  
+  mark {
+    // background-color: #f4f4f4;
+    font-size: 20px;
+    padding:7px 10px 5px;
+    font-weight: 400;
+    // display: inline-block;
+  }
+
+}
+
+

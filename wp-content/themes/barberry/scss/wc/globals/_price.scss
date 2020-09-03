@@ -1,0 +1,41 @@
+.woocommerce {
+	.price {
+		// margin-top: rem-calc(10);
+
+		.amount {
+			// font-size: 30px;
+
+		}
+
+		del {
+			text-decoration: none;
+
+    		span.amount {
+    			position: relative;
+    			color: #666;
+    			font-size: 95%;
+    			font-weight: 300;
+
+	    		.amount:before {
+	    			width: 100%;
+					position: absolute;
+					content: "";
+					right: 0;
+					top: 50%;
+					height: 0px;
+					border-bottom: 1px solid #f9423a;
+					opacity: 0.7;
+					transform: rotate(-15deg);			    			
+	    		}		    			
+    		}					
+		}
+
+    	ins {
+    		// margin-left: rem-calc(5);
+    		color: #f9423a;
+    		text-decoration: none;
+    		line-height: 1;
+    	}
+
+	}	
+}

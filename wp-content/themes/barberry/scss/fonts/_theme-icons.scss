@@ -1,0 +1,15 @@
+// Theme Icons
+
+// 1. Navigation
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    @include barberry-icon('\ea23');
+}
+
+.is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after {
+    @include barberry-icon('\ea21');
+}
+
+.is-dropdown-submenu .is-dropdown-submenu-parent.opens-left > a::after {
+    @include barberry-icon('\ea20');
+}

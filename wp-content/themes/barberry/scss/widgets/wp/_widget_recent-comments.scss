@@ -1,0 +1,42 @@
+@mixin widget_recent_comments() {
+	.recentcomments	{
+		color: #333;
+		position: relative;
+		font-size: 94%;
+		line-height: 1.6;
+		margin-bottom: rem-calc(20);
+		padding-left: rem-calc(26);
+
+		&:before {
+			color: #333;
+			font-size: 16px;
+			position: absolute;
+			left: 0;
+			top: 6px;
+			@include barberry-icon('\ea28')
+		}
+	
+
+		.comment-author-link {
+
+			a {
+				font-size: 94%;
+			}
+
+
+			& + a {
+				font-style: normal;	
+				color: #000;
+				font-weight: 500;
+				line-height: 1.4;				
+				display: block !important;
+				&:hover {
+					opacity: .6;
+				}				
+			}
+
+			
+		}
+	}
+
+}

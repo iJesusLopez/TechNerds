@@ -1,0 +1,189 @@
+.barberry-compare-list-bottom {	
+
+	.barberry-compare-list {
+
+
+		.compare_title_section {
+			
+			.barberry-compare-label {
+
+				.barberry-block {
+
+
+					&.compare-count {
+
+						@include breakpoint(500px down) {
+							margin-left: 0;
+							margin-right: 10px;
+							@include breakpoint(320px down) {
+								margin-right: 0;
+							}
+						}
+					}
+				}				
+			}
+
+		}
+
+		.compare_products_section {
+
+			.barberry-compare-wrap-item {
+
+				.barberry-compare-item {
+			
+					.barberry-remove-compare {
+						right:auto;
+						left: -5px;
+							
+						&:before {
+							left: auto;
+							right: calc(50% - 7px);
+						}						
+					}
+				}
+				.barberry-compare-item-hover {
+					left: auto;
+					right: 50%;
+	
+					@include transform(translateX(50%));
+				
+				}	
+			
+			}
+		}
+
+		.compare_button_section {
+			text-align: left;
+
+			.barberry-compare-label {
+
+				.barberry-compare-clear-all {
+					padding-left: 0;
+					padding-right: 20px;
+					margin-right: 0;
+					margin-left: 10px;
+
+					&:before {
+						left: auto;
+						right: 0;
+					}
+
+				}
+				.button {
+					i {
+						&:before {
+							margin-right: 0;
+							margin-left: 10px;
+						}
+					}
+				}							
+			}
+		}
+	}
+
+	.barberry-compare-mess {
+	    left: auto;
+	    right: 0;
+
+	    span {
+
+			&:after {
+				right: auto;
+				left: 50%;			
+			}			
+	    }	
+	}
+
+	.barberry-close-mini-compare {
+		right: auto;
+		left: 20px;
+		@include breakpoint(medium down) {
+		right: auto;	
+		left: 10px;		
+		}
+	}
+}
+
+// Compare table
+
+.barberry-wrap-table-compare {
+
+
+
+	.barberry-table-compare {
+
+
+		thead, tbody {
+
+			td,th {
+			  text-align:right;
+			}
+
+		}
+
+		tbody {
+			tr {
+				td {
+
+					&.left-cell {
+						text-align: right;
+					}
+
+
+				}
+
+				&.price {
+					.amount {
+
+						.woocommerce-Price-currencySymbol {
+							margin-right: 0;
+							margin-left: 3px;
+						}
+
+				    	sup {
+						    margin-left: 0;	
+						    margin-right: 0.1rem;		    		
+				    	}	
+
+
+					}
+
+					del {
+
+			    		span.amount {
+
+				    		.amount:before {
+								right: auto;
+								left: 0;
+								transform: rotate(-15deg);			    			
+				    		}		    			
+			    		}					
+					}
+
+				}
+				&.description {
+					
+					p {
+						text-align: right;
+					}
+				}	
+
+
+				&.remove-item {
+
+					.barberry-remove-compare {
+						padding-left: 0;
+						padding-right: 20px;
+
+						&:before {
+							left: auto;
+							right: 0;
+						}
+					}
+
+				}		
+			}
+
+		}
+	}	
+}

@@ -1,0 +1,44 @@
+.woocommerce {
+	.star-rating {
+		font-family: 'Barberry';
+		@include barberry-icon('\ea08\ea08\ea08\ea08\ea08');
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        height: 1em;
+        line-height: 1;
+        font-size: rem-calc(13);
+        letter-spacing: 0.2em;
+        width: 5.8em;
+        // margin-right: rem-calc(1); 
+        color: #dedede;
+        // background-color: #666;        
+
+         &:before {
+            // content: '\ea10\ea10\ea10\ea10\ea10';
+            @include barberry-icon('\ea08\ea08\ea08\ea08\ea08');
+            position: absolute;
+            top: 0;
+            left: 0;
+        }     
+		
+		span {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: 1.5em;
+
+            &:before {
+            	color: #ffcc33;
+                @include barberry-icon('\ea08\ea08\ea08\ea08\ea08');
+                position: absolute;
+                top: 0;
+                left: 0;
+            }			
+		}
+
+
+
+	}
+}

@@ -1,0 +1,105 @@
+#barberry_woocommerce_quickview {
+	left: auto;
+	right: 0;
+
+	.close-button-wrapper {
+		right: auto;
+		left: 20px;		
+	}
+
+	.close-button {
+		left: calc(50% - 10px); 
+		right: auto;
+	}
+
+
+	.barberry_qv_content {
+
+		.before-product-summary-wrapper {
+
+			.product-labels {
+			    left: auto;
+			    right: 15px;
+
+			    @include breakpoint(small only) {
+				    left: auto;	
+				    right: 25px;				
+			    }
+			}			
+		}
+	}
+
+
+	.nano-content {
+
+		.product-info-wrapper {
+
+			// Product Summary Middle
+
+			.product_summary_middle {
+
+				.woocommerce-product-details__short-description {
+					a {
+						background-position: right bottom, right bottom;
+					}
+				}
+
+
+				.go_to_product_page {
+					padding-left: 0;
+					padding-right: rem-calc(26);
+
+					&:before {
+						transform: scaleX(-1);
+						left: auto;
+						right: 0;
+					}
+
+					&:hover {
+						transform: translateX(-10px);
+						&:before {
+							transform: scaleX(-1);
+						}
+					}
+
+				}
+
+			}
+
+
+			// Product Summary Bottom
+
+			.product_summary_bottom {
+
+				.product_summary_bottom_inner {
+
+					.product_meta {
+						.product_meta_ins {
+							text-align: right;
+
+							.cell {
+
+								> span {
+									text-align: right;	
+									
+									a {
+										background-position: right bottom, right bottom;
+									}
+								}	
+							}
+						}
+					}
+
+				}		
+			}
+
+		}
+	}
+
+}
+
+#barberry_woocommerce_quickview .nano-content .product-info-wrapper .product_summary_bottom p.stock:before {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+

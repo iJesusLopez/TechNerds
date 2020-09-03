@@ -1,0 +1,87 @@
+.wpb_slider .vc_admin_label,
+.hide_in_vc_editor {
+  display: none !important; }
+
+.amount sup {
+  font-size: inherit;
+  vertical-align: bottom; }
+
+#barberry_sguide_metaboxes input[type=text] {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  width: 100% !important; }
+
+#barberry_sguide_metaboxes .icon-button {
+  border-radius: 4px;
+  box-shadow: none;
+  width: 20px;
+  height: 20px;
+  font-size: 17px; }
+
+#barberry_sguide_metaboxes .icon-button.addcol,
+#barberry_sguide_metaboxes .icon-button.addrow {
+  background-color: #0085ba; }
+
+#barberry_sguide_metaboxes .icon-button.delcol,
+#barberry_sguide_metaboxes .icon-button.delrow {
+  background-color: #77a8bc; }
+
+.barberry-variation-gallery-images li.image, .barberry-variation-gallery-images li.wc-metabox-sortable-placeholder {
+  position: relative;
+  width: 80px;
+  float: left;
+  cursor: move;
+  border: 1px solid #d5d5d5;
+  margin: 0 9px 9px 0;
+  background: #f7f7f7;
+  border-radius: 2px;
+  box-sizing: border-box; }
+
+.barberry-variation-gallery-images li.image img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+.barberry-variation-gallery-images li.image:hover .delete {
+  display: block; }
+
+.barberry-variation-gallery-images li.wc-metabox-sortable-placeholder {
+  border: 3px dashed #ddd;
+  overflow: hidden; }
+
+.barberry-variation-gallery-images li.wc-metabox-sortable-placeholder:after {
+  font-family: Dashicons;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+  content: "\f161";
+  font-size: 2.618em;
+  line-height: 72px;
+  color: #ddd; }
+
+.barberry-variation-gallery-images li .delete {
+  position: absolute;
+  display: none;
+  right: -8px;
+  top: -8px;
+  padding: 1px;
+  text-decoration: none; }
+
+.barberry-variation-gallery-images li .delete span:before {
+  content: "\f153";
+  font-size: 17px;
+  color: #999;
+  background-color: #fff;
+  border-radius: 50%; }
+
+.barberry-variation-gallery-images li .delete:hover span:before {
+  color: #a00; }
+
+.barberry-variation-gallery-images:after {
+  content: " ";
+  display: table;
+  clear: both; }

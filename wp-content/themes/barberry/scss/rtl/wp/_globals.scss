@@ -1,0 +1,404 @@
+.wp-caption-text {
+	text-align: right;
+}
+
+.blog-content-area,
+.single_related_posts {
+
+	article {
+
+		&.has-post-thumbnail {
+			.entry-thumbnail {
+				.entry-meta {
+					left: 0;
+					right: -15px;
+
+					@include breakpoint(small only) {
+						right: 0px;
+					}					
+				}
+			}
+		}
+	}	
+}
+
+
+.gallery {
+    margin: rem-calc(40) 0;
+
+    dl dt {
+        padding:0;
+        margin:0;
+    }
+     
+    .gallery-item   {
+        position: relative;
+        margin: 0;
+        float: left;
+        transition: opacity .8s ease;
+        
+        &:hover {
+            opacity: .5;
+        }
+
+        .wp-caption-text {
+            background-color: #fff;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            line-height: 1.3;
+            padding: 5px 10px;
+        }
+
+    }
+
+    .gallery-icon  {
+        img  {
+            width: 100%;
+            border-right: 2px solid #FFF;  
+            border-bottom: 2px solid #FFF;
+        }
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.gallery-columns-1 {
+    .gallery-item {
+        width: 100%; 
+    }
+}
+
+.gallery-columns-2 {
+    .gallery-item {
+        width: 100%; 
+        
+        @include breakpoint(medium) {
+            width: calc(100% / 2);
+        }
+
+        &:nth-child(2n+2) {
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+        
+    }
+}
+
+.gallery-columns-3 {
+    .gallery-item {
+        width: 100%; 
+        
+        @include breakpoint(medium) {
+            width: calc(100% / 3);
+        }
+        
+        &:nth-child(3n+3) {
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+        
+    }
+}
+
+.gallery-columns-4 {
+    .gallery-item {
+        width: 100%; 
+        
+        @include breakpoint(medium) {
+            width: calc(100% / 4);
+        }
+        
+        &:nth-child(4n+4) {
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+        
+    }
+}
+
+.gallery-columns-5 {
+    .gallery-item {
+        width: 100%; 
+        
+        @include breakpoint(medium) {
+            width: calc(100% / 5);
+        }    
+    }
+}
+
+.gallery-columns-6 {
+    .gallery-item {
+        width: 100%; 
+        
+        @include breakpoint(medium) {
+            width: calc(100% / 6);
+        }  
+    }
+}
+
+.gallery-columns-7
+{ 
+    .gallery-item
+    {
+        width: 100%; 
+        
+        @include breakpoint(medium)
+        {
+            width: calc(100% / 7);
+        }  
+    }
+}
+
+.gallery-columns-8
+{
+    .gallery-item
+    {
+        width: 100%; 
+        
+        @include breakpoint(medium)
+        {
+            width: calc(100% / 8);
+        } 
+    }
+}
+
+ .gallery-columns-9
+{
+    .gallery-item
+    {
+        width: 100%; 
+        
+        @include breakpoint(medium)
+        {
+            width: calc(100% / 9);
+        } 
+    }
+}
+
+.blog-gallery {
+
+    // Lighbox Gallery 
+
+    button {
+
+        &.close-button {
+            top: 0;
+            right: auto;
+            left:0;
+            margin-right: 0;
+            margin-left: 17px; 
+        }
+
+        &.prev {
+            margin-left: 0;
+            margin-right: rem-calc(17);
+            left: auto;
+            right: 0;
+            &:after {
+                @include barberry-icon('\ea21');
+            }            
+        }
+
+        &.next {
+            margin-right: 0; 
+            margin-left: rem-calc(17);
+            right: auto;
+            left: 0;
+             &:after {
+                @include barberry-icon('\ea20');
+            }           
+        }
+            
+    }
+}
+
+
+
+$avatar-size: 70 !default;
+
+@mixin comments_title {
+	font-size: rem-calc(30);
+	margin-bottom: rem-calc(60);
+	font-weight: 300;
+
+	b {
+		font-weight: 600;
+	}
+}
+
+@mixin comments_subtitle {
+	color: inherit;
+}
+
+.comments-area {
+
+	.comment-list {
+
+		li.pingback {
+			padding: 25px 35px 25px 25px;
+
+
+			.edit-link {
+				margin-left: 0; 
+				margin-right: rem-calc(16);
+			}											
+		}	
+
+		.comment {
+
+			article.comment-body {
+	
+
+				header.comment-meta {
+					padding-left: 0;
+					padding-right: rem-calc(90);
+
+					.comment-author {
+						.avatar {
+							left: auto;	
+							right: 0;					
+						}
+					}
+				}
+
+				.comment-content {
+
+					padding-left: 0;
+					padding-right: rem-calc(90);
+
+					.comment-reply {
+						margin-right: 0;
+						margin-left: rem-calc(10);
+
+						a {
+							padding-left: 0;
+							padding-right: 23px;
+
+							&:before {
+								left: auto;
+								right: 0;
+							}
+						}
+						
+					}
+				}
+
+				& + .comment-respond {
+
+					.comment-reply-title {
+
+						small {
+							
+							a {
+								padding-left: 0;
+								padding-right: rem-calc(17);
+								
+								&:before	{
+									left: auto;
+									right: 0;
+								}
+							}
+						}												
+					}
+				}
+			}	
+
+			.children {
+				margin-left: 0;
+				margin-right: rem-calc(90);
+
+				@include breakpoint(small only)	{
+					margin-right: 0;
+				}								
+			}	
+		}
+	}
+
+	.comments-pagination {
+		 
+		.nav-links	{
+			
+			.page-numbers {
+				margin-right: 0; 
+				margin-left: rem-calc(32); 
+
+
+				&.prev {
+					margin-right: 0;
+					margin-left: rem-calc(22);
+
+					@include breakpoint(large) {
+						margin-left: 0; 
+						margin-right: rem-calc(-10);
+					}
+
+				}
+
+				&.next {
+					@include breakpoint(large) {
+						margin-left: 0; 
+						margin-right: rem-calc(-10); 
+					}
+				}
+			}
+		}
+	}	
+
+	.comment-respond {
+
+		.comment-form {
+
+
+			.logged-in-as > a {
+				margin-left: 0;
+				margin-right: rem-calc(5);
+
+				&:first-child {
+					margin-right: 0;
+				}
+
+			}
+
+
+			.comment-form-author,
+			.comment-form-email,
+			.comment-form-url {
+
+				@include breakpoint(medium)	{
+					float: right;
+					margin-right: 0;
+					margin-left: 2%;
+				}
+
+			}
+
+			.comment-form-url {
+				margin-left: 0;
+			}	
+								
+		}
+
+	}
+
+}
+
+
+.comments-area .comment-list .comment article.comment-body .comment-content .comment-reply a:before {
+	@include transform(scaleX(-1));
+	filter: FlipH;
+}
+

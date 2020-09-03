@@ -1,0 +1,32 @@
+.offcanvas_aside {
+
+	&.offcanvas_aside_left {
+		left:auto;
+		right:0;
+		@include transform(translate3d($offcanvas_mobile_width,0,0));
+
+		@media #{breakpoint(medium)} {
+			@include transform(translate3d($offcanvas_mediumup_width,0,0));
+		}
+
+		@media #{breakpoint(large)} {
+			@include transform(translate3d($offcanvas_largeup_width,0,0));
+		}		
+	}
+
+	&.offcanvas_aside_right {
+		right:auto;
+		left: 0;
+		@include transform(translate3d(-$offcanvas_mobile_width,0,0));
+
+		@media #{breakpoint(medium)} {
+			@include transform(translate3d(-$offcanvas_mediumup_width,0,0));
+		}
+
+		@media #{breakpoint(large)} {
+			@include transform(translate3d(-$offcanvas_largeup_width,0,0));
+		}
+
+	}
+
+}
