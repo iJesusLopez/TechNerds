@@ -1,0 +1,2 @@
+2020-09-03T07:12:24+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) in C:\wamp64\www\TechNerds\wp-includes\rest-api\class-wp-rest-server.php on line 831
+
